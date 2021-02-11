@@ -1,7 +1,6 @@
 :root {
   --lineCol: #59CDD3;
   --tp: 0;
-  --le: 0;
 }
 
 html {
@@ -149,6 +148,24 @@ input[type="checkbox"]:checked + #popup{
   transition:.2s;
 }
 
+
+/*詳細のフェード*/
+.fade{
+  opacity: 0;
+  animation: fadein 2s ease forwards;
+}
+@keyframes fadein {
+    100% {  opacity: 1;}
+}
+
+/*以下遅延の指定*/
+.txt01 {animation-delay: 0s;}
+.txt02 {animation-delay: 0.5s;}
+.txt03 {animation-delay: 1s;}
+.txt04 {animation-delay: 1.5s;}
+.txt05 {animation-delay: 4s;}
+.txt06 {animation-delay: 6s;}
+
 /*説明文*/
 .texts{
   position: relative;
@@ -158,7 +175,6 @@ input[type="checkbox"]:checked + #popup{
   position: absolute;
   color: #000000;
   top: 5vw;
-  left: var(--le);
 }
 .texts p{
   font-family:'serif', serif;
