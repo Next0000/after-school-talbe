@@ -37,7 +37,7 @@ p, li ,a{
 /*以下はボタンのデザイン*/
 .btn-cross {
   display: inline-block;
-  width: 150px;
+  width: 10em;
   position: relative;
   padding: 0.25em 1em;
   border-top: solid 1px var(--lineCol);
@@ -51,7 +51,7 @@ p, li ,a{
   content: '';
   position: absolute;
   top: -7px;
-  width: 2px;
+  width: 0.05vw;
   height: -webkit-calc(100% + 14px);
   height: calc(100% + 14px);
   background-color: var(--lineCol);
@@ -77,7 +77,7 @@ p, li ,a{
 /*横並び*/
 .flex{
     display: flex;/*コレ*/
-text-align: center;
+    text-align: center;
 
 }
 .flex div{
