@@ -1,0 +1,206 @@
+:root {
+  --lineCol: #59CDD3;
+  --tp: 0;
+  --le: 0;
+}
+
+html {
+  font-size: 1vw; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-weight: bold;
+  font-family:'Impact', serif; /* this should be the rest of the output you got from Google fonts */
+  background-color:  #272F2E;
+  color: #E5E5E5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw;
+}
+
+h2{
+  margin: 5%;
+  text-align: center;
+}
+
+h3{
+  margin: 5%;
+  text-align: center;
+  font-size: 0.5vw;
+}
+
+
+body {
+  font-size: 1vw;
+  margin: 0% 10%;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+p, li{
+  font-family:'ＭＳ Ｐゴシック', serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+a{
+ font-family:'Impact', serif;
+ text-align: center;
+ line-height: 2;
+}
+
+/*以下はボタンのデザイン*/
+.btn-cross {
+  display: inline-block;
+  width: 10em;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 1px var(--lineCol);
+  border-bottom: solid 1px  var(--lineCol);
+  text-decoration: none;
+  font-weight: 4px;
+  color: #E5E5E5;
+}
+
+.btn-cross:before, .btn-cross:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 0.05vw;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: var(--lineCol);
+  transition: .3s;
+}
+.btn-cross:before {
+  left: 7px;
+}
+.btn-cross:after {
+  right: 7px;
+}
+.btn-cross:hover:before {
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.btn-cross:hover:after {
+  top: 0px;
+  right: 0;
+  height: 100%;
+}
+
+/*横並び*/
+.flex{
+    display: flex;/*コレ*/
+}
+.flex div{
+    text-align: center;
+    width: 50%;
+    margin: 4vw 1.5vw;
+    padding: 0.5em;
+}
+
+/*相関図の設定*/
+.soukan{
+  height: 20vw;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 3px #FFFFFF;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+/*画像表示*/
+#popup{
+  z-index: 10;
+  width:80vw;
+  height: 40vw;
+  padding: 0vw 15vw;
+  background-color: #FFFFFF;
+  line-height:50%;
+  box-sizing:border-box;
+  display:none;
+  position:fixed;
+  top:1vw;
+  left: 10vw;
+}
+div img{
+  width:50%;
+}
+label{
+  display:block;
+}
+
+label a:hover{
+  cursor:pointer;
+}
+input[type="checkbox"]{
+  display:none;
+}
+
+input[type="checkbox"]:checked + #popup{
+  display:block;
+  transition:.2s;
+}
+
+/*説明文*/
+.texts{
+  position: relative;
+}
+.texts h2{
+  z-index: 20;
+  position: absolute;
+  color: #000000;
+  top: 5vw;
+  left: var(--le);
+}
+.texts p{
+  font-family:'serif', serif;
+  padding: 1em;
+  font-weight: 1.5px;
+  border: solid 1.5px #000000;/*線*/
+  border-radius: 10px;/*角の丸み*/
+
+  z-index: 20;
+  position: absolute;
+  top: var(--tp);
+  left: 48vw;
+  color: #000000;
+  text-align: left;
+}
+
+.texts h3{
+  font-family:'serif', serif;
+  z-index: 20;
+  position: absolute;
+  top: 31vw;
+  text-align: left;
+  left: 45vw;
+  color: #000000;
+  text-align: left;
+  line-height: 1.5;
+}
+
+  .box24{
+    position: relative;
+    padding: 0.5em 0.7em;
+    margin: 2em 0;
+    font-weight: bold;
+
+    z-index: 20;
+    position: absolute;
+    top: var(--tp);
+    left: 48vw;
+    color: #000000;
+    text-align: left;
+}
+.box24:after {
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: -30px;
+    border: 15px solid transparent;
+    border-right: 15px solid #000000;
+    width: 0;
+    height: 0;
+}
