@@ -15,6 +15,7 @@ html {
 h1 {
   text-align: center;
   font-size: 5vw;
+  font-weight: lighter;
   letter-spacing: 0.5em;
 }
 
@@ -33,7 +34,7 @@ h3{
 
 body {
   font-size: 1vw;
-  margin: 5% 15%;
+  margin: 5% 10%;
 }
 p, li{
   text-align: center;
@@ -41,10 +42,10 @@ p, li{
 }
 
 a{
- font-size: 1vw;
- text-align: center;
- line-height: 2;
- letter-spacing: 0.2em;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 0.2em;
 }
 
 .title{
@@ -97,45 +98,41 @@ a{
 }
 
 
-/*相関図の設定*/
-.soukan{
-  color: #000000;
-  text-align: center;
-  background-color: white;
-  opacity: 0.5;
-}
-.soukan h3{
-  position:absolute; top:15.5vw; left: 43.5vw;
-}
-.soukan img{
-  width: 30vw;
-}
-
-
 /*newsの設定*/
 .scoop{
   position: relative;
-  height: 30vw;
+  height: 50vw;
   margin-top: 2vw;
   margin-bottom: 10vw;
-  border: solid 1px white;/*線*/
-  /*
-  border-radius: 10px;/*角の丸み*/
 }
 .scoop p{
   color: white;
   font-size: 1vw;
 }
 
+.mob{
+  width: 23vw;
+  position: absolute;
+  background-color: #000000;
+}
+.mob img{
+  display: block;
+  width: 23vw;
+  height: auto;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
 .times{
-  width: 10vw;
+  width: 15vw;
   position: absolute;
   background-color: #000000;
 }
 
 .times img{
   display: block;
-  width: 10vw;
+  width: 15vw;
   height: auto;
   filter:alpha(opacity=80);
   -moz-opacity:0.8;
@@ -150,7 +147,7 @@ a{
   animation: fadein 1s ease forwards;
 }
 @keyframes fadein {
-    100% {  opacity: 1;}
+  100% {  opacity: 1;}
 }
 
 
@@ -211,7 +208,7 @@ a{
   font-family:'serif', serif;
   padding: 1vw 2vw;
   text-align: left;
-  font-size: 0.8vw;
+  font-size: 1.1vw;
   color: #000000;
 }
 .texts h3{
@@ -240,9 +237,9 @@ a{
 }
 
 .btn{
-	position:absolute;
-	left:29vw;
-	top:38vw;
+  position:absolute;
+  left:29vw;
+  top:38vw;
 }
 
 .btn-cross:before, .btn-cross:after {
@@ -271,18 +268,6 @@ a{
   right: 0;
   height: 100%;
 }
-
-/*横並び*/
-.flex{
-    display: flex;/*コレ*/
-}
-.flex label{
-    text-align: center;
-    width: 50%;
-    margin: 4vw 1.5vw;
-    padding: 0.5em;
-}
-
 
 /*画像表示*/
 #popup{
@@ -328,7 +313,7 @@ input[type="checkbox"]:checked + #popup{
   animation: fadein 1s ease forwards;
 }
 @keyframes fadein {
-    100% {  opacity: 1;}
+  100% {  opacity: 1;}
 }
 
 /*以下遅延の指定*/
@@ -340,27 +325,136 @@ input[type="checkbox"]:checked + #popup{
 .txt06 {animation-delay: 6s;}
 
 
-
-  .box24{
-    position: relative;
-    padding: 0.5em 0.7em;
-    margin: 2em 0;
-    font-weight: bold;
-
-    z-index: 20;
-    position: absolute;
-    top: var(--tp);
-    left: 48vw;
-    color: #000000;
-    text-align: left;
+/*探索者のチェキボード*/
+.pic{
+  background-image: url("../images/bg3.png");
+  background-size: cover;
+  position: relative;
+  height: 37vw;
+  margin-top: 2vw;
+  margin-bottom: 20vw;
+  border: solid 10px rgba(0, 0, 0,.5);/*線*/
 }
-.box24:after {
-    position: absolute;
-    content: '';
-    top: 20%;
-    left: -30px;
-    border: 15px solid transparent;
-    border-right: 15px solid #000000;
-    width: 0;
-    height: 0;
+/*探索者のデータ*/
+.data{
+  width: 8vw;
+  background-color: #494949;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 15px 13px 0 rgba(0, 0, 0,.7);
+}
+.data h2{
+  margin: 0;
+  padding: 0;
+}
+.data h3{
+  text-align: center;
+  padding: 0;
+  font-size: 0.3vw;
+  margin-bottom: 2vw;
+}
+.data img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 6vw;
+  border: solid 0.2vw white;
+  background-color: black;
+  margin: 0.3vw;
+}
+
+.data:hover{
+}
+.data a{
+  margin: 0.3vw;
+  font-size: 0.7vw;
+  background-color: #B2B2B2;
+}
+.data:hover img{
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  background-color: white;
+}
+
+.pin{
+  display: inline-block;
+  position: absolute;
+  width: 1vw;/*幅*/
+	height: 1vw;/*高さ*/
+	border-radius: 50%;/*角丸*/
+  background: #B31313;
+  box-shadow: inset 0px -5px 2px 0 rgba(0, 0, 0,.5);
+}
+/*以下はボタンのデザイン*/
+.cross {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+
+.data:hover .balloon1 {
+  display: inline;                /* インライン要素として表示 */
+}
+.balloon1 {
+  position: absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: white;       /* 背景色（透明度） */
+  width:20vw;                          /* 吹き出し全体の幅 */
+  padding: 1vw;
+}
+.balloon1:after{
+  border-left: 19px solid white;   /* 吹き出し口の幅・色 */
+  border-top: 10px solid transparent;     /* 吹き出し口の高さ１／２ */
+  border-bottom: 10px solid transparent;  /* 吹き出し口の高さ１／２ */
+  right: -11px;                           /* 吹き出し口の位置調整 */
+  top: 0.3vw;                                /* 吹き出し口の縦位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+.balloon1 div{
+  mix-blend-mode: difference;
+  width: 20;
+  padding: 1.5vw;
+  background-color: white;
+  color: black;
+}
+
+.data:hover .balloon2 {
+  display: inline;                /* インライン要素として表示 */
+}
+.balloon2 {
+  position: absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: white;       /* 背景色（透明度） */
+  width:20vw;                          /* 吹き出し全体の幅 */
+  padding: 1vw;
+}
+.balloon2:after{
+  border-right: 19px solid white;   /* 吹き出し口の幅・色 */
+  border-top: 10px solid transparent;     /* 吹き出し口の高さ１／２ */
+  border-bottom: 10px solid transparent;  /* 吹き出し口の高さ１／２ */
+  left: -12px;                           /* 吹き出し口の位置調整 */
+  top: 0.3vw;                                /* 吹き出し口の縦位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+.balloon2 div{
+  mix-blend-mode: difference;
+  width: 20;
+  padding: 1.5vw;
+  background-color: white;
+  color: black;
 }
