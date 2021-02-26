@@ -471,7 +471,7 @@ input[type="checkbox"]:checked + #popup{
     margin-bottom: 10vw;
   }
   p,a{
-    font-size: 1vw;
+    font-size: 10px;
   }
 
   .boxs{
