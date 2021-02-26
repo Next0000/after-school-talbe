@@ -1,0 +1,220 @@
+:root {
+  --lineCol: #000000;
+  --tp: 0;
+}
+
+html {
+  font-size: 0.25vw; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: 'Amatic SC', "Hannari";
+  background-color: #000000;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  color: #E5E5E5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5vw;
+  font-weight: lighter;
+  letter-spacing: 0.5em;
+}
+
+h2{
+  font-size: 2vw;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+h3{
+  text-align: center;
+  font-size: 1.2vw;
+  letter-spacing: 2em
+}
+
+
+body {
+  font-size: 1vw;
+  margin: 5%;
+}
+p{
+  text-align: center;
+  line-height: 1.5;
+}
+
+a{
+  font-size: 1vw;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 0.2em;
+}
+
+.back{
+  position: relative;
+  width: auto;
+  height: 30vw;
+  border: solid 5px rgba(0, 0, 0,.5);/*線*/
+  text-align: center;
+  margin-bottom: 3vw;
+}
+
+.list{
+  padding: 0;
+  width: auto;     /* 追加 */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.list li{
+  position: relative;
+  text-align:center;
+
+  float: left;
+  list-style: none;
+  background-color: white;
+  width: 17vw;
+  height: auto;
+}
+ .item img{
+   width: 100%;
+ }
+.item p{
+  color: black;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 480px){
+  .list{
+    clear: both;
+  }
+}
+
+
+.skew {
+  animation: skew 3s infinite;
+}
+@keyframes skew {
+  0% {
+    transform: none;
+  }
+  33% {
+    transform: none;
+  }
+  33.3% {
+    transform: skewX(30deg);
+  }
+  33.6% {
+    transform: skewX(-30deg);
+  }
+  33.9% {
+    transform: none;
+  }
+  66% {
+    transform: none;
+  }
+  66.3% {
+    transform: skewX(5deg);
+  }
+  66.6% {
+    transform: skewX(-5deg);
+  }
+  66.9% {
+    transform: none;
+  }
+  77% {
+    transform: none;
+  }
+  77.3% {
+    transform: skewX(15deg);
+  }
+  77.6% {
+    transform: skewX(-15deg);
+  }
+  77.9% {
+    transform: none;
+  }
+}
+
+.times:hover{
+  z-index: 3;
+  background-color: #FFFFFF;
+  opacity: 0.8;
+  animation: fadein 1s ease forwards;
+}
+@keyframes fadein {
+  100% {  opacity: 1;}
+}
+
+
+/*以下はボタンのデザイン*/
+.btn-cross {
+  display: inline-block;
+  width: 10em;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 1px var(--lineCol);
+  border-bottom: solid 1px  var(--lineCol);
+  text-decoration: none;
+  color: black;
+}
+
+.btn{
+  position:absolute;
+  left:29vw;
+  top:38vw;
+}
+
+.btn-cross:before, .btn-cross:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width:1px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: var(--lineCol);
+  transition: .3s;
+}
+.btn-cross:before {
+  left: 7px;
+}
+.btn-cross:after {
+  right: 7px;
+}
+.btn-cross:hover:before {
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.btn-cross:hover:after {
+  top: 0px;
+  right: 0;
+  height: 100%;
+}
+
+/*詳細のフェード*/
+.fade{
+  opacity: 0;
+  animation: fadein 1s ease forwards;
+}
+@keyframes fadein {
+  100% {  opacity: 1;}
+}
+
+/*以下遅延の指定*/
+.txt01 {animation-delay: 0s;}
+.txt02 {animation-delay: 0.5s;}
+.txt03 {animation-delay: 1s;}
+.txt04 {animation-delay: 1.5s;}
+.txt05 {animation-delay: 4s;}
+.txt06 {animation-delay: 6s;}
+
+/*以下はボタンのデザイン*/
+.cross {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
