@@ -4,7 +4,7 @@
 
 html {
   font-size: 0.25vw; /* px means 'pixels': the base font size is now 10 pixels high  */
-  font-family: 'Amatic SC', "Hannari";
+  font-family: 'Amatic SC', serif;
   background-color: #000000;
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -34,6 +34,7 @@ h3{
 body {
   font-size: 1vw;
   margin: 5% 5%;
+  margin-bottom: 15%;
 }
 p, li{
   font-size: 1.5vw;
