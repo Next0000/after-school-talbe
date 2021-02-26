@@ -570,8 +570,9 @@ input[type="checkbox"]:checked + #popup{
     position: absolute;
     color: #000000;
   }
-
-
+.memo p{
+	font-size: 14px;
+}
   /*探索者のチェキボード*/
   .pic{
     background-image: url("../images/bg3.png");
