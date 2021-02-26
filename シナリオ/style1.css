@@ -470,8 +470,8 @@ input[type="checkbox"]:checked + #popup{
     font-size: 5vw;
     margin-bottom: 10vw;
   }
-  p{
-    font-size: 3vw;
+  p,a{
+    font-size: 1vw;
   }
 
   .boxs{
