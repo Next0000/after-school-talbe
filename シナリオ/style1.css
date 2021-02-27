@@ -213,7 +213,6 @@ a{
 }
 
 .leftPage p{
-  font-family:'serif', serif;
   padding: 1vw 2vw;
   text-align: left;
   font-size: 1.1vw;
@@ -221,7 +220,6 @@ a{
 }
 
 .texts h3{
-  font-family:'serif', serif;
   z-index: 20;
   position: absolute;
   top: 31vw;
@@ -465,7 +463,7 @@ input[type="checkbox"]:checked + #popup{
 
 @media screen and (max-width: 480px){
   body{
-    margin: 5%;
+    margin: 5%　10%;
     margin-bottom: 15%;
   }
   h1{
@@ -473,7 +471,6 @@ input[type="checkbox"]:checked + #popup{
     margin-bottom: 10vw;
   }
   p,a{
-    font-family:'serif', serif;
     font-size: 1vw;
   }
 
@@ -528,7 +525,6 @@ input[type="checkbox"]:checked + #popup{
   .leftPage p{
     width: 80%;
     height: 60%;
-    font-family:'serif', serif;
     text-align: left;
     font-size: 3vw;
     color: black;
