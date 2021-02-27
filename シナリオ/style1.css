@@ -3,7 +3,6 @@
 }
 
 html {
-  font-size: 0.25vw; /* px means 'pixels': the base font size is now 10 pixels high  */
   font-family: 'Amatic SC', serif;
   background-color: #000000;
   background-image: url("../images/bg.jpg");
@@ -37,13 +36,11 @@ body {
   margin-bottom: 15%;
 }
 p, li{
-  font-size: 1.5vw;
   text-align: center;
   line-height: 1.5;
 }
 
 a{
-  font-size: 1vw;
   text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
@@ -110,7 +107,6 @@ a{
   margin-bottom: 10vw;
 }
 .mob{
-  transform: translate(-0%,0%);
   position: absolute;
   background-color: #494949;
   display: inline-block;
@@ -465,11 +461,11 @@ input[type="checkbox"]:checked + #popup{
 
 @media screen and (max-width: 480px){
   body{
-    margin: 5%;
+    margin: 10%;
     margin-bottom: 15%;
   }
   h1{
-    font-size: 5vw;
+    font-size: 7vw;
     margin-bottom: 10vw;
   }
   p,a{
@@ -509,15 +505,10 @@ input[type="checkbox"]:checked + #popup{
   }
   /*詳細ページの左*/
   .leftPage{
-    background-image: url("../images/page.png");
-    background-size: cover;
     transform: translate(0%,-50%);
     position: absolute;
     width: 75%;
     height: 60%;
-    top: 50%;
-    left: 25%;
-    color: #000000;
     padding: 2vw;
   }
   .leftPage h2{
@@ -527,32 +518,21 @@ input[type="checkbox"]:checked + #popup{
   .leftPage p{
     width: 80%;
     height: 60%;
-    font-family:'serif', serif;
-    text-align: left;
-    font-size: 3vw;
     color: black;
     margin:5vw;
   }
 
   /*詳細ページの右*/
   .rightPage{
-    background-image: url("../images/page.png");
-    background-size: cover;
-    transform: translate(10%,-50%);
+    transform: translate(100%,-50%);
     position: absolute;
     width: 75%;
     height: 60%;
-    top: 50%;
-    left: 100%;
-    color: #000000;
     padding: 2vw;
   }
   .rightPage img{
     transform: translate(-50%,-120%);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
     width: 70%;
     height: auto;
   }
@@ -580,23 +560,13 @@ input[type="checkbox"]:checked + #popup{
 
   /*探索者のチェキボード*/
   .pic{
-    background-image: url("../images/bg3.png");
-    background-size: cover;
     position: relative;
     height: 180vw;
-    margin-top: 2vw;
-    margin-bottom: 10vw;
     border: solid 5px rgba(0, 0, 0,.5);/*線*/
   }
   /*探索者のデータ*/
   .data{
-    width: 18vw;
-    background-color: #494949;
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-    box-shadow: 0 15px 13px 0 rgba(0, 0, 0,.7);
+    width: 15vw;
   }
   .data h2{
     margin: 0;
@@ -609,22 +579,12 @@ input[type="checkbox"]:checked + #popup{
     margin-bottom: 2vw;
   }
   .data img{
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    width: 16vw;
-    border: solid 0.2vw white;
+    width: 15vw;
     background-color: black;
     margin: 0.3vw;
   }
-
-  .data:hover{
-  }
   .data a{
     margin: 0.3vw;
-    background-color: #B2B2B2;
   }
   .data:hover img{
     -webkit-filter: none;
@@ -640,20 +600,20 @@ input[type="checkbox"]:checked + #popup{
     position: absolute;
     width: 2vw;/*幅*/
   	height: 2vw;/*高さ*/
-  	border-radius: 50%;/*角丸*/
-    background: #B31313;
-    box-shadow: inset 0px -5px 2px 0 rgba(0, 0, 0,.5);
   }
   /*以下はボタンのデザイン*/
   .btn-cross {
     width: 20vw;
   }
   .cross {
-    text-align: center;
     display: inline-block;
     position: relative;
     text-decoration: none;
-    color: black;
+  }
+  .cross p{
+    word-break: keep-all;
+    transform:scale(0.8);
+    font-size: 0.3vw;
   }
 
 
