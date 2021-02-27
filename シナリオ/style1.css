@@ -97,7 +97,7 @@ a{
 
 
 /*newsの設定*/
-.masa{
+.masa p{
   line-height: 5;
 }
 .boxs{
@@ -583,9 +583,6 @@ input[type="checkbox"]:checked + #popup{
     background-color: black;
     margin: 0.3vw;
   }
-  .data a{
-    margin: 0.3vw;
-  }
   .data:hover img{
     -webkit-filter: none;
     -moz-filter: none;
@@ -613,7 +610,7 @@ input[type="checkbox"]:checked + #popup{
   .cross p{
     word-break: keep-all;
     transform:scale(0.8);
-    font-size: 0.3vw;
+    font-size: 2vw;
   }
 
 
