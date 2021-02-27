@@ -497,15 +497,15 @@ input[type="checkbox"]:checked + #popup{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
   }
-  .texts .leftPage{
+  .leftPage{
     scroll-snap-align: center;
   }
-  .texts .rightPage{
+  .rightPage{
     scroll-snap-align: center;
   }
   /*詳細ページの左*/
   .leftPage{
-    transform: translate(0%,-50%);
+    transform: translate(-25%,-50%);
     position: absolute;
     width: 75%;
     height: 60%;
@@ -516,6 +516,7 @@ input[type="checkbox"]:checked + #popup{
     font-size: 6vw;
   }
   .leftPage p{
+    font-size: 3vw;
     width: 80%;
     height: 60%;
     color: black;
@@ -524,7 +525,7 @@ input[type="checkbox"]:checked + #popup{
 
   /*詳細ページの右*/
   .rightPage{
-    transform: translate(100%,-50%);
+    transform: translate(55%,-50%);
     position: absolute;
     width: 75%;
     height: 60%;
