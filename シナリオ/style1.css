@@ -466,13 +466,15 @@ input[type="checkbox"]:checked + #popup{
 @media screen and (max-width: 480px){
   body{
     margin: 5%;
+    margin-bottom: 15%;
   }
   h1{
     font-size: 5vw;
     margin-bottom: 10vw;
   }
   p,a{
-    font-size: 10px;
+    font-family:'serif', serif;
+    font-size: 1vw;
   }
 
   .boxs{
@@ -571,9 +573,12 @@ input[type="checkbox"]:checked + #popup{
     position: absolute;
     color: #000000;
   }
-.memo p{
-	font-size: 14px;
-}
+
+  .memo p{
+    font-size: 14px;
+  }
+
+
   /*探索者のチェキボード*/
   .pic{
     background-image: url("../images/bg3.png");
