@@ -49,6 +49,16 @@ a{
   letter-spacing: 0.2em;
 }
 
+img{
+
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -moz-touch-callout:none;
+  -moz-user-select:none;
+  touch-callout:none;
+  user-select:none;
+}
+
 .back{
 }
 
@@ -103,7 +113,7 @@ a{
 
 @media screen and (max-width: 480px){
   body{
-    margin: 10%;
+    margin: 5%;
     margin-bottom: 15%;
   }
   h1{
@@ -114,6 +124,7 @@ a{
     font-size: 3vw;
   }
   .list{
+    padding: 20vw 0;
     margin-bottom: 5vw;
     display: block;
     border: solid 1vw gray;/*線*/

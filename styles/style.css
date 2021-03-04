@@ -34,58 +34,7 @@ p, li ,a{
   line-height: 2;
 }
 
-/*以下はボタンのデザイン*/
-.btn-cross {
-  display: inline-block;
-  width: 6vw;
-  position: relative;
-  padding: 0.25em 1em;
-  border-top: solid 1px var(--lineCol);
-  border-bottom: solid 1px  var(--lineCol);
-  text-decoration: none;
-  font-weight: 4px;
-  color: #E5E5E5;
-}
 
-.btn-cross:before, .btn-cross:after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  width: 2px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color: var(--lineCol);
-  transition: .3s;
-}
-.btn-cross:before {
-  left: 7px;
-}
-.btn-cross:after {
-  right: 7px;
-}
-.btn-cross:hover:before {
-  top: 0px;
-  left:0;
-  height: 100%;
-}
-.btn-cross:hover:after {
-  top: 0px;
-  right: 0;
-  height: 100%;
-}
-
-/*横並び*/
-.flex{
-  width: auto;
-    display: flex;/*コレ*/
-    text-align: center;
-}
-.flex div{
-    width: 50%;
-    padding: 0.5em;
-    margin: 3vw;
-    text-align: center;
-}
 
 /*ロードアクション*/
 #loading {
@@ -218,4 +167,156 @@ p, li ,a{
 .loaded {
   opacity: 0;
   visibility: hidden;
+}
+
+
+
+body {
+  margin: 0%;
+}
+/* ハンバーガーボタン */
+.btn-burger {
+  display: none;
+}
+
+/*中身*/
+.nav {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-list {
+  background-color: rgb(0,0,0,0.8);
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  width: 20%;
+}
+
+.nav-list a {
+  display: block;
+  text-decoration: none;
+  color: #958F88;
+  padding: 1vw;
+}
+
+.nav-toggle{
+  display: none;
+}
+.nav-list li:not(:last-child) {
+  border-right: 1px solid #958F88;
+}
+
+@media screen and (max-width: 480px){
+  h1{
+    margin: 10vw;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /*ハンバーガーアイコン*/
+  .btn-burger {
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0vw;
+    right: 0px;
+  }
+
+  /*ハンバーガーアイコンを作る三本線*/
+  .icon, .icon:before, .icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px; /*線の太さ*/
+    width: 30px; /*線の長さ*/
+    background-color: black;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+  }
+
+  /*三本線の間隔*/
+  .icon:before {
+    top: 20px;
+  }
+  .icon:after {
+    top: -20px;
+  }
+
+  /*チェックボックス非表示*/
+  .nav-toggle {
+    display: none;
+  }
+
+  /*アイコンをクリックしたら*/
+  .nav-toggle:checked ~ .btn-burger .icon {
+    background: transparent;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: white;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: white;
+  }
+
+  .icon,
+  .icon:before,
+  .icon:after {
+    transition: all .8s;
+  }
+
+  /*中身*/
+  .nav {
+    position: absolute;
+    top: 0;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .nav-list li {
+    width: 100%;
+    height: 20%;
+  }
+
+  .nav-list a {
+    font-size: 5vw;
+  }
+  .btn-cross div{
+    position: absolute;
+    width: 100%;
+    height: 19%;
+  }
+  .nav-toggle:checked ~ .nav .nav-list {
+    display: block;
+  }
+
+  .nav-list li:not(:last-child) {
+    border-bottom: 1px solid #958F88;
+  }
 }

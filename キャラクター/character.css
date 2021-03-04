@@ -76,7 +76,7 @@ a{
   position: absolute;
   left: 30%;
   top: 10%;
-  font-size: 10vw;
+  font-size: 4vw;
 }
 
 @media screen and (max-width: 480px){
