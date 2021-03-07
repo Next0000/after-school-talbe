@@ -205,14 +205,16 @@ p, li ,a{
   border-right: 1px solid #958F88;
 }
 
-
-img{
-  position: relative;
-  filter: grayscale(100%);
-}
 .title{
   margin-top: 15%;
   text-align: center;
+}
+
+.title img{
+  z-index: 0;
+  width: 80%;
+  position: relative;
+  filter: grayscale(100%);
 }
 @media screen and (max-width: 480px){
   h1{
@@ -222,7 +224,12 @@ img{
     margin: 0;
     padding: 0;
   }
-
+  p{
+    font-size: 12px;
+  }
+  .title img{
+    width: 100%;
+  }
   /*ハンバーガーアイコン*/
   .btn-burger {
     z-index: 2;
@@ -294,11 +301,15 @@ img{
   }
 
   .nav-list {
+    position: relative;
+    background-color: gray;
     list-style: none;
     display: none;
     margin: 0;
     padding-top: 30%;
     height: 100%;
+
+    z-index: 1;
   }
 
   .nav-list li {
