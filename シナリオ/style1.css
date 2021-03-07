@@ -363,15 +363,7 @@ input[type="checkbox"]:checked + #popup{
   width: 10vw;
   border: solid 0.2vw white;
   background-color: black;
-  margin: 0.3vw;
-}
-
-.data:hover{
-}
-.data a{
-  margin: 0.3vw;
-  font-size: 0.7vw;
-  background-color: #B2B2B2;
+  margin: 0.8vw;
 }
 .data:hover img{
   -webkit-filter: none;
@@ -391,15 +383,6 @@ input[type="checkbox"]:checked + #popup{
   background: #B31313;
   box-shadow: inset 0px -5px 2px 0 rgba(0, 0, 0,.5);
 }
-/*以下はボタンのデザイン*/
-.cross {
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: black;
-}
-
 
 .data:hover .balloon1 {
   display: inline;                /* インライン要素として表示 */
@@ -526,7 +509,7 @@ input[type="checkbox"]:checked + #popup{
 
   /*詳細ページの右*/
   .rightPage{
-    transform: translate(55%,-50%);
+    transform: translate(80%,-50%);
     position: absolute;
     width: 75%;
     height: 60%;
@@ -568,11 +551,7 @@ input[type="checkbox"]:checked + #popup{
   }
   /*探索者のデータ*/
   .data{
-    width: 15vw;
-  }
-  .data h2{
-    margin: 0;
-    padding: 0;
+    width: 18vw;
   }
   .data h3{
     text-align: center;
@@ -582,16 +561,6 @@ input[type="checkbox"]:checked + #popup{
   }
   .data img{
     width: 15vw;
-    background-color: black;
-    margin: 0.3vw;
-  }
-  .data:hover img{
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    -o-filter: none;
-    filter: none;
-    background-color: white;
   }
 
   .pin{
@@ -604,21 +573,12 @@ input[type="checkbox"]:checked + #popup{
   .btn-cross {
     width: 20vw;
   }
-  .cross {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-  }
-  .cross p{
+  .data p{
     word-break: keep-all;
     transform:scale(0.8);
     font-size: 2vw;
   }
 
-
-  .data:hover .balloon1 {
-    display: inline;                /* インライン要素として表示 */
-  }
   .balloon1 {
     position: absolute;                /* 親要素を基準 */
     display: none;                        /* 要素を非表示 */
