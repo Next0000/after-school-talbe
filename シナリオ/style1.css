@@ -481,7 +481,7 @@ input[type="checkbox"]:checked + #popup{
   }
   /*詳細ページの左*/
   .leftPage{
-    transform: translate(0%,-50%);
+    transform: translate(-50%,-50%);
     position: absolute;
     width: 70vw;
     height: 100vw;
@@ -501,7 +501,7 @@ input[type="checkbox"]:checked + #popup{
 
   /*詳細ページの右*/
   .rightPage{
-    transform: translate(100%,-50%);
+    transform: translate(50%,-50%);
     position: absolute;
     width: 70vw;
     height: 100vw;
