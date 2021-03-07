@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Amatic SC', '游明朝';
+  font-family: 'Amatic SC', serif;
   background-color: #000000;
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -41,7 +41,6 @@ p, li{
 }
 
 a{
-  font-family:'serif', serif;
   text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
@@ -468,9 +467,8 @@ input[type="checkbox"]:checked + #popup{
     position: absolute;
     background-color: #000000;
   }
-  .masa{
-    font-family:'serif', serif;
-  }
+
+
   .texts{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -483,7 +481,7 @@ input[type="checkbox"]:checked + #popup{
   }
   /*詳細ページの左*/
   .leftPage{
-    transform: translate(-50%,-50%);
+    transform: translate(0%,-50%);
     position: absolute;
     width: 70vw;
     height: 100vw;
@@ -503,7 +501,7 @@ input[type="checkbox"]:checked + #popup{
 
   /*詳細ページの右*/
   .rightPage{
-    transform: translate(50%,-50%);
+    transform: translate(100%,-50%);
     position: absolute;
     width: 70vw;
     height: 100vw;

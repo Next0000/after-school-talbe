@@ -1,7 +1,7 @@
 html {
   font-size: 1vw; /* px means 'pixels': the base font size is now 10 pixels high  */
   font-family:'Amatic SC', serif; /* this should be the rest of the output you got from Google fonts */
-  background-color:  #958F88;
+  background-color:  #C1BDBD;
   color: black;
 }
 
@@ -9,10 +9,11 @@ h1 {
   font-family:'Amatic SC', serif;
   margin-top: 5vw;
   text-align: center;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 h2 {
+  font-size: 4vw;
   text-align: center;
 }
 
@@ -162,11 +163,6 @@ p, li ,a{
   visibility: hidden;
 }
 
-
-
-body {
-  margin: 0%;
-}
 /* ハンバーガー */
 .btn-burger {
   display: none;
@@ -178,7 +174,6 @@ body {
 }
 
 .nav-list {
-  background-color: rgb(0,0,0,0.8);
   list-style: none;
   display: flex;
   justify-content: center;
@@ -191,11 +186,16 @@ body {
   width: 20%;
 }
 
+.nav-list li a:hover{
+  background-color: black;
+  color: #C1BDBD;
+}
+
 .nav-list a {
   display: block;
   text-decoration: none;
-  color: #958F88;
   padding: 1vw;
+  color: black;
 }
 
 .nav-toggle{
@@ -205,6 +205,15 @@ body {
   border-right: 1px solid #958F88;
 }
 
+
+img{
+  position: relative;
+  filter: grayscale(100%);
+}
+.title{
+  margin-top: 15%;
+  text-align: center;
+}
 @media screen and (max-width: 480px){
   h1{
     margin: 10vw;
