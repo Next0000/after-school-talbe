@@ -482,10 +482,10 @@ input[type="checkbox"]:checked + #popup{
     scroll-snap-type: x mandatory;
   }
   .leftPage{
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }
   .rightPage{
-    scroll-snap-align: center;
+    scroll-snap-align: start;
   }
   /*詳細ページの左*/
   .leftPage{
