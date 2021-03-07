@@ -281,14 +281,6 @@ a{
   top:0vw;
   left: 0vw;
 }
-div img{
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -moz-touch-callout:none;
-  -moz-user-select:none;
-  touch-callout:none;
-  user-select:none;
-}
 label{
   display:block;
 }
@@ -489,10 +481,10 @@ input[type="checkbox"]:checked + #popup{
   }
   /*詳細ページの左*/
   .leftPage{
-    transform: translate(-25%,-50%);
+    transform: translate(0%,-50%);
     position: absolute;
-    width: 75%;
-    height: 60%;
+    width: 70vw;
+    height: 100vw;
     padding: 2vw;
   }
   .leftPage h2{
@@ -509,10 +501,10 @@ input[type="checkbox"]:checked + #popup{
 
   /*詳細ページの右*/
   .rightPage{
-    transform: translate(80%,-50%);
+    transform: translate(100%,-50%);
     position: absolute;
-    width: 75%;
-    height: 60%;
+    width: 70vw;
+    height: 100vw;
     padding: 2vw;
   }
   .rightPage img{
