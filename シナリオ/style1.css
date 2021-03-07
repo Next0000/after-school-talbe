@@ -469,6 +469,9 @@ input[type="checkbox"]:checked + #popup{
   }
 
 
+	.masa{
+		font-family:'serif', serif;
+	}
   .texts{
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -481,6 +484,7 @@ input[type="checkbox"]:checked + #popup{
   }
   /*詳細ページの左*/
   .leftPage{
+	  font-family:'serif', serif;
     transform: translate(-50%,-50%);
     position: absolute;
     width: 70vw;
