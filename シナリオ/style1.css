@@ -1,9 +1,4 @@
-:root {
-  --lineCol: #000000;
-}
-
 html {
-  background-color: #000000;
   background-image: url("../images/bg.jpg");
   background-size: cover;
   color: #E5E5E5;
@@ -46,10 +41,6 @@ a{
   text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
-}
-
-.title{
-  text-align: center;
 }
 
 .skew {
@@ -212,7 +203,6 @@ a{
 }
 
 .leftPage p{
-  font-family:'serif', serif;
   padding: 1vw 2vw;
   text-align: left;
   font-size: 1.1vw;
@@ -220,7 +210,6 @@ a{
 }
 
 .texts h3{
-  font-family:'serif', serif;
   z-index: 20;
   position: absolute;
   top: 31vw;
@@ -237,8 +226,8 @@ a{
   width: 10vw;
   position: relative;
   padding: 0.25vw 1vw;
-  border-top: solid 1px var(--lineCol);
-  border-bottom: solid 1px  var(--lineCol);
+  border-top: solid 1px black;
+  border-bottom: solid 1px  black;
   text-decoration: none;
   color: black;
 }
@@ -250,7 +239,7 @@ a{
   width:1px;
   height: -webkit-calc(100% + 14px);
   height: calc(100% + 14px);
-  background-color: var(--lineCol);
+  background-color: black;
   transition: .3s;
 }
 .btn-cross:before {
@@ -314,8 +303,8 @@ input[type="checkbox"]:checked + #popup{
 .txt02 {animation-delay: 0.5s;}
 .txt03 {animation-delay: 1s;}
 .txt04 {animation-delay: 1.5s;}
-.txt05 {animation-delay: 4s;}
-.txt06 {animation-delay: 6s;}
+.txt05 {animation-delay: 2s;}
+.txt06 {animation-delay: 2.5s;}
 
 
 /*探索者のチェキボード*/
@@ -451,23 +440,17 @@ input[type="checkbox"]:checked + #popup{
   }
 
   .boxs{
-    position: relative;
     height: 100vw;
     margin-top: 1vw;
     margin-bottom: 10vw;
   }
   .mob{
     transform: translate(-40%,0%);
-    position: absolute;
-    background-color: #494949;
-    display: inline-block;
     width: 25%;
   }
 
   .times{
     width:25%;
-    position: absolute;
-    background-color: #000000;
   }
 
 
@@ -484,7 +467,6 @@ input[type="checkbox"]:checked + #popup{
   /*詳細ページの左*/
   .leftPage{
     transform: translate(-50%,-50%);
-    position: absolute;
     width: 70vw;
     height: 100vw;
     padding: 2vw;
@@ -497,21 +479,18 @@ input[type="checkbox"]:checked + #popup{
     font-size: 3vw;
     width: 80%;
     height: 60%;
-    color: black;
     margin:5vw;
   }
 
   /*詳細ページの右*/
   .rightPage{
     transform: translate(50%,-50%);
-    position: absolute;
     width: 70vw;
     height: 100vw;
     padding: 2vw;
   }
   .rightPage img{
     transform: translate(-50%,-120%);
-    position: absolute;
     width: 70%;
     height: auto;
   }
@@ -521,15 +500,10 @@ input[type="checkbox"]:checked + #popup{
   }
   .rightPage div{
     transform: translate(-50%,95%);
-    position: absolute;
     left: 50%;
     width: 70%;
     height: 40%;
     border: solid 1px black;
-  }
-  .rightPage p{
-    position: absolute;
-    color: #000000;
   }
 
   .memo p{
@@ -539,7 +513,6 @@ input[type="checkbox"]:checked + #popup{
 
   /*探索者のチェキボード*/
   .pic{
-    position: relative;
     height: 180vw;
     border: solid 5px rgba(0, 0, 0,.5);/*線*/
   }
@@ -549,8 +522,6 @@ input[type="checkbox"]:checked + #popup{
     width: 18vw;
   }
   .data h3{
-    text-align: center;
-    padding: 0;
     font-size: 1vw;
     margin-bottom: 2vw;
   }
@@ -559,8 +530,6 @@ input[type="checkbox"]:checked + #popup{
   }
 
   .pin{
-    display: inline-block;
-    position: absolute;
     width: 2vw;/*幅*/
   	height: 2vw;/*高さ*/
   }
