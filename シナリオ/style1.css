@@ -3,7 +3,6 @@
 }
 
 html {
-  font-family: 'Amatic SC', serif;
   background-color: #000000;
   background-image: url("../images/bg.jpg");
   background-size: cover;
@@ -31,16 +30,19 @@ h3{
 
 
 body {
+  font-family: 'Amatic SC', serif;
   font-size: 1vw;
   margin: 5% 10%;
   margin-bottom: 15%;
 }
 p, li{
+  font-family: serif;
   text-align: center;
   line-height: 1.5;
 }
 
 a{
+  font-family: 'Amatic SC', serif;
   text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
@@ -481,7 +483,7 @@ input[type="checkbox"]:checked + #popup{
   }
   /*詳細ページの左*/
   .leftPage{
-    transform: translate(0%,-50%);
+    transform: translate(-25%,-50%);
     position: absolute;
     width: 70vw;
     height: 100vw;
@@ -501,7 +503,7 @@ input[type="checkbox"]:checked + #popup{
 
   /*詳細ページの右*/
   .rightPage{
-    transform: translate(100%,-50%);
+    transform: translate(75%,-50%);
     position: absolute;
     width: 70vw;
     height: 100vw;
