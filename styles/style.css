@@ -227,13 +227,18 @@ p, li ,a{
   }
   body {
     margin: 0%;
-    padding: 5% 10%;
+    padding: 0%;
   }
   p{
+    margin: 0 5%;
     font-size: 12px;
   }
   .title img{
     width: 100%;
+  }
+  .ss{
+    margin: 0 5%;
+    font-size: 10px;
   }
   /*ハンバーガーアイコン*/
   .btn-burger {
