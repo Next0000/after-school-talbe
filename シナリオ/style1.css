@@ -545,12 +545,13 @@ input[type="checkbox"]:checked + #popup{
   }
   /*探索者のデータ*/
   .data{
+    font-size: 3vw;
     width: 18vw;
   }
   .data h3{
     text-align: center;
     padding: 0;
-    font-size: 0.3vw;
+    font-size: 1vw;
     margin-bottom: 2vw;
   }
   .data img{
@@ -569,7 +570,6 @@ input[type="checkbox"]:checked + #popup{
   }
   .data p{
     word-break: keep-all;
-    font-size: 2vw;
   }
 
   .balloon1:after{
