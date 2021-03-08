@@ -216,13 +216,18 @@ p, li ,a{
   position: relative;
   filter: grayscale(100%);
 }
+
+.ss{
+  font-size: 0.8vw;
+  word-break: keep-all;
+}
 @media screen and (max-width: 480px){
   h1{
-    margin: 10vw;
+    margin: 5%;
   }
   body {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 5% 10%;
   }
   p{
     font-size: 12px;
