@@ -30,10 +30,10 @@ Rain.prototype.constructor = Rain;
 //描画処理
 Rain.prototype.draw = function() {
   c.beginPath();
-  c.strokeStyle = 'rgb(0, 0, 0)';
+  c.fillStyle = 'rgb(0, 0, 0,0.3)';
   c.lineWidth = 0.5;
   c.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-  c.stroke();
+  c.fill();
 };
 
 //更新
@@ -49,12 +49,12 @@ Rain.prototype.update = function() {
 
 const rains = [];
 
-while(rains.length < 25) {
+while(rains.length < 10) {
   const size = random(2,5);
   let rain = new Rain(
     random(size,width - size),
     random(size,height - size),
-    size*1,size
+    size*0.3,size
   );
   rains.push(rain);
 }
