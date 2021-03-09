@@ -64,8 +64,6 @@ h2 {
   margin: 0 7%;
   font-size: 0.8vw;
   word-break: keep-all;
-  border: solid 1px gray;/*線*/
-  background-color: gray;
 }
 
 .todo{
@@ -256,6 +254,10 @@ animation: fadein 1s ease forwards;
     padding: 0;
   }
 
+  .ss{
+    font-size: 8px;
+  }
+
 
   /*ハンバーガーアイコン*/
   .btn-burger {
@@ -350,11 +352,4 @@ animation: fadein 1s ease forwards;
   .nav-toggle:checked ~ .nav .nav-list {
     display: block;
   }
-
-
-/*
-  .nav-list li:not(:last-child) {
-    border-bottom: 1px solid #958F88;
-  }
-  */
 }
