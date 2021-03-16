@@ -1,10 +1,14 @@
 html {
-  background-image: url("../images/bg.jpg");
+  /*background-image: url("../images/bg.jpg");
   background-size: cover;
   color: #E5E5E5;
+  */
+  background-color:  #C1BDBD;
+  color: black;
 }
 
 h1 {
+  font-family: 'Amatic SC',serif;
   text-align: center;
   font-size: 5vw;
   font-weight: lighter;
@@ -12,6 +16,7 @@ h1 {
 }
 
 h2{
+  font-family: 'Amatic SC',serif;
   font-size: 2vw;
   text-align: center;
   letter-spacing: 0.1em;
@@ -25,22 +30,21 @@ h3{
 
 
 body {
-  font-family: 'Amatic SC', serif;
+  font-family: serif;
   font-size: 1vw;
-  margin: 5% 10%;
+  margin: 0%;
   margin-bottom: 15%;
 }
 p, li{
-  font-family: serif;
   text-align: center;
   line-height: 1.5;
 }
-
 a{
-  font-family: 'Amatic SC', serif;
+  font-family: 'Amatic SC';
   text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
+  color: black;
 }
 
 .skew {
@@ -99,20 +103,6 @@ a{
   height: 50vw;
   margin-top: 2vw;
   margin-bottom: 10vw;
-}
-.mob{
-  position: absolute;
-  background-color: #494949;
-  display: inline-block;
-  width: 20%;
-}
-.mob img{
-  width: 100%;
-  height: auto;
-  filter:alpha(opacity=80);
-  -moz-opacity:0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
 }
 
 .times{
@@ -220,44 +210,6 @@ a{
   line-height: 1.5;
 }
 
-/*以下はボタンのデザイン*/
-.btn-cross {
-  display: inline-block;
-  width: 10vw;
-  position: relative;
-  padding: 0.25vw 1vw;
-  border-top: solid 1px black;
-  border-bottom: solid 1px  black;
-  text-decoration: none;
-  color: black;
-}
-
-.btn-cross:before, .btn-cross:after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  width:1px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color: black;
-  transition: .3s;
-}
-.btn-cross:before {
-  left: 7px;
-}
-.btn-cross:after {
-  right: 7px;
-}
-.btn-cross:hover:before {
-  top: 0px;
-  left:0;
-  height: 100%;
-}
-.btn-cross:hover:after {
-  top: 0px;
-  right: 0;
-  height: 100%;
-}
 
 /*画像表示*/
 #popup{
@@ -313,8 +265,7 @@ input[type="checkbox"]:checked + #popup{
   background-size: cover;
   position: relative;
   height: 120vw;
-  margin-top: 2vw;
-  margin-bottom: 10vw;
+  margin: 5vw;
   border: solid 10px rgba(0, 0, 0,.5);/*線*/
 }
 /*探索者のデータ*/
@@ -426,9 +377,54 @@ input[type="checkbox"]:checked + #popup{
   color: black;
 }
 
+
+
+/* ハンバーガー */
+.btn-burger {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  width: 20%;
+}
+
+.nav-list li a:hover{
+  background-color: black;
+  color: #C1BDBD;
+}
+
+.nav-list a {
+  display: block;
+  text-decoration: none;
+  padding: 1vw;
+  color: black;
+  font-size: 2vw;
+  letter-spacing: 0.2em;
+  text-decoration:underline;
+}
+
+.nav-toggle{
+  display: none;
+}
+
+
 @media screen and (max-width: 480px){
   body{
-    margin: 10% 5%;
+    margin: 0%;
     margin-bottom: 15%;
   }
   h1{
@@ -533,13 +529,6 @@ input[type="checkbox"]:checked + #popup{
     width: 2vw;/*幅*/
   	height: 2vw;/*高さ*/
   }
-  /*以下はボタンのデザイン*/
-  .btn-cross {
-    width: 20vw;
-  }
-  .data p{
-    font-size: 1.5vw;
-  }
 
   .balloon1:after{
     right: -19px;                           /* 吹き出し口の位置調整 */
@@ -559,4 +548,138 @@ input[type="checkbox"]:checked + #popup{
     padding: 1vw;
   }
 
+
+    /*ハンバーガーアイコン*/
+    .btn-burger {
+      z-index: 2;
+      cursor: pointer;
+      display: block;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 0vw;
+      right: 0px;
+    }
+
+    /*ハンバーガー三本線*/
+    .icon, .icon:before, .icon:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      height: 1px;
+      width: 30px;
+      background-color: black;
+      border-radius: 2px;
+      display: block;
+      content: '';
+      cursor: pointer;
+      margin: auto;
+    }
+
+    /*三本線の間隔*/
+    .icon:before {
+      top: 20px;
+    }
+    .icon:after {
+      top: -20px;
+    }
+
+    /*チェックボックス非表示*/
+    .nav-toggle {
+      display: none;
+    }
+
+    /*アイコンをクリックしたら*/
+    .nav-toggle:checked ~ .btn-burger .icon {
+      background: transparent;
+    }
+    .nav-toggle:checked ~ .btn-burger .icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+      background-color: white;
+    }
+    .nav-toggle:checked ~ .btn-burger .icon:after {
+      transform: rotate(45deg);
+      top: 0;
+      background-color: white;
+    }
+
+    .icon,
+    .icon:before,
+    .icon:after {
+      transition: all .8s;
+    }
+
+
+    .nav {
+      position: absolute;
+      top: 0%;
+    }
+
+    .nav-list {
+      position: relative;
+      background-color: gray;
+      list-style: none;
+      display: none;
+      margin: 0;
+      padding-top: 30%;
+      height: 100%;
+
+      z-index: 1;
+    }
+
+    .nav-list li {
+      width: 100%;
+      height: 10%;
+    }
+
+    .nav-list a {
+      font-size: 5vw;
+    }
+    .nav-toggle:checked ~ .nav .nav-list {
+      display: block;
+    }
+}
+
+/*以下はボタンのデザイン*/
+.btn2 {
+  display: inline-block;
+  width: 10em;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 1px black;
+  border-bottom: solid 1px  black;
+  text-decoration: none;
+  color: black;
+}
+
+
+.btn2:before, .btn2:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width:1px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+  transition: .3s;
+}
+.btn2:before {
+  left: 7px;
+}
+.btn2:after {
+  right: 7px;
+}
+.btn2:hover:before {
+  top: 0px;
+  left:0;
+  height: 100%;
+}
+.btn2:hover:after {
+  top: 0px;
+  right: 0;
+  height: 100%;
 }

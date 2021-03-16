@@ -119,7 +119,7 @@ p{
 
 /*ロード画面閉じる*/
 .loaded {
-  animation: bgAnime .4s linear 1.9s forwards;
+  animation: bgAnime .4s linear .5s forwards;
 }
 @keyframes bgAnime {
   0% {
