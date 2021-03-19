@@ -1,8 +1,7 @@
 html {
-  font-size: 1vw; /* px means 'pixels': the base font size is now 10 pixels high  */
-  font-family:serif; /* this should be the rest of the output you got from Google fonts */
-  background-color:  #C1BDBD;
-  color: black;
+  font-size: 1vw;
+  background-color:  #AAA79B;
+  color: #3F3515;
 }
 
 canvas{
@@ -13,15 +12,38 @@ canvas{
   height:100%;
 }
 
+header{
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family:'Amatic SC';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  margin: 0%;
+  text-align: center;
+}
+
+li,a{
+  font-size: 1vw;
+  line-height: 2;
+}
+p{
+  font-family:serif;
+  font-size: 1vw;
+  line-height: 2;
+}
 h1 {
   margin-top: 5vw;
-  text-align: center;
   font-size: 2vw;
 }
 
 h2 {
   font-size: 4vw;
-  text-align: center;
   margin: 0;
   margin-top: 20%;
 }
@@ -47,55 +69,17 @@ h2 {
   justify-content: center;
   padding: 0 5%;
 }
-.news img{
-  width: 60%;
-}
 .news p{
+  position: relative;
+  z-index: 1;
   text-align: left;
+  background-color: #C4C0B4;
+  margin: 5vw;
+  padding: 3%;
 }
 .news div{
   text-align: right;
-  width: 40%;
-  padding: 3%;
-}
-
-.ss{
-  padding: 3%;
-  margin: 0 7%;
-  font-size: 0.8vw;
-  word-break: keep-all;
-}
-
-.todo{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20%;
-}
-.todo img{
-  width: 40%;
-  margin: 1%;
-}
-
-#body {
-  font-family:'Amatic SC';
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  margin: 0%;
-}
-
-li,a{
-  text-align: center;
-  font-size: 1vw;
-  line-height: 2;
-}
-p{
-  font-family:serif;
-  text-align: center;
-  font-size: 1vw;
-  line-height: 2;
+  width: 80%;
 }
 
 /*ロードアクション*/
@@ -109,12 +93,6 @@ p{
   top: 0;
   left: 0;
   z-index: 9999;
-}
-
-#loading h1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 /*ロード画面閉じる*/
@@ -136,6 +114,8 @@ animation: fadein 1s ease forwards;
 
 }
 
+
+/*今後使うかも
 .fade{
   opacity: 0;
   animation: fadein 1s ease forwards;
@@ -144,14 +124,13 @@ animation: fadein 1s ease forwards;
   100% {  opacity: 1;}
 }
 
-/*以下遅延の指定*/
 .txt01 {animation-delay: 2s;}
 .txt02 {animation-delay: 2.5s;}
 .txt03 {animation-delay: 3s;}
 .txt04 {animation-delay: 3.5s;}
 .txt05 {animation-delay: 4s;}
 .txt06 {animation-delay: 4.5s;}
-
+*/
 
 /* ハンバーガー */
 .btn-burger {
@@ -161,6 +140,7 @@ animation: fadein 1s ease forwards;
 .nav {
   width: 100%;
   height: 100%;
+  border-bottom: dashed 2px #3F3515;/*点線*/
 }
 
 .nav-list {
@@ -172,23 +152,18 @@ animation: fadein 1s ease forwards;
   padding: 0;
 }
 
-.nav-list li {
-  width: 20%;
-}
-
 .nav-list li a:hover{
   background-color: black;
-  color: #C1BDBD;
+  color: white;
 }
 
-.nav-list a {
+.nav-list a{
   display: block;
   text-decoration: none;
-  padding: 1vw;
-  color: black;
-  font-size: 2vw;
+  padding: 0.5vw 2vw;
+  color: #3F3515;
+  font-size: 1.5vw;
   letter-spacing: 0.2em;
-  text-decoration:underline;
 }
 
 .nav-toggle{
@@ -202,18 +177,13 @@ animation: fadein 1s ease forwards;
 }
 
 .title img{
+  position: fixed;
   z-index: 0;
   width: 60%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  filter: grayscale(100%);
-}
-.title h3{
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  opacity: 0.2;
 }
 
 
@@ -224,10 +194,6 @@ animation: fadein 1s ease forwards;
   h2{
     font-size: 8vw;
   }
-  body {
-    margin: 0%;
-    padding: 0%;
-  }
   p{
     margin: 0 15%;
     font-size: 10px;
@@ -235,9 +201,6 @@ animation: fadein 1s ease forwards;
   .title img{
     width: 100%;
   }
-  .title h3{
-  }
-
   .news{
     text-align: center;
     display: block;
@@ -253,11 +216,6 @@ animation: fadein 1s ease forwards;
     width: 100%;
     padding: 0;
   }
-
-  .ss{
-    font-size: 8px;
-  }
-
 
   /*ハンバーガーアイコン*/
   .btn-burger {
@@ -325,6 +283,7 @@ animation: fadein 1s ease forwards;
 
 
   .nav {
+    border-bottom: none;
     position: absolute;
     top: 0%;
   }

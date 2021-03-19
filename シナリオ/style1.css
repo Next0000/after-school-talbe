@@ -1,50 +1,54 @@
 html {
-  /*background-image: url("../images/bg.jpg");
-  background-size: cover;
-  color: #E5E5E5;
-  */
-  background-color:  #C1BDBD;
-  color: black;
+  font-size: 1vw;
+  background-color:  #AAA79B;
+  color: #3F3515;
 }
 
-h1 {
-  font-family: 'Amatic SC',serif;
+header{
+  width: 100%;
   text-align: center;
+}
+
+body {
+  font-family:'Amatic SC';
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  margin: 0%;
+  text-align: center;
+  margin-bottom: 15%;
+}
+
+li{
+  font-size: 1vw;
+  line-height: 1.5;
+}
+p{
+  font-family:serif;
+  font-size: 1vw;
+  line-height: 1.5;
+}
+h1 {
   font-size: 5vw;
   font-weight: lighter;
   letter-spacing: 0.5em;
 }
 
 h2{
-  font-family: 'Amatic SC',serif;
   font-size: 2vw;
-  text-align: center;
   letter-spacing: 0.1em;
 }
 
 h3{
-  text-align: center;
   font-size: 1.2vw;
   letter-spacing: 2em
 }
 
-
-body {
-  font-family: serif;
-  font-size: 1vw;
-  margin: 0%;
-  margin-bottom: 15%;
-}
-p, li{
-  text-align: center;
-  line-height: 1.5;
-}
 a{
-  font-family: 'Amatic SC';
-  text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
-  color: black;
 }
 
 .skew {
@@ -100,148 +104,40 @@ a{
 }
 .boxs{
   position: relative;
-  height: 50vw;
+  width: 100%;
+  height: 70%;
   margin-top: 2vw;
   margin-bottom: 10vw;
 }
 
+.eva{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 40%;
+  opacity: 0;
+  padding: 1vw;
+}
 .times{
   transform: translate(0%,0%);
   width:20%;
+  height: 10%;
   position: absolute;
-  background-color: #000000;
-}
-
-.times img{
-  display: block;
-  width: 100%;
-  height: auto;
-  filter:alpha(opacity=80);
-  -moz-opacity:0.8;
-  -khtml-opacity: 0.8;
-  opacity: 0.8;
-}
-
-.times:hover{
-  z-index: 3;
-  background-color: #FFFFFF;
-  opacity: 0.8;
-  animation: fadein 1s ease forwards;
-}
-@keyframes fadein {
-  100% {  opacity: 1;}
-}
-
-
-/*見開き詳細の設定*/
-.texts{
-  text-align: center;
-  color: #000000;
-}
-
-/*詳細ページの左*/
-.leftPage{
-  background-image: url("../images/page.png");
+  background-image: url("../images/paper.png");
   background-size: cover;
-  transform: translate(-100%,-50%);
-  position: absolute;
-  width: 28vw;
-  height: 40vw;
-  top: 50%;
-  left: 50%;
-  color: #000000;
-}
-.leftPage h2{
-  font-size: 2vw;
 }
 
-/*詳細ページの右*/
-.rightPage{
-  background-image: url("../images/page.png");
-  background-size: cover;
-  transform: translate(0%,-50%);
-  position: absolute;
-  width: 28vw;
-  height: 40vw;
-  top: 50%;
-  left: 50%;
-  color: #000000;
+.times1:hover +.eva1{
+  opacity: 1;
 }
-.rightPage img{
-  transform: translate(-50%,-120%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  width: 20vw;
-  height: auto;
+.times2:hover +.eva2{
+  opacity: 1;
 }
-.rightPage h2{
-  font-size: 2vw;
-}
-.rightPage div{
-  transform: translate(-50%,100%);
-  position: absolute;
-  left: 50%;
-  width: 20vw;
-  height: 15vw;
-  border: solid 1px black;
-}
-.rightPage p{
-  position: absolute;
-  color: #000000;
+.times3:hover +.eva3{
+  opacity: 1;
 }
 
-.leftPage p{
-  padding: 1vw 2vw;
-  text-align: left;
-  font-size: 1.1vw;
-  color: #000000;
-}
-
-.texts h3{
-  z-index: 20;
-  position: absolute;
-  top: 31vw;
-  text-align: left;
-  left: 45vw;
-  color: #000000;
-  text-align: left;
-  line-height: 1.5;
-}
-
-
-/*画像表示*/
-#popup{
-  text-align: center;
-  z-index: 10;
-  width:100%;
-  height: 100%;
-  background-color:rgba(0,0,0,0.8);
-  box-sizing:border-box;
-  display:none;
-  position:fixed;
-  top:0vw;
-  left: 0vw;
-}
-label{
-  display:block;
-}
-
-label a:hover{
-  cursor:pointer;
-}
-input[type="checkbox"]{
-  display:none;
-}
-
-input[type="checkbox"]:checked + #popup{
-  display:block;
-  transition:.2s;
-}
-
-
-/*詳細のフェード*/
+/*保存用
 .fade{
   opacity: 0;
   animation: fadein 1s ease forwards;
@@ -249,15 +145,13 @@ input[type="checkbox"]:checked + #popup{
 @keyframes fadein {
   100% {  opacity: 1;}
 }
-
-/*以下遅延の指定*/
 .txt01 {animation-delay: 0s;}
 .txt02 {animation-delay: 0.5s;}
 .txt03 {animation-delay: 1s;}
 .txt04 {animation-delay: 1.5s;}
 .txt05 {animation-delay: 2s;}
 .txt06 {animation-delay: 2.5s;}
-
+*/
 
 /*探索者のチェキボード*/
 .pic{
@@ -387,6 +281,7 @@ input[type="checkbox"]:checked + #popup{
 .nav {
   width: 100%;
   height: 100%;
+  border-bottom: dashed 2px #3F3515;/*点線*/
 }
 
 .nav-list {
@@ -398,29 +293,23 @@ input[type="checkbox"]:checked + #popup{
   padding: 0;
 }
 
-.nav-list li {
-  width: 20%;
-}
-
 .nav-list li a:hover{
   background-color: black;
-  color: #C1BDBD;
+  color: white;
 }
 
-.nav-list a {
+.nav-list a{
   display: block;
   text-decoration: none;
-  padding: 1vw;
-  color: black;
-  font-size: 2vw;
+  padding: 0.5vw 2vw;
+  color: #3F3515;
+  font-size: 1.5vw;
   letter-spacing: 0.2em;
-  text-decoration:underline;
 }
 
 .nav-toggle{
   display: none;
 }
-
 
 @media screen and (max-width: 480px){
   body{
