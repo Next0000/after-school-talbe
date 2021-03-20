@@ -5,48 +5,47 @@
 }
 
 html {
-  font-size: 0.25vw; /* px means 'pixels': the base font size is now 10 pixels high  */
-  font-family: 'Amatic SC', serif;
-  background-color: #000000;
-  background-image: url("../images/bg.jpg");
-  background-size: cover;
-  color: #E5E5E5;
+  font-size: 1vw;
+  background-color:  #AAA79B;
+  color: #3F3515;
+}
+header{
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  font-family:'Amatic SC',serif;
+  margin: 0%;
+  text-align: center;
+  margin-bottom: 15%;
 }
 
 h1 {
-  text-align: center;
-  font-size: 5vw;
+  font-size: 3.5vw;
   font-weight: lighter;
   letter-spacing: 0.5em;
+  margin: 0;
 }
 
 h2{
   font-size: 2vw;
-  text-align: center;
   letter-spacing: 0.1em;
+  margin: 0;
 }
 
 h3{
-  text-align: center;
   font-size: 1.2vw;
   letter-spacing: 2em
 }
 
-
-body {
-  font-size: 1vw;
-  margin: 5% 10%;
-  margin-bottom: 15%;
-}
-p{
-  line-height: 1.5;
-}
-
 a{
-  font-size: 1vw;
-  text-align: center;
   line-height: 2;
   letter-spacing: 0.2em;
+}
+
+p{
+  line-height: 1.5;
 }
 
 img{
@@ -59,20 +58,17 @@ img{
   user-select:none;
 }
 
-.back{
-}
-
 .list{
   padding: 0;
-  width: auto;     /* 追加 */
+  width: auto;
   height: auto;
-  margin: 0;
+  margin: 2vw 2vw 10vw 2vw;
+
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
-  background-color: black;
-  border: solid 0.25vw #B7B7B7;/*線*/
-  margin-bottom: 10vw;
 }
 
 .list li:hover{
@@ -84,7 +80,7 @@ img{
 .list li{
   position: relative;
   text-align:center;
-  margin: 2vw 5vw 4vw 1vw;
+  margin: 2vw 5vw 6vw 1vw;
   float: left;
   list-style: none;
 
@@ -111,9 +107,47 @@ img{
   font-size: 2vw;
 }
 
+/* ハンバーガー */
+.btn-burger {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+  height: 100%;
+  border-bottom: dashed 2px #3F3515;/*点線*/
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a:hover{
+  background-color: black;
+  color: white;
+}
+
+.nav-list a{
+  display: block;
+  text-decoration: none;
+  padding: 0.5vw 2vw;
+  color: #3F3515;
+  font-size: 1.5vw;
+  letter-spacing: 0.2em;
+}
+
+.nav-toggle{
+  display: none;
+}
+
 @media screen and (max-width: 480px){
   body{
-    margin: 5%;
+    margin: 15%;
     margin-bottom: 15%;
   }
   h1{
@@ -124,7 +158,7 @@ img{
     font-size: 3vw;
   }
   .list{
-    padding: 20vw 0;
+    padding: 5vw 0;
     margin-bottom: 5vw;
     display: block;
     border: solid 1vw gray;/*線*/
@@ -161,6 +195,101 @@ img{
   }
   .item a{
     background: #ccc;
+    display: block;
+  }
+
+  /*ハンバーガーアイコン*/
+  .btn-burger {
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0vw;
+    right: 0px;
+  }
+
+  /*ハンバーガー三本線*/
+  .icon, .icon:before, .icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    height: 1px;
+    width: 30px;
+    background-color: black;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+  }
+
+  /*三本線の間隔*/
+  .icon:before {
+    top: 20px;
+  }
+  .icon:after {
+    top: -20px;
+  }
+
+  /*チェックボックス非表示*/
+  .nav-toggle {
+    display: none;
+  }
+
+  /*アイコンをクリックしたら*/
+  .nav-toggle:checked ~ .btn-burger .icon {
+    background: transparent;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: white;
+  }
+  .nav-toggle:checked ~ .btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: white;
+  }
+
+  .icon,
+  .icon:before,
+  .icon:after {
+    transition: all .8s;
+  }
+
+
+  .nav {
+    border-bottom: none;
+    position: absolute;
+    top: 0%;
+  }
+
+  .nav-list {
+    position: relative;
+    background-color: gray;
+    list-style: none;
+    display: none;
+    margin: 0;
+    padding-top: 30%;
+    height: 100%;
+
+    z-index: 1;
+  }
+
+  .nav-list li {
+    width: 100%;
+    height: 10%;
+  }
+
+  .nav-list a {
+    font-size: 5vw;
+  }
+  .nav-toggle:checked ~ .nav .nav-list {
     display: block;
   }
 }
@@ -216,7 +345,7 @@ img{
 
 
 /*以下はボタンのデザイン*/
-.btn-cross {
+.btn2 {
   display: inline-block;
   width: 10em;
   position: relative;
@@ -228,7 +357,7 @@ img{
 }
 
 
-.btn-cross:before, .btn-cross:after {
+.btn2:before, .btn2:after {
   content: '';
   position: absolute;
   top: -7px;
@@ -238,24 +367,24 @@ img{
   background-color: black;
   transition: .3s;
 }
-.btn-cross:before {
+.btn2:before {
   left: 7px;
 }
-.btn-cross:after {
+.btn2:after {
   right: 7px;
 }
-.btn-cross:hover:before {
+.btn2:hover:before {
   top: 0px;
   left:0;
   height: 100%;
 }
-.btn-cross:hover:after {
+.btn2:hover:after {
   top: 0px;
   right: 0;
   height: 100%;
 }
 
-/*詳細のフェード*/
+/*保存
 .fade{
   opacity: 0;
   animation: fadein 1s ease forwards;
@@ -264,10 +393,10 @@ img{
   100% {  opacity: 1;}
 }
 
-/*以下遅延の指定*/
 .txt01 {animation-delay: 0s;}
 .txt02 {animation-delay: 0.5s;}
 .txt03 {animation-delay: 1s;}
 .txt04 {animation-delay: 1.5s;}
 .txt05 {animation-delay: 2s;}
 .txt06 {animation-delay: 2.5s;}
+*/
