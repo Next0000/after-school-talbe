@@ -21,6 +21,7 @@ li{
   line-height: 1.5;
 }
 p{
+  font-family:serif;
   font-size: 1.2vw;
   line-height: 1.5;
 }
@@ -156,12 +157,11 @@ a{
 .mem-list{
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: .5vw 4vw;
 }
-
 
 .repo1{
   text-align: left;
@@ -169,47 +169,59 @@ a{
   margin: 1vw 5vw  0 5vw;
   border: solid 2px #3F3515;/*線*/
   display: flex;
-  justify-content: space-between;
 }
 .repo2{
   position: relative;
-  border: solid 2px #3F3515;/*線*/
+  border: double 4px #3F3515;/*線*/
   text-align: left;
   padding: 1vw;
   margin: 0;
 }
-.repo2-1{
-  border-bottom: dashed 2px #3F3515;
-}
+
 .repo3{
   position: relative;
   border: solid 2px #3F3515;/*線*/
   text-align: left;
   padding: 2vw;
-  margin: 0 -2px  0 0;
+  margin: 0 1vw  0 0;
+  flex-grow: 1.5;
+}
+
+.member{
+  position: relative;
+  border-top: dashed  2px #3F3515;
+  border-bottom: dashed  2px #3F3515;
+  margin: 1vw 5vw;
+  padding: 1vw;
 }
 .repo4{
   text-align: left;
   position: relative;
   margin: -2px 5vw  10vw 5vw;
-  border: solid 2px #3F3515;/*線*/
   display: flex;
-  justify-content: space-between;
+}
+
+.repo4-1{
+    border: solid 2px #3F3515;
+    margin-right: 1vw;
+    padding: 1vw;
+    width: 30vw;
 }
 .repo4-2{
-  border-top: solid 2px #3F3515;
+  border: solid 2px #3F3515;
 }
 .repo4-3{
-  border-left: solid 2px #3F3515;
-  width: 20vw;
+  display:flex;
+  border-top: solid 2px #3F3515;
 }
 main{
-  margin: -2px 5vw  -2px 5vw;
+  margin: 1vw 5vw;
   display: flex;
-  height: 40vw;
+  height: 20vw;
 }
 /*探索者のデータ*/
 .data{
+  position: relative;
   width: 10vw;
   background-color: #494949;
   text-align: center;
@@ -217,7 +229,7 @@ main{
   text-decoration: none;
   margin: 0;
   padding: 0;
-  box-shadow: 0 15px 13px 0 rgba(0, 0, 0,.7);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0,.7);
   color: white;
 }
 .data h2{
@@ -254,20 +266,21 @@ main{
   visibility: inherit;
 }
 .balloon{
+  z-index: 10;
   position: absolute;
   visibility:collapse;                        /* 要素を非表示 */
   padding: 2px;
   background-color: white;
-  width:40vw;
+  width:25vw;
   padding: 1vw;
-  left : -15vw;
-  top: 20vw;
+  left : -9vw;
+  top: 18vw;
 }
 .balloon:after{
   content: "";
   position: absolute;
   top: -35px;
-  left: 50%;
+  left: 47%;
   border: 10px solid transparent;
   border-bottom: 30px solid white;
 }
@@ -280,6 +293,18 @@ main{
   color: black;
 }
 
+.tape{
+display: block;
+ position: relative;
+ content: "";
+ width: 7vw;
+ height: 2vw;
+ left: 5vw;
+ top: -14vw;
+ background-color: rgba(204, 186, 136,0.4);
+ box-shadow: 0 0 3px rgba(0,0,0,0.1);
+ transform: rotate( 43deg );
+}
 
 /* ハンバーガー */
 .btn-burger {
@@ -326,7 +351,9 @@ main{
   }
   h1{
     font-size: 5vw;
-    margin-bottom: 10vw;
+  }
+  h2{
+    font-size: 4vw;
   }
   p,a{
     font-size: 3vw;
@@ -346,73 +373,58 @@ main{
     padding: 0;
   }
 
-
-  .repo1{
-    position: relative;
-    text-align: left;
-    margin: 1vw 5vw  0 5vw;
-    border: solid 2px #3F3515;/*線*/
-    justify-content: space-between;
-  }
-  .repo1-1{
-    width: 45vw;
-    padding: 1vw;
-    border-right: dashed 2px #3F3515;
-    border-bottom: none;
-  }
-  .repo2-2{
-    padding: 1vw;
-  }
   .repo2{
-    position: relative;
-    border: solid 2px #3F3515;/*線*/
-    text-align: left;
-    display: flex;
-    padding: 0;
-    margin: 0;
+    padding: 2vw;
     height: auto;
   }
-  .repo2-1{
-    width: 45vw;
-    padding: 1vw;
-    border-right: dashed 2px #3F3515;
-    border-bottom: none;
-  }
-  .repo2-2{
-    padding: 1vw;
-  }
   .repo3{
-    position: relative;
-    border: solid 2px #3F3515;/*線*/
-    text-align: left;
     padding: 2vw;
-    margin: -2px 0 -2px 0;
+    margin: 2vw 0;
     height: 60vw;
   }
 
   .repo4{
-    text-align: left;
-    position: relative;
     margin: -2px 5vw  10vw 5vw;
-    border: solid 2px #3F3515;/*線*/
     display: block;
     justify-content: space-between;
   }
-  .repo4-2{
-    border-top: solid 2px #3F3515;
+  .repo4-1{
+      border: solid 2px #3F3515;
+      margin: 1vw 0 2vw 0;
+      padding: 2vw;
+      width: auto;
   }
-  .repo4-3{
-    border-top: solid 2px #3F3515;
-    border-left: none;
-    width: auto;
-  }
+  .repo4-1 ul{
+    justify-content: space-between;
+    display: flex;
+}
 
+  .repo4-3{
+    border-left: none;
+  }
 
   main{
-    position: relative;
-    margin: -2px 5vw  -2px 5vw;
     height: auto;
     display: block;
+  }
+
+  /*探索者のデータ*/
+  .balloon{
+    width:80vw;
+    padding: 1vw;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .balloon:after{
+    display: none;
+  }
+
+  .tape{
+   left: 13vw;
+   top: -30vw;
   }
   .data{
     font-size: 2vw;
@@ -425,30 +437,6 @@ main{
   .data img{
     width: 15vw;
   }
-
-  .pin{
-    width: 2vw;/*幅*/
-  	height: 2vw;/*高さ*/
-  }
-
-  .balloon1:after{
-    right: -19px;                           /* 吹き出し口の位置調整 */
-  }
-
-  .balloon1 div{
-    padding: 1vw;
-  }
-
-  .balloon2 {
-    left : 22vw;
-  }
-  .balloon2:after{
-    left: -19px;                           /* 吹き出し口の位置調整 */
-  }
-  .balloon2 div{
-    padding: 1vw;
-  }
-
 
     /*ハンバーガーアイコン*/
     .btn-burger {
