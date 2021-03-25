@@ -68,6 +68,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 0 5%;
+  margin-bottom: 15%;
 }
 .news p{
   position: relative;
