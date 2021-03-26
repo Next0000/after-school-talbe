@@ -129,17 +129,17 @@ img{
 @keyframes kuji{
     0%{
       background-image:url(../images/kujimeLine.png);
-      background-size: cover;
+      background-size: contain;
       background-position: center;
     }
     50%{
       background-image:url(../images/kujimeLine2.png);
-      background-size: cover;
+      background-size: contain;
       background-position: center;
     }
     100%{
       background-image:url(../images/kujimeLine3.png);
-      background-size: cover;
+      background-size: contain;
       background-position: center;
     }
 }
