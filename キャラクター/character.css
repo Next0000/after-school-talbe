@@ -1,6 +1,7 @@
 :root {
   --bgCol: #000000;
   --bg:url("");
+  --bg2:url("");
   --setPic: 10%;
 }
 
@@ -16,7 +17,7 @@ header{
 }
 
 body {
-  font-family:'Amatic SC',serif;
+  font-family:'Amatic SC','游明朝',serif;
   margin: 0%;
   text-align: center;
   margin-bottom: 15%;
@@ -27,7 +28,6 @@ li{
   line-height: 1.5;
 }
 p{
-  font-family:serif;
   font-size: 1.2vw;
   line-height: 1.5;
 }
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2{
-  font-family:'Amatic SC',serif;
+  font-weight:inherit;
   font-size: 2vw;
   letter-spacing: 0.1em;
   margin: 0;
@@ -67,8 +67,8 @@ img{
 .no1-l{
   width: 40%;
   text-align:center;
-  border: solid 2px #3F3515;
   margin-right: 1vw;
+  border: solid 2px #3F3515;
 }
 .no1-r{
   width: 60%;
@@ -95,7 +95,7 @@ img{
   justify-content: space-between;
 }
 .no3-2 div{
-  border: solid 2px #3F3515;
+  border: solid 2px rgba(255, 255, 255, 0.5);
   padding: 1vw;
 }
 
@@ -106,10 +106,14 @@ img{
 }
 .no4 div{
   width: 50%;
+  border: solid 2px var(--bgCol);
+}
+.no4 p{
+  font-family: 'New Tegomin', serif;
 }
 .no4-1{
-  border: solid 2px #3F3515;
-  color: var(--bgCol);
+  background-color: var(--bgCol);
+  color: #AAA79B;
   margin-bottom: 1vw;
 }
 .line{
@@ -130,6 +134,7 @@ img{
   clear: both;
 }
 .status ul{
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 0;
   margin-bottom: 1vw;
   width: 100%;
@@ -199,6 +204,64 @@ img{
     font-size: 3vw;
   }
 
+  .no1{
+    margin: 3vw 5vw;
+    display: block;
+  }
+
+  .no1-l{
+    padding: 1vw;
+    width: auto;
+    margin-right: 0vw;
+  }
+  .no1-r{
+    width: 100%;
+    margin: 0vw;
+  }
+  .no2-1{
+    margin: 3vw 0;
+    display: flex;
+  }
+
+  .no3{
+    margin-top: 5vw;
+    display: block;
+    height: auto;
+  }
+
+  .no3-2 div{
+    margin-top: 3vw;
+    padding: 1vw;
+  }
+
+  .no4{
+    margin: 10vw 5vw;
+    display: block;
+  }
+  .no4 div{
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  .no4 p{
+    font-family: 'New Tegomin', serif;
+  }
+  .no4-1{
+    margin-bottom: 1vw;
+  }
+  .pv{
+    margin: 0vw;
+  }
+  .status{
+    height: auto;
+    margin: 0;
+    padding: 1vw;
+    border: solid 2px #3F3515;
+    clear: both;
+  }
+
+  .status li{
+    width: 22vw;
+  }
   /*ハンバーガーアイコン*/
   .btn-burger {
     z-index: 2;
