@@ -203,12 +203,8 @@ animation: fadein 1s ease forwards;
   .title img{
     width: 100%;
   }
-  .news{
-    text-align: center;
-    display: block;
-  }
 
-  .news div{
+.news div{
     text-align: center;
     width: 80%;
     margin: 4vw auto;
