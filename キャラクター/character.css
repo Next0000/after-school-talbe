@@ -304,6 +304,14 @@ animation: fadein 1s ease forwards;
   .no4-1{
     margin-bottom: 1vw;
   }
+
+  .lines{
+    background-image:url(../images/kujimeLine.png);
+    background-size: cover;
+    background-position: center;
+    animation: none;
+  }
+
   .pv{
     margin: 0vw;
   }
