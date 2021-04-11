@@ -61,7 +61,18 @@ h2 {
 }
 
 
+.go-top{
+  background: url(../images/up.png);
+  position: fixed;
 
+  background-size: 100%;
+  filter: grayscale(100%);
+  width: 5%;
+  height: 10%;
+  bottom: 10%;
+  right: 0;
+  background-color: gray;
+}
 
 .news{
   width: 100%;
@@ -304,5 +315,11 @@ animation: fadein 1s ease forwards;
   }
   .nav-toggle:checked ~ .nav .nav-list {
     display: block;
+  }
+
+
+  .go-top{
+    width: 10%;
+    height: 5%;
   }
 }

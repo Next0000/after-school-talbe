@@ -187,6 +187,7 @@ animation: fadein 1s ease forwards;
 
   .about{
     display: block;
+    padding: 2vw;
   }
   .list img{
     width: 50%;
@@ -203,7 +204,7 @@ animation: fadein 1s ease forwards;
     white-space: normal;
     float: none;
     width:  60vw;
-    height: 100vw;
+    height: 60vw;
 
     margin: 0 2vw;
     padding: 5vw;
