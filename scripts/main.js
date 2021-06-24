@@ -3,6 +3,8 @@ window.onload = function() {
   const spinner = document.getElementById('loading');
   spinner.classList.add('loaded');
 
+  const logo = document.getElementById('title');
+  logo.classList.add('move');
 
 //ふわっと
 var scrollAnimationElm = document.querySelectorAll('.sa');
@@ -16,4 +18,8 @@ var scrollAnimationFunc = function() {
 }
 window.addEventListener('load', scrollAnimationFunc);
 window.addEventListener('scroll', scrollAnimationFunc);
+
+
+
+
 }
