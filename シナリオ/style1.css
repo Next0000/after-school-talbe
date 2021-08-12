@@ -1,21 +1,3 @@
-html {
-  font-size: 1vw;
-  background-color:  #AAA79B;
-  color: #3F3515;
-}
-
-header{
-  width: 100%;
-  text-align: center;
-}
-
-body {
-  font-family:'Amatic SC','游明朝','Noto Serif JP',serif;
-  margin: 0%;
-  text-align: center;
-  margin-bottom: 15%;
-}
-
 li{
   font-size: 1vw;
   line-height: 1.5;
@@ -45,51 +27,6 @@ h3{
 a{
   line-height: 2;
   letter-spacing: 0.2em;
-}
-
-.skew {
-  animation: skew 3s infinite;
-}
-@keyframes skew {
-  0% {
-    transform: none;
-  }
-  33% {
-    transform: none;
-  }
-  33.3% {
-    transform: skewX(30deg);
-  }
-  33.6% {
-    transform: skewX(-30deg);
-  }
-  33.9% {
-    transform: none;
-  }
-  66% {
-    transform: none;
-  }
-  66.3% {
-    transform: skewX(5deg);
-  }
-  66.6% {
-    transform: skewX(-5deg);
-  }
-  66.9% {
-    transform: none;
-  }
-  77% {
-    transform: none;
-  }
-  77.3% {
-    transform: skewX(15deg);
-  }
-  77.6% {
-    transform: skewX(-15deg);
-  }
-  77.9% {
-    transform: none;
-  }
 }
 
 
@@ -174,7 +111,6 @@ a{
 }
 
 /*探索者のチェキボード*/
-
 .member{
   width: auto;
 }
@@ -330,47 +266,6 @@ display: block;
  transform: rotate( 43deg );
 }
 
-/* ハンバーガー */
-.btn-burger {
-  display: none;
-}
-
-.nav {
-  width: 100%;
-  height: 100%;
-  border-bottom: dashed 2px #3F3515;/*点線*/
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list li a:hover{
-  background-color: black;
-  color: white;
-}
-
-.nav-list a{
-  display: block;
-  text-decoration: none;
-  padding: 0.5vw 2vw;
-  color: #3F3515;
-  font-size: 1.5vw;
-  letter-spacing: 0.2em;
-}
-
-.nav-toggle{
-  display: none;
-}
-#now a{
-  color: white;
-  background-color: black;
-}
 @media screen and (max-width: 480px){
   body{
     margin-top: 15%;
@@ -399,7 +294,6 @@ display: block;
   }
 
   /*探索者のデータ*/
-
   .member{
     width: auto;
   }
@@ -475,139 +369,4 @@ display: block;
   .data img{
     width: 15vw;
   }
-
-    /*ハンバーガーアイコン*/
-    .btn-burger {
-      z-index: 2;
-      cursor: pointer;
-      display: block;
-      width: 60px;
-      height: 60px;
-      position: absolute;
-      top: 0vw;
-      right: 0px;
-    }
-
-    /*ハンバーガー三本線*/
-    .icon, .icon:before, .icon:after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-
-      height: 1px;
-      width: 30px;
-      background-color: black;
-      border-radius: 2px;
-      display: block;
-      content: '';
-      cursor: pointer;
-      margin: auto;
-    }
-
-    /*三本線の間隔*/
-    .icon:before {
-      top: 20px;
-    }
-    .icon:after {
-      top: -20px;
-    }
-
-    /*チェックボックス非表示*/
-    .nav-toggle {
-      display: none;
-    }
-
-    /*アイコンをクリックしたら*/
-    .nav-toggle:checked ~ .btn-burger .icon {
-      background: transparent;
-    }
-    .nav-toggle:checked ~ .btn-burger .icon:before {
-      transform: rotate(-45deg);
-      top: 0;
-      background-color: white;
-    }
-    .nav-toggle:checked ~ .btn-burger .icon:after {
-      transform: rotate(45deg);
-      top: 0;
-      background-color: white;
-    }
-
-    .icon,
-    .icon:before,
-    .icon:after {
-      transition: all .8s;
-    }
-
-
-    .nav {
-      border-bottom: none;
-      position: absolute;
-      top: 0%;
-    }
-
-    .nav-list {
-      position: relative;
-      background-color: gray;
-      list-style: none;
-      display: none;
-      margin: 0;
-      padding-top: 30%;
-      height: 100%;
-
-      z-index: 1;
-    }
-
-    .nav-list li {
-      width: 100%;
-      height: 10%;
-    }
-
-    .nav-list a {
-      font-size: 5vw;
-    }
-    .nav-toggle:checked ~ .nav .nav-list {
-      display: block;
-    }
-}
-
-/*以下はボタンのデザイン*/
-.btn2 {
-  display: inline-block;
-  width: 10em;
-  position: relative;
-  padding: 0.25em 1em;
-  border-top: solid 1px black;
-  border-bottom: solid 1px  black;
-  text-decoration: none;
-  color: black;
-}
-
-
-.btn2:before, .btn2:after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  width:1px;
-  height: -webkit-calc(100% + 14px);
-  height: calc(100% + 14px);
-  background-color: black;
-  transition: .3s;
-}
-.btn2:before {
-  left: 7px;
-}
-.btn2:after {
-  right: 7px;
-}
-.btn2:hover:before {
-  top: 0px;
-  left:0;
-  height: 100%;
-}
-.btn2:hover:after {
-  top: 0px;
-  right: 0;
-  height: 100%;
 }
