@@ -6,7 +6,6 @@
 }
 
 li{
-  font-size: 1vw;
   line-height: 1.5;
 }
 p{
@@ -236,3 +235,4 @@ img{
   .status li{
     width: 22vw;
   }
+}
