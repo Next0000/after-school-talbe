@@ -120,7 +120,7 @@ a{
   justify-content:space-between;
   align-items: center;
   margin: 0;
-  padding: .5vw 4vw;
+  padding: 2vw 4vw;
 }
 
 .repo1{
@@ -187,10 +187,8 @@ main{
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 3vw;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0,.7);
-  color: white;
 }
 .data h2{
   margin: 0;
@@ -254,13 +252,13 @@ main{
 }
 
 .tape{
-display: block;
- position: relative;
+display: inline-block;
+ position: absolute;
  content: "";
- width: 7vw;
- height: 2vw;
- left: 5vw;
- top: -14vw;
+ width: 70%;
+ height: 20%;
+ left: 50%;
+ top: 0;
  background-color: rgba(204, 186, 136,0.4);
  box-shadow: 0 0 3px rgba(0,0,0,0.1);
  transform: rotate( 43deg );
@@ -302,8 +300,6 @@ display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
   }
 
   .repo2{
@@ -354,10 +350,6 @@ display: block;
     display: none;
   }
 
-  .tape{
-   left: 13vw;
-   top: -30vw;
-  }
   .data{
     font-size: 2vw;
     width: 18vw;
@@ -368,5 +360,8 @@ display: block;
   }
   .data img{
     width: 15vw;
+  }
+  .data p{
+    font-size: 1vw;
   }
 }
