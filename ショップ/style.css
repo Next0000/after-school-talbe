@@ -183,6 +183,16 @@ h3{
 
 /*-----------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px){
+body{
+    margin-top: 0%;
+    margin-bottom: 15%;
+}
+h1{
+    font-size: 8vw;
+}
+p,a{
+    font-size: 3vw;
+}
 h2{
     font-size: 3.5vw;
 }
