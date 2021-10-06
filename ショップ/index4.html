@@ -1,140 +1,190 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
-    <link href="../styles/style.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="search.js"></script>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="../images/favicon.ico">
+  <title>shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <link href="../styles/style.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="search.js"></script>
 
-  <body>
-    <header>
-      <div class="drawer">
-        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-        <label for="navToggle" class="btn-burger">
-          <span class="icon"></span>
-        </label>
-    
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="../index.html" class="btn-cross">top</a></li>
-            <li><a href="../シナリオ/index1.html" class="btn-cross">Scenario</a></li>
-            <li><a href="../キャラクター/index1.html" class="btn-cross">character</a></li>
-            <li><a href="../放課後卓とは/index3.html" class="btn-cross">about</a></li>
-            <li id="now"><a class="btn-cross">shop</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
+  <link　href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap"　rel="stylesheet">
+</head>
 
-    <div class="news">
+<div id="loading"></div>
 
-      <div class="one">
-        <div class="search">
-          <h3 class="space">attention</h3>
-          <p>当ページで扱っている商品は全て架空の物です。</p>
+<body>
+  <header>
+    <div class="drawer">
+      <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+      <label for="navToggle" class="btn-burger">
+        <span class="icon"></span>
+      </label>
 
-          <h3 class="space">search</h3>
-          <form>
-              <input type="text" id="searchTerm" placeholder="検索...">
-          </form>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="btn-cross">top</a></li>
+          <li><a href="../シナリオ/index1.html" class="btn-cross">Scenario</a></li>
+          <li><a href="../キャラクター/index1.html" class="btn-cross">character</a></li>
+          <li><a href="../放課後卓とは/index3.html" class="btn-cross">about</a></li>
+          <li id="now"><a class="btn-cross">shop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          <form onsubmit="return false;" action="***" method="***">
-            <input type="text" id="searchTerm" placeholder="検索...">
-              <input type="button" value="送信する" onclick="submit();">
-         </form>
+  <div class="news">
 
+    <div class="picRoll">
+      <img id="test1" src="../images/logo1.png">
+      <img id="test2" src="../images/logo1.png">
+    </div>
 
+    <div class="info section">
+      <h3>INFORMATION</h3>
+      <p>当ページで扱っている商品は全て架空の物です。</p>
+      <p>気になる商品または追加希望作品等がありましたらご連絡ください。</p>
+    </div>
 
+    <div class="pics section">
+      <h3>pickup</h3>
 
-          <h3 class="space">category</h3>
-          <ul>
-            <li><a href="">>画集</a></li>
-            <li><a href="">>楽曲</a></li>
-            <li><a href="">>シナリオ</a></li>
-            <li><a href="">>装飾品</a></li>
-          </ul>
+      <p>今月追加された新商品を紹介</p>
+      
 
-          <h3 class="space">guide</h3>
-          <p><a href="">お問い合わせ</a></p>
-          <p><a href="">よくある質問</a></p>
-          <p><a href="">クリエイターについて</a></p>
+      <div class="coming2">
+
+        <div class="pic">
+          <div class="pitem" style="background-image: url(../images/gomitaLine.png);"></div>
+          <div class="comment">
+            <h2>noah監修「タロット占い」</h2>
+            <h2>2000円</h2>
+            <p>イラストを手掛けるのは今話題のイラストレーターnoah<br>
+            水彩の淡いタッチが癖になる完全オリジナルデザイン。<br>
+            解説書付きなので初心者の方も安心。</p>
+            <p>一緒に精神分析を高めていこう。</p>
+          </div>
         </div>
 
-        <div class="items">
-          <div class="picRoll">
-            <img id="test1" src="../images/logo1.png">
-            <img id="test2" src="../images/logo1.png">
+        <div class="pic">
+          <div class="pitem2" style="background-image: url(../images/gomitaLine.png);"></div>
+          <div class="comment2">
+            <h2>水無月の名曲アルバム</h2>
+            <h2>3000円</h2>
+            <p>水無月のアルバムがついにリリース<br>
+              「スパナ」を初めとしたヒットソングに加え、<br>
+              大人気バンド「ECHO(S)」とのコラボ曲も収録</p>
+              <p>冒涜的な一曲をお届け。</p>
           </div>
-    
-          <div class="swiper-container coming2">
-            <h3 class="section">--ピックアップ--</h3>
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide ">
-                <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
-                <p>noah監修「タロット占い」</p><p>1130円</p>
-              </li>
-              
-              <li class="swiper-slide ">
-                <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
-                <p>水無月の名曲アルバム</p><p>629円</p>
-              </li>
-
-              <li class="swiper-slide ">
-                <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
-                <p>凍雲名言集</p><p>625円</p>
-              </li>
-
-              <li class="swiper-slide ">
-                <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
-                <p>「うめぇ牛乳」茂辺地牧場</p><p>619円</p>
-              </li>
-              
-              <li class="swiper-slide ">
-                <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
-                <p>ばるばる市場の眼鏡</p><p>620円</p>
-              </li>
-
-              <li class="swiper-slide ">
-                <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
-                <p>フカヒレ</p><p>123円</p>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-          </div>
-
-
-          <div class="coming">
-            <div class="section">
-              <h3>--ランキング--</h3>
-            </div>
-            <ul>
-              <li><div class="item" style="background-image: url(../images/gomitaLine.png);"></div> <p>music「気だるげな魔女」</p><p>3030円</p></li>
-              <li><div class="item" style="background-image: url(../images/gomitaLine.png);"></div><p>scenario「雪国」</p>620円<p></p></li>
-              <li><div class="item" style="background-image: url(../images/gomitaLine.png);"></div><p>凍雲名言集</p><p>625円</p></li>
-              <li><div class="item" style="background-image: url(../images/gomitaLine.png);"></div><p>music「排他」</p><p>3030円</p></li>
-              <li><div class="item" style="background-image: url(../images/gomitaLine.png);"></div><p>フカヒレ</p><p>123円</p></li>
-            </ul>
-          </div>
-
-          
-          
         </div>
+
+        <div class="pic">
+          <div class="pitem" style="background-image: url(../images/gomitaLine.png);"></div>
+          <div class="comment">
+            <h2>「ambivalent」著：凍雲</h2>
+            <h2>1600円</h2>
+            <p>”アンビバレント-相反する感情や考え方を同時に抱くこと”<br>
+              バルバル賞を受賞した思考にまつわる推理小説。<br>
+              ものの考え方、感覚が乖離していく恐怖を味わおう</p>
+              <p>皆さん一緒に「SANチェックどうぞ」</p>
+          </div>
+        </div>
+
       </div>
     </div>
-    
+
+
+
+    <div class="lunk section">
+      <h3>lunking</h3>
+
+      <div class="coming">
+        <ul>
+          <li>
+            <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
+            <div class="comment3">
+              <p>music「怠惰の魔女」</p>
+              <p>3000円</p>
+            </div>
+            <p class="nomber">１</p>
+          </li>
+          <li>
+            <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
+            <div class="comment3">
+              <p>scenario「雪国」</p>
+              <p>500円</p>
+            </div>
+            <p class="nomber">２</p>
+          </li>
+          <li>
+            <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
+            <div class="comment3">
+              <p>book「ambivalent」</p>
+              <p>11600円</p>
+            </div>
+            <p class="nomber">３</p>
+          </li>
+          <li>
+            <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
+            <div class="comment3">
+              <p>music「スパナ」</p>
+              <p>3000円</p>
+            </div>
+            <p class="nomber">４</p>
+          </li>
+          <li>
+            <div class="item" style="background-image: url(../images/gomitaLine.png);"></div>
+            <div class="comment3">
+              <p>フカヒレ</p>
+              <p>1d10 *1000円</p>
+            </div>
+            <p class="nomber">５</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="search">
+      <h3>CONTENTS</h3>
+
+      <div class="menu">
+        <div>
+          <h3>--category--</h3>
+          <ul>
+            <li><a href="">- 画集</a></li>
+            <li><a href="">- 楽曲</a></li>
+            <li><a href="">- シナリオ</a></li>
+            <li><a href="">- 装飾品</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>--guide--</h3>
+          <ul>
+            <li><a href="">- お問い合わせ</a></li>
+            <li><a href="">- よくある質問</a></li>
+            <li><a href="">- クリエイターについて</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
 
 
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <script src="../scripts/slide.js"></script>
-　</body>
+  　
+</body>
+
 </html>

@@ -5,36 +5,23 @@
   --setPic: 10%;
 }
 
-li{
-  line-height: 1.5;
-}
-p{
-  font-size: 1.2vw;
-  line-height: 1.5;
-}
 h1 {
   font-size: 3.5vw;
   font-weight: lighter;
   letter-spacing: 0.5em;
   margin: 0;
 }
-
 h2{
   font-weight:inherit;
   font-size: 2vw;
   letter-spacing: 0.1em;
   margin: 0;
 }
-
 h3{
   font-size: 1.2vw;
   letter-spacing: 2em
 }
 
-a{
-  line-height: 2;
-  letter-spacing: 0.2em;
-}
 
 img{
   width: 100%;
@@ -154,9 +141,11 @@ img{
 .status p{
   margin: 0;
 }
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px){
   body{
-    margin-top: 15%;
+    margin-top: 0%;
     margin-bottom: 15%;
   }
   h1{

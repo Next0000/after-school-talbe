@@ -4,33 +4,6 @@
   --setPic: 10%;
 }
 
-h1 {
-  font-size: 3.5vw;
-  font-weight: lighter;
-  letter-spacing: 0.5em;
-  margin: 0;
-}
-
-h2{
-  font-size: 2vw;
-  letter-spacing: 0.1em;
-  margin: 0;
-}
-
-h3{
-  font-size: 1.2vw;
-  letter-spacing: 2em
-}
-
-a{
-  line-height: 2;
-  letter-spacing: 0.2em;
-}
-
-p{
-  line-height: 1.5;
-}
-
 img{
   -webkit-touch-callout:none;
   -webkit-user-select:none;
@@ -93,11 +66,14 @@ img{
 
 @media screen and (max-width: 480px){
   body{
-    margin: 15% 0;
+    margin-top: 0%;
+    margin-bottom: 15%;
   }
   h1{
     font-size: 8vw;
-    margin-bottom: 10vw;
+  }
+  h2{
+    font-size: 4vw;
   }
   p,a{
     font-size: 3vw;

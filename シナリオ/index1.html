@@ -1,89 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>scenario</title>
-  <link href="../styles/style.css" rel="stylesheet" type="text/css">
-  <link href="style1.css" rel="stylesheet" type="text/css">
-  <script src="scripts/main.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>scenario</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script src="../scripts/main.js"></script>
+  
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  </head>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
-</head>
+  <div id="loading"></div>
 
-<body>
-  <header>
-  <div class="drawer">
-    <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-    <label for="navToggle" class="btn-burger">
-      <span class="icon"></span>
-    </label>
+  <body>
+    <header>
+      <div class="drawer">
+        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+        <label for="navToggle" class="btn-burger">
+          <span class="icon"></span>
+        </label>
 
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="../index.html" class="btn-cross" style="--lineCol:">top</a></li>
-        <li id="now"><a class="btn-cross" style="--lineCol:">Scenario</a></li>
-        <li><a href="../キャラクター/index1.html" class="btn-cross" style="--lineCol:">character</a></li>
-        <li><a href="../放課後卓とは/index3.html" class="btn-cross" style="--lineCol:">about</a></li>
-        <li><a href="../ショップ/index4.html" class="btn-cross"  style="--lineCol:">four</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="btn-cross">top</a></li>
+            <li id="now"><a href="" class="btn-cross">Scenario</a></li>
+            <li><a href="../キャラクター/index1.html" class="btn-cross">character</a></li>
+            <li><a href="../放課後卓とは/index3.html" class="btn-cross">about</a></li>
+            <li><a href="../ショップ/index4.html" class="btn-cross">shop</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <div class="masa">
+        <h1>scenario</h1>
 
-
-  <div class="title skew">
-    <h1>scenario.</h1>
-  </div>
-
-  <div class="masa">
-    <p>
-      混沌たる、しかし純粋な狂気に抗いし者達<br>
-      探索者。その小さな勇気に賞賛を。<br>
-      これは、語れらることのない冒険譚である。
-    </p>
-  </div>
+      <p>
+        混沌たる、しかし純粋な狂気に抗いし者達<br>
+        探索者。その小さな勇気に賞賛を。<br>
+        これは、語れらることのない冒険譚である。
+      </p>
+      <p class="scroll">
+        <span></span>
+        <div class="arrow"></div>
+      </p>
+    </div>
 
     <div class="boxs">
+      <ul class="Scenarios">
 
-     <a href="./index1-2.html" class="times times1" style="top:20%; left:5%;"></a>
-     <div class="eva eva1">
-       <h2>闇を行く者たちの宴</h2>
-       <p style="top:10%; left:65%;">「家族が待ってるんだ」</p>
-       <p style="top:60%; left:10%;">「そこを、どきなさい！」</p>
-       <p style="top:20%; left:15%;">「オカルトの気配ッ」</p>
-       <p style="top:70%; left:65%;">「久次米さんの気配ッ」</p>
-       <p style="top:50%; left:25%;">「読みます、この本」</p>
-       <p style="top:50%; left:55%;">「SANチェックどうぞ」</p>
+        <li style="--book:70%;">
+          <a href="./index1-2.html" class="times1"></a>
+          <div class="eva eva1">
+            <h2>闇を行く者たちの宴</h2>
+            <p style="top:10%; left:65%;">「家族が待ってるんだ」</p>
+            <p style="top:60%; left:10%;">「そこを、どきなさい！」</p>
+            <p style="top:20%; left:15%;">「オカルトの気配ッ」</p>
+            <p style="top:70%; left:65%;">「久次米さんの気配ッ」</p>
+            <p style="top:50%; left:25%;">「読みます、この本」</p>
+            <p style="top:50%; left:55%;">「SANチェックどうぞ」</p>
+          </div>
+        </li>
+
+        <li class="times1" style="--book:90%;">
+          <a href="#" class="times2"></a>
+          <div class="eva eva2">
+            <h2>「沼男は誰だ？」</h2>
+            <p style="top:10%; left:65%;">「家族に会いに行く。」</p>
+            <p style="top:60%; left:10%;">「あの人が居たから、私は」</p>
+            <p style="top:20%; left:15%;">「新曲が出来たんだ」</p>
+            <p style="top:70%; left:65%;">「会いたかった」</p>
+            <p style="top:50%; left:25%;">「僕が、殺します」</p>
+            <p style="top:50%; left:55%;">「悲しいねぇ」</p>
+          </div>
+        </li>
+
+        <li style="--book:50%;">
+          <a href="#" class="times3"></a>
+          <div class="eva eva3">
+            <h2>「蠢く島」</h2>
+            <p style="top:10%; left:65%;">「タバコミュニケーション」</p>
+            <p style="top:60%; left:10%;">「傍に居ます、ずっと」</p>
+            <p style="top:20%; left:15%;">「あ、占いましょうか？」</p>
+            <p style="top:70%; left:65%;">「すみません（滝汗）」</p>
+            <p style="top:50%; left:25%;">「酔い止め要ります？」</p>
+            <p style="top:50%; left:55%;">「...この先が楽しみです。」</p>
+          </div>
+        </li>
+
+        <li style="--book:50%;">
+          <a href="#" class="times4"></a>
+          <div class="eva eva4">
+            <h2>「雪の降る夜に」</h2>
+            <p style="top:10%; left:65%;">「誰も死なせない」</p>
+            <p style="top:60%; left:10%;">「綾香」</p>
+            <p style="top:20%; left:15%;">「雨宮」</p>
+            <p style="top:70%; left:65%;">「仲間って何？」</p>
+            <p style="top:50%; left:25%;">「なんにも知らないのにさ、」</p>
+            <p style="top:50%; left:55%;">「gm」</p>
+          </div>
+        </li>
+
+        <li style="--book:100%;">
+          <a href="#" class="times5"></a>
+          <div class="eva eva5">
+            <h2>「呪われたダイヤ」</h2>
+            <p style="top:60%; left:10%;">「おばっおばさん！？」</p>
+            <p style="top:20%; left:15%;">「こっ...こりは！」</p>
+            <p style="top:70%; left:65%;">「怒られてしまいますな」</p>
+            <p style="top:50%; left:25%;">「全く、使えない人ね」</p>
+            <p style="top:10%; left:65%;">「ピピガガガ」</p>
+          </div>
+        </li>
+
+      </ul>
     </div>
-    <a class="times times1" style="top:30%; left:8%;"></a>
-    <a href="#" class="times times2" style="top:40%; left:0%;"></a>
-    <div class="eva eva2">
-      <h2>「？？？？？？」</h2>
-      <p style="top:10%; left:65%;">「家族に会いに行く。」</p>
-      <p style="top:60%; left:10%;">「アナウンサー辞めました」</p>
-      <p style="top:20%; left:15%;">「新曲が出来たんだ」</p>
-      <p style="top:70%; left:65%;">「貴方に会いたかった」</p>
-      <p style="top:50%; left:25%;">「終わらせる、友ならば」</p>
-      <p style="top:50%; left:55%;">「それが君たちの選択なんだね」</p>
-   </div>
 
-   <a href="#" class="times times3" style="top:50%; left:10%;"></a>
-   <div class="eva eva3">
-     <h2>「？？？」</h2>
-     <p style="top:10%; left:65%;">「隣、いいですか」</p>
-     <p style="top:60%; left:10%;">「傍に居ます、ずっと」</p>
-     <p style="top:20%; left:15%;">「占いましょうか？」</p>
-     <p style="top:70%; left:65%;">「すみません（滝汗）」</p>
-     <p style="top:50%; left:25%;">「酔い止め要ります？」</p>
-     <p style="top:50%; left:55%;">「この先が楽しみです。」</p>
-  </div>
-  <a class="times times1" style="top:60%; left:15%;"></a>
-  </div>
-
-    <div style="text-align: center;"><a href="../index.html" class="btn2">back</a></div>
-</body>
+    <footer>
+      <div class="btn1"><a href="../index.html" class="btn2">back</a></div>
+    </footer>
+  </body>
 </html>

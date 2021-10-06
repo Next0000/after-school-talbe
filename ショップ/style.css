@@ -1,93 +1,172 @@
-h2{
+p{
     margin: 0;
+}
+h2{
+    font-size: 1.5vw;
 }
 a{
     text-decoration: none;
     color: white;
 }
-.space{
-    letter-spacing: 0.8em;
+h3{
+    letter-spacing: 0.5em;
     color: white;
     text-align: center;
-    border-bottom: solid white 1px;
 }
 .news{
-    margin: 0 5%;
+    margin: 2% 3%;
 }
 
 .picRoll{
     position: relative;
-    height: 25vw;
+    width: 100%;
+    height: 30vh;
     background-color: lightgray;
-
+    overflow: hidden;
 }
 .picRoll img{
-    width: 60%;
+    width: 50%;
     position: absolute;
-    left: 20%;
-    bottom: 5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.one{
-    width: 100%;
-    margin-top: 1%;
-    display: flex;
+/*インフォ*/
+.lunk{
+    background-color: rgba(0, 128, 128, 0.507);
+    padding-bottom: 3%;
 }
 
+/*コンテンツ*/
 .search{
+    margin-top: 5%;
     text-align: left;
-    width: 14%;
     padding: 3%;
     background-color: #3f35153d;
 }
-.search ul{
+.menu{
+    display: flex;
+    justify-content:space-between;
+}
+.menu div{
+    width: 50%;
+    padding: 0 10%;
+}
+.menu ul{
     list-style: none;
     padding: 0;
-    margin-bottom: 5vw;
 }
-
-.items{
-    width: 78%;
-    padding-left: 2%;
+.menu ul li{
+    margin-bottom: 2%;
+}
+.menu h3{
+    text-align: left;
 }
 
 .section{
-    text-align: center;
-    margin: 1% 0;
-    padding: 1% 0;
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    color: white;
+    border-top: solid white 1px;
+}
+
+/*ピックアップの要素*/
+.pics{
+    margin: 10% 0;
+}
+.coming2{
+    display: block;
+    padding: 0 2%;
+    margin-top: 5%;
+}
+.pic{
+    position: relative;
+    height: 40vh;
+    background-color: lightgray;
+    margin-bottom: 1vw;
+}
+.pitem{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-color:  rgba(0, 0, 0, 0.137);
+}
+.comment{
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color: black;
+}
+.pitem2{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-color:  rgba(0, 0, 0, 0.137);
+}
+.comment2{
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color: black;
+}
+
+/*ランキングの要素*/
+.coming{
+    margin: 3% 0;
 }
 .coming ul{
     display:flex;
     flex-wrap: wrap;
-    padding: 0;
+    padding-bottom: 5%;
     list-style: none;
+    padding: 0;
 }
 .coming li{
+    position: relative;
     margin: 1vw auto;
     width: 13vw;
     background-color: lightgray;
-}
-.coming p{
-    line-height: 0.8;
-}
-.coming img{
-    width: 15vw;
-}
-.coming{
-    border: solid lightgray 1px;
-    margin-top: 3%;
+    overflow: hidden;
 }
 .item{
+    position: relative;
     margin: auto;
     width: 13vw;
     height: 6vw;
     background-size: cover;
 }
+.comment3{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    color: black;
+}
 
+.nomber{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    background-color: tomato;
+    padding: 0.5vw 0;
+    margin: 0;
+    top: 40%;
+    left: -20%;
 
-
-
-
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
 
 .fadeout{
     opacity: 0;
@@ -101,32 +180,98 @@ a{
 }
 
 
-.swiper-slide{
-    margin-bottom: 3vw;
-    background-color: lightgray;
-}
-.coming2 ul{
-    padding: 0;
-    list-style: none;
-}
-.coming2 p{
-    line-height: 0.8;
-}
 
-.coming2 li{
-    margin: 2vw auto;
-    width: 13vw;
-    background-color: lightgray;
+/*-----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px){
+h2{
+    font-size: 3.5vw;
 }
-.coming2 img{
-    width: 15vw;
+h3{
+    font-size: 3.5vw;
 }
 .coming2{
-    border: solid lightgray 1px;
-    margin-top: 3%;
-    padding: 0 8%;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    overflow-x: auto;
+    background-color: lightgray;
+    margin: 20% 0;
+    padding: 5% 0;
+    margin: auto;
+
+    scroll-snap-type: x mandatory;
+    
+    display:-webkit-box;
+    display:-ms-flexbox;
+
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
-.swiper-pagination-bullet-active {
-    opacity: 0.5;
-    background: red;
+.pic{
+    width: 90%;
+    height: 100%;
+    scroll-snap-align: center;
+    padding: 0 5%;
+    margin: 0;
 }
+.pitem{
+    position: relative;
+    margin: auto;
+    height: 40%;
+    width: 100%;
+}
+.comment{
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+    top: auto;
+    transform: translate(0%,-0%);
+}
+.pitem2{
+    position: relative;
+    margin: auto;
+    height: 40%;
+    width: 100%;
+}
+.comment2{
+    position: relative;
+    width: 100%;
+    padding: 5% 0;
+    top: auto;
+    transform: translate(0%,-0%);
+}
+/*ランキングの要素*/
+    .coming ul{
+        padding: 0 0 5% 0;
+    }
+    .coming img{
+        width: 15vw;
+    }
+    .coming{
+        margin-top: 3%;
+    }
+    .item{
+        width: 15vh;
+        height: 6vh;
+    }
+    .nomber{
+        top: 55%;
+        left: -20%;
+    }
+    .coming li{
+        margin: 2% auto;
+        width: 15vh;
+    }
+
+
+    .search{
+        margin-top: 20%;
+    }
+    .menu div{
+        width: 50%;
+        padding: 0 0%;
+    }
+}
+
+

@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Character</title>
-  <link href="../styles/style.css" rel="stylesheet" type="text/css">
-  <link href="style1.css" rel="stylesheet" type="text/css">
-  <script src="../scripts/main.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="../images/favicon.ico">
+    <title>Character</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <script src="../scripts/main.js"></script>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
-</head>
-<div id="loading"></div>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  </head>
+  <div id="loading"></div>
 
-<body oncontextmenu="return false;">
+  <body oncontextmenu="return false;">
 
-  <header>
-  <div class="drawer">
-    <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-    <label for="navToggle" class="btn-burger">
-      <span class="icon"></span>
-    </label>
+    <header>
+      <div class="drawer">
+        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+        <label for="navToggle" class="btn-burger">
+          <span class="icon"></span>
+        </label>
 
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="../index.html" class="btn-cross">top</a></li>
-        <li><a href="../シナリオ/index1.html" class="btn-cross" >Scenario</a></li>
-        <li id="now"><a class="btn-cross">character</a></li>
-        <li><a href="../放課後卓とは/index3.html" class="btn-cross" >about</a></li>
-        <li><a href="../ショップ/index4.html" class="btn-cross">four</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="btn-cross">top</a></li>
+            <li><a href="../シナリオ/index1.html" class="btn-cross" >Scenario</a></li>
+            <li id="now"><a href=""　class="btn-cross">character</a></li>
+            <li><a href="../放課後卓とは/index3.html" class="btn-cross" >about</a></li>
+            <li><a href="../ショップ/index4.html" class="btn-cross">shop</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
 
-  <h1 class="title skew">player character</h1>
-  <p>探索者の一覧です</p>
-  <p>背景カラーは各プレイヤーと対応しています。※スマホの場合クリック時に確認できます。</p>
+    <h1 class="title skew">player character</h1>
+    <p>探索者の一覧です</p>
+    <p>背景カラーは各プレイヤーと対応しています。※スマホの場合クリック時に確認できます。</p>
 
-  <ul class="list">
+    <ul class="list">
       <li href="../index.html" class="item" style="--bgCol:#5B8037; --bg:url(../images/木村茜.png); --setPic:14%;">
-        <a href="akane.html">
+        <a href="yami/akane.html">
           <div></div>
           <img src="../images/木村茜.png" alt="木村あかね image">
         </a>
@@ -50,7 +50,7 @@
       </li>
 
       <li class="item" style="--bgCol:#C14242; --bg:url(../images/五味田すとか.png);">
-        <a href="gomita.html">
+        <a href="yami/gomita.html">
           <div></div>
         <img src="../images/五味田すとか.png" alt="五味田すとか image">
         </a>
@@ -58,7 +58,7 @@
       </li>
 
       <li class="item" style="--bgCol:#3BA9A9; --bg:url(../images/久次米くるみ.png); --setPic:9%;">
-        <a href="kujime.html">
+        <a href="yami/kujime.html">
           <div></div>
         <img src="../images/久次米くるみ.png" alt="久次米くるみ image">
         </a>
@@ -66,7 +66,7 @@
       </li>
 
       <li class="item" style="--bgCol:#3B72A9; --bg:url(../images/橘裕太.png); --setPic:14%;">
-        <a href="tatibana.html">
+        <a href="yami/tatibana.html">
           <div></div>
         <img src="../images/橘裕太.png" alt="橘裕太 image">
         </a>
@@ -74,8 +74,9 @@
       </li>
 
       <li class="item" style="--bgCol:#A9723B; --bg:#; --setPic:14%;">
-        <a href="">
+        <a href="yami/mituya.html">
           <div></div>
+          <img src="../images/亀田三矢.png" alt="橘裕太 image">
         </a>
         <p>Kameda Mituya</p>
       </li>
@@ -121,7 +122,7 @@
         <a href="">
           <div></div>
         </a>
-        <p>olovia mayflower</p>
+        <p>olivia mayflower</p>
       </li>
 
       <li class="item" style="--bgCol:#C14242; --bg:#">
@@ -142,12 +143,13 @@
         <a href="">
           <div></div>
         </a>
-        <p>william.k.andor</p>
+        <p>william.k.ando</p>
       </li>
-
     </ul>
 
-    <div style="text-align: center;"><a href="../index.html" class="btn2">back</a></div>
+    <footer>
+      <div class="btn1"><a href="javascript:history.back()" class="btn2">back</a></div>
+    </footer>
 
   </body>
-  </html>
+</html>
