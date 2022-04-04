@@ -99,6 +99,30 @@ h1 {
 .eva p{
   position: absolute;
 }
+.eva :nth-child(2){
+  top:10%;
+  left:65%;
+}
+.eva :nth-child(3){
+  top:60%;
+  left:10%;
+}
+.eva :nth-child(4){
+  top:20%;
+  left:15%;
+}
+.eva :nth-child(5){
+  top:70%;
+  left:65%;
+}
+.eva :nth-child(6){
+  top:50%;
+  left:25%;
+}
+.eva :nth-child(7){
+  top:45%;
+  left:60%;
+}
 /*セリフ表示（ここすっきりさせたい）*/
 .times1:hover +.eva1{
   opacity: 0;
