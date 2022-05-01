@@ -246,7 +246,7 @@ h2 {
   width: 200%;
   height: 100%;
   transform: translateX(-100%);
-  animation : extend 2.5s ease-out var(--s) forwards;
+  animation : extend 2.5s ease var(--s) forwards;
   background-color: #000000;
 }
 @keyframes extend{
