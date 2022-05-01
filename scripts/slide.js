@@ -5,7 +5,7 @@ let imgPath;
 let setImg = (function(){
     return function() {
         num++;
-        imgPath = "../images/"+imgList['image'+num];
+        imgPath = "../images/logo/"+imgList['image'+num];
 
         if(flag == 0){
             document.querySelector('#test2').src = imgPath;

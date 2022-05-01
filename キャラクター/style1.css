@@ -80,26 +80,50 @@ img{
   }
   .list{
     padding: 5vw 0;
-    margin: 10vw;
+    margin: 10vw 0;
     display: block;
-    border: solid 1vw gray;/*線*/
   }
   .list li{
     overflow: hidden;
-    margin: 4vw 2vw;
+    margin: 0vw 0vw;
     float: none;
-    width:  auto;
+    width:  50vw;
     height: 30vw;
     background-size: 200%;
-  }
-  .list li:nth-child(odd){
-    text-align:right;
-    background-position: right 20% top var(--setPic);
+    background-color: var(--bgCol);
+    background-blend-mode: multiply;
+    filter: none;
+    color: #ccc;
   }
   .list li:nth-child(even){
+    margin-right: 50vw;
+    text-align:right;
+    background-position: right 20% top var(--setPic);
+    animation : moveleft 1s ease-out 0.5s forwards;
+    opacity: 0;
+  }
+  .list li:nth-child(odd){
+    margin-left: 50vw;
     text-align:left;
     background-position: left 30% top var(--setPic);
+    animation : moveright 1s ease-out 0.5s forwards;
+    opacity: 0;
   }
+
+@keyframes moveright{
+  100%{
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveleft{
+  100%{
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
+
   .item img{
     display: none;
   }

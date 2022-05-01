@@ -70,10 +70,32 @@ h1 {
 }
 .Scenarios li{
   width: var(--book);
-  height: 10vh;
+  height: 12vh;
   margin-bottom: 0vh;
-  background-image: url("../images/paper.png");
   background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
+}
+/*背表紙*/
+.book1{
+  background: black;
+  background-image: url("../images/books/b1.jpg");
+}
+.book2{
+  background: black;
+  background-image: url("../images/books/b2.jpg");
+}
+.book3{
+  background: black;
+  background-image: url("../images/books/b3.jpg");
+}
+.book4{
+  background: black;
+  background-image: url("../images/books/b4.jpg");
+}
+.book5{
+  background: black;
+  background-image: url("../images/books/b5.jpg");
 }
 .Scenarios a{
   display: block;
@@ -326,7 +348,10 @@ main{
   background-color: white;
   color: black;
 }
-
+.balloon h3{
+  margin: 0;
+  font-size: 1vw;
+}
 .tape{
   display: inline-block;
   position: absolute;
@@ -404,9 +429,8 @@ main{
       padding: 2vw;
       width: auto;
   }
-  .repo4-1 ul{
-    justify-content: space-between;
-    display: flex;
+  .repo4-1 ul p{
+    margin: 0; 
   }
   .repo4-2 p{
     padding: 2vw;

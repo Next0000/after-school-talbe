@@ -157,16 +157,14 @@ h2 {
 /*タイトル*/
 .move1{
   opacity: 0;
-  animation: moveAnime1 1s ease-in-out var(--s) forwards;
+  animation: moveAnime1 0.5s ease 2.2s forwards;
 }
 @keyframes moveAnime1 {
   0% {
-      transform: translateX(-15vw);
       opacity: 0;
     }
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 
@@ -205,7 +203,7 @@ h2 {
   top: 0;
   left: 0;
   opacity: 0.1;
-  background-image: url("../images/bgm3.jpg");
+  background-image: url("../images//backpic/bgm4.jpg");
   background-size: cover;
   filter: contrast(150%) grayscale(100%);
   width: 100%;
@@ -231,27 +229,32 @@ h2 {
   overflow: hidden;
 }
 .we1-1{
+  width:fit-content;
   position: relative;
-  width: auto;
-  height: auto;
+  display: block;
   margin-bottom: 1vw;
+  overflow: hidden;
 }
-.we1-2{
+.we1-1 p{
+  margin: 0;
+}
+.we1-1::after{
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200%;
   height: 100%;
-  transform: translateX(-101%);
-  animation : extend 1.5s ease-out var(--s) forwards;
+  transform: translateX(-100%);
+  animation : extend 2.5s ease-out var(--s) forwards;
   background-color: #000000;
 }
 @keyframes extend{
   0%{
-    transform: translateX(-101%);
+    transform: translateX(-100%);
   }
   100%{
-    transform: translateX(101%);
+    transform: translateX(50%);
   }
 }
 

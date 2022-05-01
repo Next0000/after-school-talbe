@@ -22,7 +22,6 @@ h3{
   letter-spacing: 2em
 }
 
-
 img{
   width: 100%;
 }
@@ -95,18 +94,18 @@ img{
 
 @keyframes kuji{
     0%{
-      background-image:url(../images/kujimeLine.png);
-      background-size: contain;
+      background-image:url(../images/textline/kujimeLine.png);
+      background-size: cover;
       background-position: center;
     }
     50%{
-      background-image:url(../images/kujimeLine2.png);
-      background-size: contain;
+      background-image:url(../images/textline/kujimeLine2.png);
+      background-size: cover;
       background-position: center;
     }
     100%{
-      background-image:url(../images/kujimeLine3.png);
-      background-size: contain;
+      background-image:url(../images/textline/kujimeLine3.png);
+      background-size: cover;
       background-position: center;
     }
 }
@@ -201,13 +200,6 @@ img{
   }
   .no4-1{
     margin-bottom: 1vw;
-  }
-
-  .lines{
-    background-image:url(../images/kujimeLine.png);
-    background-size: cover;
-    background-position: center;
-    animation: none;
   }
 
   .pv{
