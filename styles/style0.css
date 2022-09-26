@@ -1,0 +1,223 @@
+:root {
+  --s:1.5s;
+  --roop:100%;
+  --end:-100%;
+}
+
+p{
+  font-size: 1vw;
+}
+h1 {
+  font-size: 15vw;
+}
+h2 {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.main{
+  position: relative;
+  width: 100%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+}
+/*回転文字や中央ロゴの全体配置*/
+.bgmark{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  height: 90%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+/*浮かび上がる*/
+.move1{
+  opacity: 0;
+  animation: moveAnime1 0.5s ease 2.2s forwards;
+}
+@keyframes moveAnime1 {
+  0% {
+      opacity: 0;
+    }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*ロゴの持ち上げ（スロー）*/
+.move2{
+  opacity: 0;
+  animation: moveAnime 1.0s ease-in-out 1.5s forwards;
+}
+@keyframes moveAnime {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(-10vh);
+  }
+}
+
+/*要素の持ち上げ（素早い）*/
+.opRoll{
+  height: 98%;
+  border: double 5px #403D31;
+  animation: fade_up 1s ease-in-out 0.6s forwards;
+  opacity: 0;
+}
+/*背景画像*/
+.pic img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  background-size: cover;
+  filter: contrast(150%) grayscale(100%);
+  width: 100%;
+  height: auto;
+}
+@keyframes fade_up {
+  0% {
+    transform: translateY(100vh);
+      opacity: 0;
+    }
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+}
+
+/*タイトルにょーん*/
+.title1{
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
+  text-align: left;
+  overflow: hidden;
+}
+.title2{
+  position: absolute;
+  bottom: 10vh;
+  left: 10vw;
+  text-align: left;
+  overflow: hidden;
+}
+.title_text{
+  width:fit-content;
+  position: relative;
+  display: block;
+  margin-bottom: 1vw;
+  overflow: hidden;
+}
+.title_text p{
+  margin: 0;
+}
+.title_text::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  transform: translateX(-100%);
+  animation : extend 2.5s ease var(--s) forwards;
+  background-color: #000000;
+}
+@keyframes extend{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(50%);
+  }
+}
+
+/*いあいあ*/
+.title3{
+  position: absolute;
+  right: 0%;
+  width: 5%;
+  height: 100%;
+  text-align: right;
+
+  animation: flowing 10s linear 3.3s infinite;
+  transform: translateY( var(--roop) );/*初期位置*/
+}
+.title3 p{
+  white-space: nowrap;
+  transform: rotate( 90deg );
+  transform-origin:left bottom;
+}
+@keyframes flowing {
+  100% {
+    transform: translateY( var(--end) );
+    opacity: 1;
+  }
+}
+
+img{
+  position: absolute;
+  width: 50%;
+  top: 20vh;
+  left: 25%;
+}
+
+@media screen and (max-width: 480px){
+  .bgmark{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 95%;
+    height: 108%;
+    margin: auto;
+    transform: translate(-0%,-8%);
+    overflow: hidden;
+  }
+
+  .pic img{
+    left:-50%;
+    width: auto;
+    height: 100%;
+  }
+
+  .title1{
+    top: 8vh;
+  }
+  .title2{
+    position: absolute;
+    bottom: 8vh;
+  }
+  .title2 p{
+    margin: 0;
+  }
+  /*いあいあ*/
+  .title3{
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+
+    animation: flowing 10s linear 3.3s infinite;
+    transform: translateX( var(--roop) );/*初期位置*/
+  }
+  .title3 p{
+    transform: rotate( 0deg );
+  }
+  @keyframes flowing {
+    100% {
+      transform: translateX( var(--end) );
+      opacity: 1;
+    }
+  }
+
+  img{
+    position: absolute;
+    width: 100%;
+    top: 45vh;
+    left: 0vw;
+  }
+}
