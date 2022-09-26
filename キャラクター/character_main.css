@@ -1,0 +1,210 @@
+:root {
+    --bg:url("");
+    --setPic: 0%;
+    --setTime: 0s;
+}
+li{
+    list-style: none;
+    margin: 0;
+}
+/*全体描画範囲の設定*/
+.member_main{
+    width: 100%;
+    height: 100%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+/*名前一覧の設定*/
+.names{
+    position: relative;
+    width: 14vw;
+    height: 50vh;
+    padding: 2vw;
+    text-align: center;
+    background-color: whitesmoke;
+}
+.names ul{
+    padding: 0;
+    margin: auto;
+    align-items:center;
+}
+.names li{
+    position: relative;
+    text-align: left;
+    margin:0.5vw 0;
+    height: 10%;
+    color: whitesmoke;
+    background-color: #95c6cf;
+}
+.names li div{
+    color: #403D31;
+    padding: 0.5vw 0vw;
+    padding-left: 1vw;
+    width: 100%;
+    height: 100%;
+}
+/*名前の接触処理*/
+.names li:hover{
+    background-color:#377ab1;
+}
+
+/*立ち絵範囲の設定*/
+.list{
+    position: relative;
+    width: 50vw;
+    height: 80vh;
+}
+/*背景画像*/
+.pic{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin: 20% 0;
+    top: 0;
+    left: 0; 
+    
+    background-image: url("../images//backpic/yami.jpg");
+    background-size: cover;
+    background-size: 90%;
+    background-position: 50% 70%;
+    
+    opacity: 0.4;
+    filter: grayscale(60%);
+  }
+.list ul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap:nowrap;
+  
+    justify-content: center;
+    align-items: center;
+}
+.list li{
+    text-align:center;
+    width: 30%;
+    height: 100%;
+    margin: 0 -6%;
+
+    background-image: var(--bg);
+    background-repeat:no-repeat;
+    background-size:140%;
+    background-position: var(--setPic) 50%;
+}
+/*background-color: rgba(192, 192, 192, 0.377);*/
+.list li div{
+    width: 100%;
+    height: 100%;
+}
+
+/*立ち絵接触の設定*/
+.list:hover li:not(:hover){
+animation : blur .3s ease-out 0s forwards;
+}
+@keyframes blur{
+    100%{
+        filter: blur(3px);
+    }
+}
+/*ぼかし効果の設定*/
+.blur{
+    animation : blur .3s ease-out 0s forwards;
+}
+
+/* フェードイン用のCSS */
+.fade2{
+    opacity: 0;
+    transition:all 1s ease var(--setTime);
+}
+.showw{
+    opacity: 1;
+    transform: none;
+}
+
+/*重なり順*/
+.one{
+    z-index: 1;
+}
+.two{
+    z-index: 2;
+}
+.three{
+    z-index: 3;
+}
+.four{
+    z-index: 4;
+}
+.five{
+    z-index: 5;
+}
+
+
+@media screen and (max-width: 480px){
+    h3{
+        margin: 0;
+    }
+    .member_main{
+        width: auto;
+        padding: 0;
+        display: block;
+    }
+    .names{
+        width: 100vw;
+        height: 53vh;
+        padding-top: 2vh;
+    }
+    .names ul{
+        width: 40%;
+        height: 50%;
+    }
+    .names li{
+        margin: 10% 0;
+        font-size: 4vw;
+        height: 6vw;
+        background-color: #95c6cf;
+    }
+
+    .list{
+        width: auto;
+        height: 35vh;
+        padding: auto;
+        overflow: hidden;
+    }
+    /*背景画像*/
+    .pic{
+        background-size: 120%;
+        background-position: 50% 70%;
+    }
+
+    .list ul{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap:nowrap;
+
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    }
+    .list li{
+        margin: 0 -12%;
+        width: 40vw;
+        height: 50vh;
+
+        background-size:150%;
+        background-position: var(--setPic) 0%;
+    }
+    .list li:nth-child(even){
+        margin-top: 15vh;
+    }
+    .list li:nth-child(odd){
+        margin-top: 30vh;
+    }
+}
+
