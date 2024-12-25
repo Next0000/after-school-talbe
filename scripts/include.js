@@ -9,7 +9,7 @@ includeHeader.onreadystatechange = function () {
 };
 
 const includeHead = new XMLHttpRequest();
-includeHead.open("GET", "../../include/head.html", true);
+includeHead.open("GET", "/after-school-talbe/include/head.html", true);
 includeHead.onreadystatechange = function () {
   if (includeHead.readyState === 4 && includeHead.status === 200) {
     const headHTML = includeHead.responseText;
