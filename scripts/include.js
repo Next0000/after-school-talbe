@@ -1,3 +1,5 @@
+/*全体で共通している要素のインクルード*/
+
 const includeHeader = new XMLHttpRequest();
 includeHeader.open("GET", "../../include/header.html", true);
 includeHeader.onreadystatechange = function () {
