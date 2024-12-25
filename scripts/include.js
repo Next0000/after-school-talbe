@@ -12,9 +12,9 @@ const includeHead = new XMLHttpRequest();
 includeHead.open("GET", "../../include/head.html", true);
 includeHead.onreadystatechange = function () {
   if (includeHead.readyState === 4 && includeHead.status === 200) {
-    const headerHTML = includeHead.responseText;
-    const header = document.querySelector("#head");
-    header.insertAdjacentHTML("afterbegin", headerHTML);
+    const headHTML = includeHead.responseText;
+    const head = document.querySelector("#head");
+    head.insertAdjacentHTML("afterbegin", headHTML);
   }
 };
 
