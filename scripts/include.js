@@ -20,5 +20,5 @@ includeHead.onreadystatechange = function () {
   }
 };
 
-
+includeHeader.send();
 includeHead.send();
