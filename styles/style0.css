@@ -27,20 +27,6 @@ h2 {
   overflow: hidden;
 }
 
-/*浮かび上がる*/
-.move1{
-  opacity: 0;
-  animation: moveAnime1 0.5s ease 2.2s forwards;
-}
-@keyframes moveAnime1 {
-  0% {
-      opacity: 0;
-    }
-  100% {
-    opacity: 1;
-  }
-}
-
 /*ロゴの持ち上げ（スロー）*/
 .move2{
   opacity: 0;
@@ -109,35 +95,6 @@ h2 {
   left: 10vw;
   text-align: left;
   overflow: hidden;
-}
-.title_text{
-  width:fit-content;
-  position: relative;
-  display: block;
-  margin-bottom: 1vw;
-  overflow: hidden;
-}
-.title_text p{
-  margin: 0;
-}
-.title_text::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  transform: translateX(-100%);
-  animation : extend 2.5s ease var(--s) forwards;
-  background-color: #000000;
-}
-@keyframes extend{
-  0%{
-    transform: translateX(-100%);
-  }
-  100%{
-    transform: translateX(50%);
-  }
 }
 
 /*いあいあ*/
