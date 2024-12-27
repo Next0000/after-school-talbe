@@ -25,28 +25,117 @@ h3{
 img{
   width: 100%;
 }
+
+.tape{
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 5%;
+  left: 90%;
+  top: 10%;
+  background-color: rgba(204, 186, 136,0.4);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  transform: rotate( 43deg );
+}
+
+
 .no1{
-  margin: 3vw 5vw;
   display: flex;
 }
 
 .no1-l{
-  width: 40%;
+  width: 30%;
   text-align:center;
   margin-right: 1vw;
   border: solid 2px #3F3515;
 }
 .no1-r{
-  width: 60%;
+  width: 70%;
   margin: 0 0 0 1vw;
 }
+.face_pic{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: yellowgreen;
+}
+.face_pic div{
+  position: relative;
+  width: 8vw;
+  height: 10vw;
+  overflow: hidden;
+  background-color: rgb(205, 50, 205);
+  border: solid .5vw white;
+}
+
+.face_pic img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: auto;
+  position: absolute;
+  background-color: black;
+}
+
+
 .no2-1{
   text-align: center;
   margin: 1vw;
   vertical-align: middle;
   display: flex;
 }
+/*棒グラフのアニメーション*/
+.bar-chart-002 {
+  font-size: .9em;
+}
 
+.bar-chart-002_div{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  margin-bottom: 7px;
+}
+
+.bar-chart-002_div > div {
+  display: flex;
+  justify-content:color;
+  width: 45%;
+  margin-bottom: 7px;
+}
+
+.bar-chart-002 dt {
+  width: 10%;
+}
+
+.bar-chart-002 dd {
+  width: 100%;
+  margin: 0;
+  border-radius: 3px;
+  background-color: #ffffff80;
+}
+
+.bar-chart-002 span {
+  display: inline-block;
+  padding-right: 15px;
+  border-radius: inherit;
+  background-color: #000000;
+  color: #fff;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: right;
+  white-space: nowrap;
+  animation: anima-bar-chart-002 4s ease;
+}
+
+@keyframes anima-bar-chart-002 {
+  from {
+      width: 0;
+  }
+}
+/**/
 .no3{
   text-align: left;
   margin-top: 1vw;
@@ -123,7 +212,7 @@ img{
   clear: both;
 }
 .status ul{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff80;
   padding: 0;
   margin-bottom: 1vw;
   width: 100%;

@@ -1,27 +1,21 @@
 html {
-  background-color:  #D9D5C1;
+  background-color:  #e4e2d5;
   color: #403D31;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 body {
   font-family:'Amatic SC','游明朝','Noto Serif JP',serif;
-  margin: 0%;
-  padding: 0%;
   height: 100vh;
+  margin-top: 0;
 }
 
 header{
+  position: sticky;
   z-index: 1;
-  position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
-  margin: 0;
-  padding: 0;
   height: 10%;
+  background-color:  #e4e2d5;
 }
 .drawer{
   width: 100%;
@@ -134,27 +128,9 @@ h2 {
 
 
 /*ナビゲート設定*/
-.back_blur{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: none;
-}
-.back_blur:before{
-  content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: inherit;
-	background-clip: content-box;
-	width: 100%;
-	height: 100%;
-}
 .nav {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  border-bottom: double 5px #3F3515;/*ナビゲーションの線*/
+  border-bottom: solid 1px #000000;/*ナビゲーションの線*/
 }
 
 .nav-list {
@@ -165,7 +141,6 @@ h2 {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color:  #D9D5C1;
 }
 
 .nav-list li a:hover{
@@ -199,28 +174,6 @@ h2 {
 .loaded {
   animation: bgAnime .4s linear .5s forwards;
 }
-
-
-/*以下はボタンのデザイン*/
-.btn1{
-  position: relative;
-  margin: 10vh;
-}
-.btn1 a:hover{
-  background-color: black;
-  color: white;
-}
-.btn2 {
-  letter-spacing: 0.5em;
-  display: inline-block;
-  width: 8em;
-  position: relative;
-  text-decoration: none;
-  color: black;
-  font-size: 1.5vw;
-  background-color: #8b8981;
-}
-
 
 @media screen and (max-width: 480px){
   h1{
