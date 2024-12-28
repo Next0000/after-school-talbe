@@ -26,25 +26,30 @@ h3{
 .next_character{
   position: relative;
   text-align:center;
-  background-color: yellow;
+  margin: 1vw 0 1vw 0;
+}
+.next_character img{
+  width: 100%;
 }
 .next_character ul{
   display: flex;
   align-items: stretch;
   justify-content:center;
   padding: 0;
+  margin: 0;
 }
 .next_character li{
   list-style: none;
-  background-color: violet;
-  margin: 1vw;
+  overflow: hidden;
+  background-color: #d4c390;
+  margin: 0 1vw 0 1vw;
+  width: 3vw;
+  height: 3vw;
 }
 .black_move{
   margin: auto;
-  margin-top: 1vw;
   width: fit-content;
   overflow: hidden;
-  background-color: turquoise;
 }
 
 
@@ -104,7 +109,6 @@ h3{
   width: 8vw;
   height: 10vw;
   overflow: hidden;
-  background-color: rgb(205, 50, 205);
   border: solid .5vw white;
 }
 
@@ -152,7 +156,6 @@ h3{
 .bar-chart-002 dd {
   width: 100%;
   margin: 0;
-  border-radius: 3px;
   background-color: #ffffff80;
 }
 
@@ -178,13 +181,13 @@ h3{
   text-align: left;
   margin-top: 1vw;
 }
-
+/*性格*/
 .no3-2{
   padding:0vw;
   justify-content: start;
 }
 .no3-2 div{
-  border: solid 2px rgba(255, 255, 255, 0.5);
+  border: solid 1px #000000;
   padding: 1vw;
 }
 
@@ -253,14 +256,11 @@ h3{
 
 .status li{
   text-align: left;
-  width: 10vw;
+  width: auto;
   list-style: none;
 
   margin: 0 1vw;
   display: inline-block;
-}
-.status p{
-  margin: 0;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/

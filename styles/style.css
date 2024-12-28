@@ -3,19 +3,39 @@ html {
   color: #403D31;
 }
 body {
-  font-family:'Amatic SC','游明朝','Noto Serif JP',serif;
-  height: 100vh;
+  font-family:'monospace','游明朝','Noto Serif JP',serif;
+  height: auto;
   margin-top: 0;
 }
 
+footer{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-color:  #fddb00;
+}
+.menu{
+  display: flex;
+  justify-content:space-around;
+}
+.menu div{
+  width: 40%;
+  padding: 0;
+  text-align: left;
+}
+.menu ul{
+  list-style: none;
+  padding: 0;
+}
 header{
   position: sticky;
   z-index: 2;
   top: 0;
   width: 100%;
   text-align: center;
-  height: 10%;
   background-color:  #e4e2d5;
+  background-color:  #fddb00;
+  height: 3vw;
 }
 .drawer{
   width: 100%;
@@ -153,8 +173,7 @@ h2 {
   text-decoration: none;
   padding: 0.1vw 2vw;
   color: #3F3515;
-  font-size: 1.5vw;
-  letter-spacing: 0.2em;
+  font-size: 1vw;
 }
 
 .nav-toggle{

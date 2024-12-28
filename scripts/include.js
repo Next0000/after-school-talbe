@@ -8,6 +8,16 @@ includeHeader.onreadystatechange = function () {
   }
 };
 
+const includefooter = new XMLHttpRequest();
+includefooter.open("GET", "/after-school-talbe/include/footer.html", true);
+includefooter.onreadystatechange = function () {
+  if (includefooter.readyState === 4 && includefooter.status === 200) {
+    const footerHTML = includefooter.responseText;
+    const footer = document.querySelector("#footer");
+    footer.insertAdjacentHTML("afterbegin", footerHTML);
+  }
+};
+
 const includeHead = new XMLHttpRequest();
 includeHead.open("GET", "/after-school-talbe/include/head.html", true);
 includeHead.onreadystatechange = function () {
@@ -19,4 +29,5 @@ includeHead.onreadystatechange = function () {
 };
 
 includeHeader.send();
+includefooter.send();
 includeHead.send();
