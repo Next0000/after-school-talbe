@@ -12,11 +12,14 @@ footer{
   position: relative;
   z-index: 2;
   width: 100%;
-  background-color:  #fddb00;
+  height: 12vw;
+  background-color: #d4c390;
 }
 .menu{
   display: flex;
   justify-content:space-around;
+  border-top: solid 1px #000000;
+  margin-top: 1vw;
 }
 .menu div{
   width: 40%;
@@ -34,19 +37,11 @@ header{
   width: 100%;
   text-align: center;
   background-color:  #e4e2d5;
-  background-color:  #fddb00;
   height: 3vw;
 }
 .drawer{
   width: 100%;
   height: 100%;
-}
-footer{
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  height: 5%;
 }
 
 /*文字*/
@@ -65,6 +60,10 @@ h1 {
 
 h2 {
   font-size: 2vw;
+}
+h3{
+  font-size: 1.2vw;
+  letter-spacing: 2em
 }
 
 
@@ -239,16 +238,17 @@ h2 {
   }
 }
 
-@media screen and (max-width: 480px){
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 860px){
   h1{
+    font-size: 25px;
     margin: 5%;
   }
   h2{
-    font-size: 8vw;
+    font-size: 20px;
   }
   p{
-    margin: 0 15%;
-    font-size: 10px;
+    font-size: 16px;
   }
   img{
     width: 100%;
@@ -303,20 +303,19 @@ h2 {
     background: transparent;
   }
   .nav-toggle:checked ~ .btn-burger .icon:before {
-    transform: rotate(-45deg);
-    top: 0;
+    transform: rotate(45deg);
     background-color: white;
-    top: 30px;
-    right: 15px;
+    top: auto;
+    right: auto;
     left: auto;
     bottom: auto;
     position: fixed;
   }
   .nav-toggle:checked ~ .btn-burger .icon:after {
     position: fixed;
-    transform: rotate(45deg);
-    top: 30px;
-    right: 15px;
+    transform: rotate(-45deg);
+    top: auto;
+    right: auto;
     left: auto;
     bottom: auto;
     background-color: white;
@@ -360,4 +359,9 @@ h2 {
   .nav-toggle:checked ~ .nav .nav-list {
     display: block;
   }
+
+  footer{
+    height: 15vh;
+  }
+
 }

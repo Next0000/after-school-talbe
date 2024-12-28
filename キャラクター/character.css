@@ -5,23 +5,6 @@
   --setPic: 10%;
 }
 
-h1 {
-  font-size: 3.5vw;
-  font-weight: lighter;
-  letter-spacing: 0.5em;
-  margin: 0;
-}
-h2{
-  font-weight:inherit;
-  font-size: 2vw;
-  letter-spacing: 0.1em;
-  margin: 0;
-}
-h3{
-  font-size: 1.2vw;
-  letter-spacing: 2em
-}
-
 /*全体要素*/
 .next_character{
   position: relative;
@@ -140,21 +123,22 @@ h3{
   align-items: stretch;
   justify-content: space-around;
   margin-bottom: 7px;
+  width: 100%;
 }
 
 .bar-chart-002_div > div {
   display: flex;
   justify-content:color;
-  width: 45%;
   margin-bottom: 7px;
+  width: 45%;
 }
 
 .bar-chart-002 dt {
-  width: 10%;
+  width: 30%;
 }
 
 .bar-chart-002 dd {
-  width: 100%;
+  width: 70%;
   margin: 0;
   background-color: #ffffff80;
 }
@@ -189,25 +173,9 @@ h3{
 .no3-2 div{
   border: solid 1px #000000;
   padding: 1vw;
+  margin: 1vw 0 0 0;
 }
 
-.no4{
-  margin: 3vw 5vw;
-  display: flex;
-  justify-content: space-between;
-}
-.no4 div{
-  width: 50%;
-  border: solid 2px var(--bgCol);
-}
-.no4 p{
-  font-family: 'New Tegomin', serif;
-}
-.no4-1{
-  background-color: var(--bgCol);
-  color: #AAA79B;
-  margin-bottom: 1vw;
-}
 .line{
   background-image:var(--bg);
   background-size: cover;
@@ -235,12 +203,6 @@ h3{
       background-position: center;
     }
 }
-
-.pv{
-  background-color: var(--bgCol);
-  margin-left: 1vw;
-  border: solid 2px #3F3515;
-}
 .status{
   height: auto;
   margin: 0;
@@ -264,23 +226,8 @@ h3{
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 480px){
-  body{
-    margin-top: 0%;
-    margin-bottom: 15%;
-  }
-  h1{
-    font-size: 5vw;
-  }
-  h2{
-    font-size: 4vw;
-  }
-  p,a{
-    font-size: 3vw;
-  }
-
+@media screen and (max-width: 860px){
   .no1{
-    margin: 3vw 5vw;
     display: block;
   }
 
@@ -293,9 +240,27 @@ h3{
     width: 100%;
     margin: 0vw;
   }
+  .face_pic{
+    order:1;
+    width:35vw;
+    margin: auto;
+  }
+  .face_pic div{
+    width:15vw;
+    height: 18vw;
+    border: solid 1vw white;
+  }
+  .face_pic::before{
+    width: 35%;
+  }
+  .face_pic::after{
+    width: 40%;
+  }
+
+
   .no2-1{
     margin: 3vw 0;
-    display: flex;
+    display: block;
   }
 
   .no3{
@@ -309,24 +274,6 @@ h3{
     padding: 1vw;
   }
 
-  .no4{
-    margin: 10vw 5vw;
-    display: block;
-  }
-  .no4 div{
-    width: 100%;
-    margin-bottom: 5vw;
-  }
-  .no4 p{
-    font-family: 'New Tegomin', serif;
-  }
-  .no4-1{
-    margin-bottom: 1vw;
-  }
-
-  .pv{
-    margin: 0vw;
-  }
   .status{
     height: auto;
     margin: 0;
@@ -335,7 +282,4 @@ h3{
     clear: both;
   }
 
-  .status li{
-    width: 22vw;
-  }
 }
