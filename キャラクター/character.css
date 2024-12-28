@@ -6,6 +6,11 @@
 }
 
 /*全体要素*/
+#now_Character a{
+  color: white;
+  background-color: black;
+}
+
 .next_character{
   position: relative;
   text-align:center;
