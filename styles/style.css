@@ -29,17 +29,13 @@ footer{
   padding: 0;
 }
 header{
-  position: sticky;
+  position: fixed;
   z-index: 2;
   top: 0;
   width: 100%;
   text-align: center;
   background-color:  #e4e2d5;
   height: 3vw;
-}
-.drawer{
-  width: 100%;
-  height: 100%;
 }
 
 /*文字*/
