@@ -74,19 +74,19 @@
   margin: 0;
   padding-top: 0.5vw;
   border-top:solid black 5px;
-  font-family:'Impact','MS Gothic','Noto Serif JP',serif;
+  font-family:'Impact','メイリオ','Noto Serif JP',serif;
 }
 .text2{
   margin: 0;
   font-size: 12px;
   border-top:solid black 1px;
-  font-family:'Impact','MS Gothic','Noto Serif JP',serif;
+  font-family:'Impact','メイリオ','Noto Serif JP',serif;
 }
 .text3{
   margin: 0;
   padding-bottom: 0.5vw;
   border-bottom:solid black 3px;
-  font-family:'Impact','MS Gothic','Noto Serif JP',serif;
+  font-family:'Impact','メイリオ','Noto Serif JP',serif;
 }
 @media screen and (max-width: 480px){
   .list li{
