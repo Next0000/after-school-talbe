@@ -115,11 +115,15 @@
 
 .no2-1{
   text-align: center;
-  margin: 1vw;
+  margin-top: 2vw;
   vertical-align: middle;
   display: flex;
   justify-content: space-around;
 }
+.no2-1 h2{
+  margin: 0;
+}
+
 /*棒グラフのアニメーション*/
 .bar-chart-002 {
   font-size: .9em;
@@ -159,7 +163,7 @@
   font-weight: 600;
   text-align: right;
   white-space: nowrap;
-  animation: anima-bar-chart-002 4s ease;
+  animation: anima-bar-chart-002 5s 3s ease;
 }
 
 @keyframes anima-bar-chart-002 {
@@ -233,7 +237,7 @@
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 860px){
+@media screen and (max-width: 480px){
   .no1{
     display: block;
   }
@@ -291,7 +295,6 @@
     height: auto;
     margin: 0;
     padding: 1vw;
-    border: solid 2px #3F3515;
     clear: both;
   }
 

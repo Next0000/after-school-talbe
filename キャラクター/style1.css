@@ -4,6 +4,11 @@
   --col3:#D9D5C1;
 }
 
+#now_Character a{
+  color: white;
+  background-color: black;
+}
+
 .item{
   position: relative;
 }
@@ -83,7 +88,7 @@
   border-bottom:solid black 3px;
   font-family:'Impact','MS Gothic','Noto Serif JP',serif;
 }
-@media screen and (max-width: 860px){
+@media screen and (max-width: 480px){
   .list li{
     width: 45vw;
     margin: 5vw;
