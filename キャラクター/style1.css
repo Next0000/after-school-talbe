@@ -1,25 +1,17 @@
 :root {
-  --col:#403D31;
+  --col:black;
   --col2:#B51616;
   --col3:#D9D5C1;
 }
 
-img{
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -moz-touch-callout:none;
-  -moz-user-select:none;
-  touch-callout:none;
-  user-select:none;
-}
 .item{
   position: relative;
 }
 
 .list{
   width: 80vw;
-  height: 60vh;
   margin: auto;
+  padding: 0;
 
   display: flex;
   flex-wrap: wrap;
@@ -28,18 +20,13 @@ img{
   align-content:space-around;
 
   background-color: var(--col3);
-  border:solid #403D31 2px;
 }
 .list li{
   position: relative;
-  text-align:center;
+  text-align:left;
   list-style: none;
-  width: 6vw;
-  height: 6vw;
-  margin: 0vw 3vw;
-
-  border: double 7px var(--col);
-  border-radius: 50%;
+  width: 20vw;
+  margin: 5vw 1vw;
 
   opacity: 0;
 }
@@ -56,17 +43,17 @@ img{
 }
 
 
-
-.done:hover{
+.done:hover .text1{
+  color: var(--col2);
+  border-color: var(--col2);
+}
+.done:hover .text2{
   border-color: var(--col2);
   color: var(--col2);
 }
-.done:hover p{
+.done:hover .text3{
   color: var(--col2);
-}
-.done:hover .text2{
-  background-color: var(--col2);
-  color: var(--col3);
+  border-color: var(--col2);
 }
 .stamp{
   width: 100%;
@@ -74,89 +61,31 @@ img{
   color: var(--col);
 
   position: relative;
-  white-space: nowrap;
 
   display: inline-block;
 }
-.stamp2{
-  position: absolute;
-  top: 5vw;
-  left: 2vw;
-  width:fit-content;
-  padding: 0vw 1vw;
-
-  font-size: 4vw;
-  color: var(--col2);
-  border: solid 3px var(--col2);
-
-  transform:rotate(-4deg); 
-}
 
 .text1{
-  position: absolute;
-  top:0%;
-  left:50%;
-  transform:translate(-50%,0%);
   margin: 0;
   padding-top: 0.5vw;
+  border-top:solid black 5px;
+  font-family:'Impact','MS Gothic','Noto Serif JP',serif;
 }
 .text2{
-  position: absolute;
-  top:50%;
-  left:50%;
-  padding: 0 0.5vw;
-  transform:translate(-50%,-50%);
   margin: 0;
-
-  background-color: var(--col);
-  color: var(--col3);
-  border: double 5px var(--col3);
+  font-size: 12px;
+  border-top:solid black 1px;
+  font-family:'Impact','MS Gothic','Noto Serif JP',serif;
 }
 .text3{
-  position: absolute;
-  bottom:0%;
-  left:50%;
-  transform:translate(-50%,0%);
   margin: 0;
   padding-bottom: 0.5vw;
+  border-bottom:solid black 3px;
+  font-family:'Impact','MS Gothic','Noto Serif JP',serif;
 }
-@media screen and (max-width: 480px){
-  /*枠・四角背景の位置に関する処理*/
-  .position{
-    padding: 0;
-  }
-  
-  .list{
-    width: 90vw;
-    height: 85vh;
-    overflow:scroll;
-  }
-  
-  .back1{
-    width: 90vw;
-    height: 95vh;
-  }
-  .back2{
-    width: 95vw;
-    height: 90vh;
-  }
-  
+@media screen and (max-width: 860px){
   .list li{
-    width: 18vw;
-    height: 18vw;
-    margin: 0vw 5vw;
-    border: double 5px var(--col);
-  }
-  .stamp2{
-    top: 0vw;
-    left: 10vw;
-    font-size: 8vw;
-  }
-  
-  .text1{
-    padding-top: 2vw;
-  }
-  .text3{
-    padding-bottom: 2vw;
+    width: 45vw;
+    margin: 5vw;
   }
 }

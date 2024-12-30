@@ -4,14 +4,6 @@
   --end:-100%;
 }
 
-p{
-  font-size: 1vw;
-}
-h2 {
-  font-size: 4vw;
-  margin: 0;
-}
-
 .main{
   position: relative;
   height: 100%;

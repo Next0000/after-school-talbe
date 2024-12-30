@@ -3,16 +3,11 @@
     --bg:url("");
     --setPic: 10%;
   }
-  
-  img{
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-touch-callout:none;
-    -moz-user-select:none;
-    touch-callout:none;
-    user-select:none;
-  }
 
+  .S_title{
+    text-align: center;
+    margin: 1vw auto;
+  }
   .list{
     padding: 0;
     width: auto;
@@ -80,59 +75,10 @@
     transform: rotate(-90deg);
     left: 0vw;
     bottom: -4vw;
-    font-size: 2vw;
     color: #D9D5C1;
   }
 
-  .title{
-    text-align: center;
-    width: 30vw;
-    margin: auto;
-    overflow: hidden;
-  }
-  .title_text{
-    width:100%;
-    position: relative;
-    display: block;
-    transform: translateX(-100%);
-    animation : extend 0.5s ease var(--s) forwards;
-  }
-  @keyframes extend{
-    100%{
-      transform: translateX(0%);
-    }
-  }
-  .title_text::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateX(0%);
-    animation : extend2 3s ease var(--s) forwards;
-    background-color: #000000;
-  }
-  @keyframes extend2{
-    100%{
-      transform: translateX(100%);
-    }
-  }
-
-  @media screen and (max-width: 480px){
-    body{
-      margin-top: 0%;
-      margin-bottom: 15%;
-    }
-    h1{
-      font-size: 8vw;
-    }
-    h2{
-      font-size: 4vw;
-    }
-    p,a{
-      font-size: 3vw;
-    }
+  @media screen and (max-width: 860px){
     .list{
       padding: 5vw 0;
       margin: 10vw 0;
@@ -142,8 +88,8 @@
       overflow: hidden;
       margin: 0vw 0vw;
       float: none;
-      width:  50vw;
-      height: 30vw;
+      width:  45vw;
+      height: 45vw;
       background-size: 200%;
       background-color: var(--bgCol);
       background-blend-mode: multiply;
@@ -151,14 +97,14 @@
       color: #ccc;
     }
     .list li:nth-child(even){
-      margin-right: 50vw;
       text-align:right;
       background-position: right 20% top var(--setPic);
     }
     .list li:nth-child(odd){
-      margin-left: 50vw;
       text-align:left;
       background-position: left 30% top var(--setPic);
+      margin-right: 0;
+      margin-left: auto;
     }
 
 
@@ -171,7 +117,6 @@
       margin: 0;
       position: static;
       transform: none;
-      font-size: 8vw;
     }
     .item div{
       position: absolute;

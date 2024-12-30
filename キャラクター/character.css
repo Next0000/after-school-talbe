@@ -14,8 +14,8 @@
 .next_character{
   position: relative;
   text-align:center;
-  margin: 1vw 0 1vw 0;
   height: auto;
+  margin-bottom: 1vw;
 }
 .next_character img{
   width: 100%;
@@ -118,6 +118,7 @@
   margin: 1vw;
   vertical-align: middle;
   display: flex;
+  justify-content: space-around;
 }
 /*棒グラフのアニメーション*/
 .bar-chart-002 {
