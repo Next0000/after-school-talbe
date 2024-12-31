@@ -1,223 +1,192 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="../../images/favicon.ico">
-  <title>Character.kujime</title>
+<head id="head">
   <link href="../../styles/style.css" rel="stylesheet" type="text/css">
   <link href="../character.css" rel="stylesheet" type="text/css">
   <script src="../../scripts/main.js"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap"
-    rel="stylesheet">
 </head>
+
 <div id="loading"></div>
 
 <body>
-  <header>
-    <div class="drawer">
-      <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-      <label for="navToggle" class="btn-burger">
-        <span class="icon"></span>
-      </label>
 
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a href="../../index.html" class="btn-cross">top</a></li>
-          <li><a href="../../シナリオ/index1.html" class="btn-cross">Scenario</a></li>
-          <li id="now"><a href="../../キャラクター/index1.html" 　class="btn-cross">character</a></li>
-          <li><a href="../../放課後卓とは/index3.html" class="btn-cross">about</a></li>
-          <li><a href="../../pass.html" class="btn-cross">shop</a></li>
-        </ul>
-      </nav>
+  <header id="header"></header>
+
+  <div class="next_character">
+    <div class="black_move">
+      <div class="title_text" style="--s:1.2s;">
+        <p class="move1">
+          闇を行く者達の宴
+        </p>
+      </div>
     </div>
-  </header>
 
-  <div class="no1" style="--bg2:url(../images/papers.png);">
+    <ul>
+      <li><a href="./akane.html"><img src="../../images/木村茜icon.png"></a></li>
+      <li><a href="./gomita.html"><img src="../../images/五味田すとかicon.png"></a></li>
+      <li><a href="./kujime.html"><img src="../../images/久次米くるみicon.png"></a></li>
+      <li><a href="./tatibana.html"><img src="../../images/橘裕太icon.png"></a></li>
+      <li><a href="./mituya.html"><img src="../../images/ダミーicon.png"></a></li>
+    </ul>
+  </div>
+
+  <div class="no1">
     <div class="no1-l">
-      <h2>職業：探偵</h2>
       <img src="../../images/久次米くるみ.png" alt="久次米くるみ image">
     </div>
 
+
     <div class="no1-r">
+
       <div class="no2-1">
-        <div style="padding: 1vw; flex-grow: .7;">
-          <h1><ruby>
+        <div>
+          <h1>
+            <ruby>
               <rb>久次米</rb>
               <rt>kujime</rt>
               <rb>くるみ</rb>
               <rt>kurumi</rt>
-            </ruby></h1>
+            </ruby>
+          </h1>
+          <h2>職業：探偵</h2>
         </div>
-        <div style="padding:1vw; border-left: solid 2px #3F3515; flex-grow: .3;">
-          <h2>logo</h2>
-          <h2>pl:Noah</h2>
+
+        <div>
+          <div class="face_pic">
+            <div>
+              <img src="../../images/久次米くるみ.png" alt="久次米くるみ image" style="width: 350%; left: -130%; top:-10%;">
+            </div>
+            <div><img src="../../images/久次米くるみ.png" alt="久次米くるみ image" style="width: 400%; left: -190%; top:-120%;"><span class="tape"></span></div>
+          </div>
         </div>
       </div>
 
       <div class="status">
-        <h2>status</h2>
+        <h2>Status</h2>
         <ul>
-          <li>
-            <p>str 16</p>
-          </li>
-          <li>
-            <p>dex 15</p>
-          </li>
-          <li>
-            <p>int 13</p>
-          </li>
-          <li>
-            <p>con 12</p>
-          </li>
-          <li>
-            <p>app 15</p>
-          </li>
-          <li>
-            <p>pow 14</p>
-          </li>
-          <li>
-            <p>siz 16</p>
-          </li>
-          <li>
-            <p>edu 17</p>
-          </li>
-          <li>
-            <p>san 50</p>
-          </li>
-          <li>
-            <p>アイデア 65</p>
-          </li>
-          <li>
-            <p>幸運 50</p>
-          </li>
-          <li>
-            <p>知識 85</p>
-          </li>
-          <li>
-            <p>クトゥルフ 66</p>
-          </li>
-          <li>
-            <p>ダメボ 1d4</p>
-          </li>
-          <li>
-            <p>mp 14</p>
-          </li>
-          <li>
-            <p>耐久力 14</p>
-          </li>
+          <li><p>MP 14</p></li>
+          <li><p>HP 14</p></li>
+          <li><p>SAN 50</p></li>
+          <li><p>IDE 65</p></li>
+          <br>
+          <li><p>幸運 50</p></li>
+          <li><p>知識 85</p></li>
+          <li><p>クトゥルフ 66</p></li>
+          <li><p>DB +1d4</p></li>
+          
         </ul>
 
-        <h2>skill</h2>
+        <dl class="bar-chart-002">
+          <div class="bar-chart-002_div">
+            <div>
+              <dt>STR</dt>
+              <dd><span style="width: 88%">16.</span></dd>
+            </div>
+            <div>
+              <dt>DEX</dt>
+              <dd><span style="width: 83%">15.</span></dd>
+            </div>
+          </div>
+          <div class="bar-chart-002_div">
+            <div>
+              <dt>INT</dt>
+              <dd><span style="width: 72%">13.</span></dd>
+            </div>
+            <div>
+              <dt>CON</dt>
+              <dd><span style="width: 66%">12.</span></dd>
+            </div>
+          </div>
+          <div class="bar-chart-002_div">
+            <div>
+              <dt>APP</dt>
+              <dd><span style="width: 83%">15.</span></dd>
+            </div>
+            <div>
+              <dt>POW</dt>
+              <dd><span style="width: 77%">14.</span></dd>
+            </div>
+          </div>
+          <div class="bar-chart-002_div">
+            <div>
+              <dt>SIZ</dt>
+              <dd><span style="width: 88%">16.</span></dd>
+            </div>
+            <div>
+              <dt>EDU</dt>
+              <dd><span style="width: 94%">17.</span></dd>
+            </div>
+          </div>
+        </dl>
+
+        <h2>Skill</h2>
         <ul>
-          <li>
-            <p>応急処置 70</p>
-          </li>
-          <li>
-            <p>回避 50</p>
-          </li>
-          <li>
-            <p>隠れる 58</p>
-          </li>
-          <li>
-            <p>信用 75</p>
-          </li>
-          <li>
-            <p>心理学 85</p>
-          </li>
-          <li>
-            <p>詐欺道具 55</p>
-          </li>
-          <li>
-            <p>精神分析 51</p>
-          </li>
-          <li>
-            <p>図書館 65</p>
-          </li>
-          <li>
-            <p>説得 65</p>
-          </li>
-          <li>
-            <p>英語 47</p>
-          </li>
-          <li>
-            <p>目星 70</p>
-          </li>
-          <li>
-            <p>こぶし 70</p>
-          </li>
-          <li>
-            <p>ショットガン 75</p>
-          </li>
+          <li><p>応急処置 70</p></li>
+          <li><p>回避 50</p></li>
+          <li><p>隠れる 58</p></li>
+          <li><p>信用 75</p></li>
+          <li><p>心理学 85</p></li>
+          <li><p>詐欺道具 55</p></li>
+          <li><p>精神分析 51</p></li>
+          <li><p>図書館 65</p></li>
+          <li><p>説得 65</p></li>
+          <li><p>英語 47</p></li>
+          <li><p>目星 70</p></li>
+          <li><p>こぶし 70</p></li>
+          <li><p>ショットガン 75</p></li>
         </ul>
-      </div>
-
-      <div class="no3">
-        <div class="no3-2">
-          <div>
-            <h2>性格</h2>
-            <p>好奇心旺盛で、気になったものはとことん追及する生粋の探偵気質。器用だが、ここぞという場面で失敗を侵すお茶目な一面がある。<br>
-              一方話術においては安定感のある動きを得意とし、数々の修羅場を潜り抜けてきた。厄介ごとに巻き込まれがちな日常の中ででも、
-              未知への好奇に目を輝かせる、まさに少年のような大人。</p>
-          </div>
-
-          <div class="status">
-            <h2>持ち物</h2>
-            <ul>
-              <li>
-                <p>虫眼鏡</p>
-              </li>
-              <li>
-                <p>ペンライト</p>
-              </li>
-              <li>
-                <p>手帳</p>
-              </li>
-              <li>
-                <p>ボールペン</p>
-              </li>
-              <li>
-                <p>財布と携帯</p>
-              </li>
-              <li>
-                <p>救急ポーチ</p>
-              </li>
-              <li>
-                <p>各名刺や証明書</p>
-              </li>
-              <li>
-                <p>軽食</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="no3-2">
-          <div>
-            <h2>生い立ち</h2>
-            <p>結構なお金持ちの家に生まれ、それなりの教養はあるが、余り勉学に興味がない。<br>
-              いい大学を出ているものの、外国をまわったり体を鍛えたり、自由に生きることが好き。<br>
-              面白そうだったからという理由で探偵になる。探偵だけだと物足りなかったので、たまに詐欺師になる。
-              色々面倒くさい時は、悪くなく、良すぎない容姿と巧みな詐欺技術で状況を潜り抜けてきた。<br>
-              警察には「阿良々木琥珀」という知り合いがいる。</p>
-          </div>
-
-          <div>
-            <h2>魔術</h2>
-            <p>読んだ魔導書：セラエノ断章の写本・エイボンの書・ネクロノミコン<br>
-              学んだ呪文：蜂蜜酒の製造法・古き印・クトゥグァの招来・ホイッスルの魔力付与・ビヤーキーの召喚、従属・萎縮・破壊・被害をそらす・
-              治癒・ハスターの退散<br>
-              遭遇した化け物：クトゥルフ・ハスター・深き者ども・ビヤーキー</p>
-          </div>
-        </div>
       </div>
     </div>
+
   </div>
 
+  <div class="no3">
+    <div class="no3-2">
+      <div>
+        <h2>性格</h2>
+        <p>好奇心旺盛で、気になったものはとことん追及する生粋の探偵気質。器用だが、ここぞという場面で失敗を侵すお茶目な一面がある。<br>
+          一方話術においては安定感のある動きを得意とし、数々の修羅場を潜り抜けてきた。厄介ごとに巻き込まれがちな日常の中ででも、
+          未知への好奇に目を輝かせる、まさに少年のような大人。</p>
+      </div>
+
+      <div class="status">
+        <h2>持ち物</h2>
+        <ul>
+          <li><p>虫眼鏡</p></li>
+          <li><p>ペンライト</p></li>
+          <li><p>手帳</p></li>
+          <li><p>ボールペン</p></li>
+          <li><p>財布と携帯</p></li>
+          <li><p>救急ポーチ</p></li>
+          <li><p>各名刺や証明書</p></li>
+          <li><p>軽食</p></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="no3-2">
+      <div>
+        <h2>生い立ち</h2>
+        <p>結構なお金持ちの家に生まれ、それなりの教養はあるが、余り勉学に興味がない。<br>
+          いい大学を出ているものの、外国をまわったり体を鍛えたり、自由に生きることが好き。<br>
+          面白そうだったからという理由で探偵になる。探偵だけだと物足りなかったので、たまに詐欺師になる。
+          色々面倒くさい時は、悪くなく、良すぎない容姿と巧みな詐欺技術で状況を潜り抜けてきた。<br>
+          警察には「阿良々木琥珀」という知り合いがいる。</p>
+        </div>
+
+        <div>
+          <h2>魔術</h2>
+          <p>読んだ魔導書：セラエノ断章の写本・エイボンの書・ネクロノミコン<br>
+            学んだ呪文：蜂蜜酒の製造法・古き印・クトゥグァの招来・ホイッスルの魔力付与・ビヤーキーの召喚、従属・萎縮・破壊・被害をそらす・
+            治癒・ハスターの退散<br>
+            遭遇した化け物：クトゥルフ・ハスター・深き者ども・ビヤーキー</p>
+        </div>
+    </div>
+
+  </div>
+
+  <!--良い感じの一言コメント用の要素
   <div class="no4" style="--bgCol:#308C8C;">
     <div>
       <h2 class="no4-1">好奇と自由。そして未知。</h2>
@@ -229,14 +198,9 @@
         …ねぇ？<span class="lines">&emsp;&emsp;&emsp;&emsp;</span>
       </p>
     </div>
-    <div class="pv">
-      <p>pv</p>
-    </div>
-  </div>
-
-  <footer>
-    <div class="btn1"><a href="javascript:history.back()" class="btn2">back</a></div>
-  </footer>
+      -->
+<footer id="footer"></footer>
+<script src="../../scripts/include.js"></script>
 </body>
 
 </html>

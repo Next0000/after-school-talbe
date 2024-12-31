@@ -3,7 +3,10 @@
     --bg:url("");
     --setPic: 10%;
   }
-
+  #now_Character a{
+    color: white;
+    background-color: black;
+  }
   .S_title{
     text-align: center;
     margin: 1vw auto;
@@ -74,7 +77,7 @@
     transform-origin: left top;
     transform: rotate(-90deg);
     left: 0vw;
-    bottom: -3vw;
+    bottom: 0vw;
     color: #D9D5C1;
   }
 
