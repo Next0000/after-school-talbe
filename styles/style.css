@@ -9,9 +9,10 @@ body {
 }
 
 footer{
-  position: relative;
   width: 100%;
   margin-top: 1vw;
+  top: 100vh;
+  position: sticky;
 }
 .menu{
   display: flex;

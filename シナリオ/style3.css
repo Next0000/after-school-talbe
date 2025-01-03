@@ -6,18 +6,17 @@
 .main{
   background-color: yellowgreen;
   position: relative;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
 }
 /* 右背景要素 */
 .back{
   background-color: turquoise;
-  width: 60%;
+  width: 50%;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 40%;
-  padding-top: 3vw;
+  left: 50%;
 }
 .slide1{
   opacity: 0;
