@@ -1,35 +1,50 @@
-//シナリオページに関する処理
 
-const book_number = [];
-const msg_number = [];
-
-for (var i = 1; i < 8; ++i) {
-    book_number.push(document.getElementById("no-" + i));
-    msg_number.push(document.getElementById("no--" + i));
+const thumb = document.querySelectorAll('.slide1');
+ 
+const switchThumb = (index) => {
+  document.querySelector('.thumb-media-active').classList.remove('thumb-media-active');
+  thumb[index].classList.add('thumb-media-active');
 }
+ 
 
-document.addEventListener('mouseover', function(event) {
-    const touch = event.target.id;//触れたもの
-    //console.log(touch);
 
-    for (var i = 0; i < book_number.length; ++i) {
-        if(book_number[i].id == touch){
-            msg_number[i].classList.toggle('show_msg');
-
-            const title = msg_number[i].firstElementChild;
-            title.classList.toggle('show_title');
+//サムネ
+var infiniteSlider = new Swiper(".infinite-slider", {
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    centeredSlides: true,
+    speed: 150,
+    autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0:{
+            direction: "horizontal",
+        },
+        // ウィンドウサイズが750px以下
+        750: {
+            direction: "vertical",
         }
-    }
+    },
+
+    on: {
+        afterInit: (swiper) => {
+          thumb[swiper.realIndex].classList.add('thumb-media-active');
+          for (let i = 0; i < thumb.length; i++) {
+            thumb[i].onclick = () => {
+              swiper.slideTo(i);
+            };
+          }
+        },
+        slideChange: (swiper) => {
+          switchThumb(swiper.realIndex);
+        },
+      }
 });
 
-document.addEventListener('mouseout', function(event) {
-    const touch2 = event.target.id;//離れたもの
-    console.log("touch2");
-    for (var i = 0; i < book_number.length; ++i) {
-        if(book_number[i].id == touch2){
-            msg_number[i].classList.toggle('show_msg');
-        }
-    }
-});
+
+
   
   

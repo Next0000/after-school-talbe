@@ -1,0 +1,247 @@
+.main{
+  background-color: yellowgreen;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* 右背景要素 */
+.back{
+  background-color: turquoise;
+  width: 60%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 40%;
+  padding-top: 3vw;
+}
+.slide1{
+  opacity: 0;
+}
+.slide1 img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  height: 100%;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.thumb-media-active{
+  opacity: 1;
+}
+
+/* 左comment要素 */
+.comment{
+  background-color: #B51616;
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 3vw;
+}
+
+.comment div{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+  font-size: 3vw;
+  font-weight: bold;
+
+
+  color: #e4e2d5;
+}
+
+/* 中央チケット要素*/
+.ticket{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  padding-top: 3vw;
+  transform: translate(-50%, 0);
+}
+
+/* コンテナー */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.swiper {
+  height: calc(100vh - 3vw);
+}
+
+/* スライド */
+.slide2 {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  height: 150px !important;
+  background-color: #e4e2d5;
+  width: 350px!important;
+  padding: 1vw;
+  margin: 0 0 0 10px;
+
+  transform: scale(.8); /* 左右のスライドを小さくする */
+  transition: .7s; /* ゆっくり小さくさせる */
+
+  display: flex;
+  justify-content: space-between;
+
+  border-radius:5px;
+}
+.swiper-slide-active {
+  opacity: 1; /* 中央のスライドは薄くしない */
+  transform: scale(1); /* 中央のスライドは小さくしない */
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+/**/
+.Card_body{
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: solid 1px black;
+}
+.Card_title{
+  display: flex;
+  justify-content: space-between;
+}
+.Card_title h2{
+  margin: 0px;
+}
+.Card_title p{
+  margin: 0;
+  font-weight:bold;
+  color: #B51616;
+}
+.Card_tag{
+  font-weight:bold;
+  color: #B51616;
+}
+.Card_name{
+  display: flex;
+}
+.Card_name p{
+  width: 150px;
+  margin: 0;
+  border: solid 1px black;
+}
+/**/
+.bar {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  background: #ffffff;
+  margin: 0;
+  margin:auto;
+  overflow: hidden;
+}
+.bar span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #B51616;
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+
+
+.swiper-slide-active .bar span{
+  animation-name: slideInR;
+  animation-duration: 10000ms;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+@keyframes slideInR {
+      0% {
+        transform: scaleY(0);
+      }
+ 
+      100% {
+        transform: scaleY(1);
+      }
+    }
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+@media screen and (max-width: 750px){
+  
+  /* 左comment要素 */
+  .comment{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    padding-top: 0vw;
+  }
+  .comment div{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    font-size: 6vw;
+  }
+
+  /* 右背景要素 */
+  .back{
+    background-color: turquoise;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 0vw;
+  }
+
+  /* 中央チケット要素*/
+  .ticket{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    padding-top: 0vw;
+    transform: translate(0, -50%);
+  }
+
+  /* コンテナー */
+  .container {
+    max-width: auto;
+    height: 100%;
+    margin: auto;
+  }
+  .swiper {
+    width: calc(100%);
+  }
+  .infinite-slider{
+    background-color: #5e2f2f69;
+    height: 100%;
+  }
+
+  /* スライド */
+  .slide2 {
+    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+    position: relative;
+    height: 40vw !important;
+    background-color: #e4e2d5;
+    width: 90vw !important;
+    padding: 3vw;
+    margin: auto;
+
+    transform: scale(.8); /* 左右のスライドを小さくする */
+    transition: .7s; /* ゆっくり小さくさせる */
+  }
+
+  /**/
+.Card_body{
+  width: 85vw;
+}
+
+
+}
