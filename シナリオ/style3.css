@@ -4,15 +4,12 @@
 }
 
 .main{
-  background-color: yellowgreen;
   position: relative;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 }
 /* 右背景要素 */
 .back{
-  background-color: turquoise;
   width: calc(50% - 8px);
   height: 100vh;
   position: fixed;
@@ -87,7 +84,7 @@
 .slide2 {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
   height: 150px !important;
-  background-color: #e4e2d5;
+  background-color: #e4e6df;
   width: 350px!important;
   padding: 1vw;
   margin: 0 0 0 10px;
@@ -100,10 +97,19 @@
 
   border-radius:5px;
 }
+.slide2 a{
+  background-color: yellowgreen;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
 .swiper-slide-active {
   opacity: 1; /* 中央のスライドは薄くしない */
   transform: scale(1); /* 中央のスライドは小さくしない */
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.swiper-slide-active a{
+  pointer-events: all;
 }
 /**/
 .Card_body{
@@ -197,7 +203,6 @@
 
   /* 右背景要素 */
   .back{
-    background-color: turquoise;
     width: 100%;
     height: 50vh;
     position: relative;

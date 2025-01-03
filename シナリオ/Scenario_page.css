@@ -1,0 +1,281 @@
+:root {
+  --book:50%;
+  --scrollspace:100vh;
+}
+
+/*探索者のチェキボード*/
+.member{
+width: auto;
+}
+.mem-list{
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 0;
+  padding: 2vw 4vw;
+}
+
+/*シナリオタイトル*/
+.repo1{
+  text-align: left;
+  position: relative;
+  width: 100%;
+  margin-top: 3vw;
+  border: solid 2px #3F3515;/*線*/
+  display: flex;
+}
+.repo1 div{
+  padding: 1vw;
+}
+
+/*keywords*/
+main{
+  margin: 1vw 0;
+  display: flex;
+  height: auto;
+}
+.repo2{
+  position: relative;
+  border: double 4px #3F3515;/*線*/
+  text-align: left;
+  padding: 1vw;
+  margin: 0;
+}
+/*story*/
+.repo3{
+  position: relative;
+  border: solid 2px #3F3515;/*線*/
+  text-align: left;
+  padding: 2vw;
+  margin: 0 1vw  0 0;
+  flex-grow: 1.5;
+}
+/*-------------------------------------------*/
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 5px;
+  width: 100%;
+}
+
+.tab > label {
+  order: -1;
+  opacity: .5;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: #d4c390;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab > label:hover {
+  opacity: .8;
+}
+
+.tab input {
+  display: none;
+}
+
+.tab > div {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #d4c390;
+}
+
+.tab label:has(:checked) {
+  opacity: 1;
+}
+
+.tab label:has(:checked) + div {
+  display: block;
+}
+
+.member_text{
+  background-color: #d4c390;
+  margin-bottom: 50px;
+}
+.member_picture{
+  position: relative;
+  width: 10%;
+  padding: 10px;
+  background-color: #353535;
+  margin: auto;
+}
+.member_picture img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  width: 100%;
+  background-color: #cacaca;
+  margin: auto;
+}
+.member_picture img:hover{
+  filter: none;
+}
+/*-------------------------------------------*/
+/*写真一覧*/
+.member{
+  position: relative;
+  border-top: dashed  2px #3F3515;
+  border-bottom: dashed  2px #3F3515;
+  margin: 1vw 0;
+  padding: 1vw;
+}
+/*探索者のデータ*/
+.member_picture::after{
+  display: inline-block;
+  position: absolute;
+  content: "touch";
+  width: 70%;
+  height: 20%;
+  left: 50%;
+  top: 0;
+  background-color: rgba(179, 147, 61, 0.815);
+  transform: rotate( 43deg );
+}
+
+/*報告欄*/
+.repo4{
+  text-align: left;
+  position: relative;
+  display: flex;
+}
+/*容疑者一覧*/
+.repo4-1{
+  border: solid 2px #3F3515;
+  margin-right: 1vw;
+  padding: 1vw;
+  width: 30vw;
+}
+/*報告欄*/
+.repo4-2{
+  border: solid 2px #3F3515;
+}
+/*備考と判定*/
+.repo4-3{
+  display:flex;
+  border-top: solid 2px #3F3515;
+}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+@media screen and (max-width: 480px){
+  /*探索者のチェキボード*/
+  .member{
+    width: auto;
+  }
+  .repo1 div h2{
+    font-size: 4vw;
+  }
+
+  .repo2{
+    padding: 2vw;
+    height: auto;
+  }
+  .repo2 p{
+    margin: 0;
+  }
+  .repo3{
+    padding: 2vw;
+    margin: 2vw 0;
+  }
+  .repo3 p{
+    margin: 0;
+  }
+
+  .repo4{
+    display: block;
+    justify-content: space-between;
+  }
+  .repo4-1{
+      border: solid 2px #3F3515;
+      margin: 1vw 0 2vw 0;
+      padding: 2vw;
+      width: auto;
+  }
+  .repo4-1 ul p{
+    margin: 0; 
+  }
+  .repo4-2 p{
+    padding: 2vw;
+  }
+
+  .repo4-3{
+    border-left: none;
+  }
+
+  main{
+    height: auto;
+    display: block;
+  }
+
+  /*探索者のデータ*/
+  /*-------------------------------------------*/
+.tab {
+  position: relative;
+  display: block;
+  flex-wrap:nowrap;
+  width: 100%;
+  height: 90vh;
+}
+
+.tab > label {
+  writing-mode: vertical-rl;
+  padding: 5% 1%;
+  margin-bottom: 2px;
+  border-radius: 5px 0 0 5px;
+  background-color: #d4c390;
+  width: 8%;
+  display: block;
+}
+
+.tab > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  width: 90%;
+  height: 100%;
+  padding: 0;
+  background-color: #d4c390;
+}
+.member_text{
+  margin: auto;
+  margin-bottom: 10vh;
+  width: 90%;
+}
+.member_picture{
+  position: relative;
+  width: 30%;
+  margin: auto;
+}
+/*-------------------------------------------*/
+/*写真一覧*/
+.member{
+  position: relative;
+  border-top: dashed  2px #3F3515;
+  border-bottom: dashed  2px #3F3515;
+  margin: 1vw 0;
+  padding: 1vw;
+}
+/*探索者のデータ*/
+.member_picture::after{
+  display: inline-block;
+  position: absolute;
+  content: "touch";
+  width: 70%;
+  height: 20%;
+  left: 50%;
+  top: 0;
+  background-color: rgba(179, 147, 61, 0.815);
+  transform: rotate( 43deg );
+}
+}
