@@ -3,6 +3,11 @@
   --scrollspace:100vh;
 }
 
+
+#now_Scenario a{
+  color: white;
+  background-color: black;
+}
 /*探索者のチェキボード*/
 .member{
 width: auto;

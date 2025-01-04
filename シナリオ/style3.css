@@ -91,7 +91,7 @@
 
   transform: scale(.8); /* 左右のスライドを小さくする */
   transition: .7s; /* ゆっくり小さくさせる */
-
+  
   display: flex;
   justify-content: space-between;
 
@@ -102,6 +102,8 @@
   height: 100%;
   width: 100%;
   pointer-events: none;
+  display: flex;
+  justify-content: space-between;
 }
 .swiper-slide-active {
   opacity: 1; /* 中央のスライドは薄くしない */
