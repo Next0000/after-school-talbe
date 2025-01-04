@@ -4,20 +4,11 @@
   --col3:#D9D5C1;
   --col4:#A6A186;
 }
-p{
-  font-size: 1vw;
-  line-height: 2;
-}
-h1{
-  margin: 0;
-  font-size: 10vw;
-}
-h2{
-  font-size: 8vw;
-  letter-spacing: 0.1em;
-  margin: 0;
-}
 
+#now_About a{
+  color: white;
+  background-color: black;
+}
 
 .end{
   position: relative;
@@ -95,29 +86,9 @@ h2{
   filter: grayscale(30%);
 }
 
-.box4{
-  background-color:var(--col2);
-  color: #D9D5C1;
-  padding: 10vh 0;
-}
 
-
-.half{
-  display: flex;
-  justify-content:center;
-}
 .half2{
   display: none;
-}
-.hidari{
-  text-align: right;
-  margin-right: 0.5vw;
-  width: 30vw;
-}
-.migi{
-  text-align: left;
-  margin-left: 0.5vw;
-  width: 30vw;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
