@@ -160,10 +160,24 @@ main{
 }
 /*備考と判定*/
 .repo4-3{
+  position: relative;
   display:flex;
   border-top: solid 2px #3F3515;
 }
 
+/*判定スタンプ*/
+.stamp{
+  opacity: .8;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  text-align: center;
+  color: #B51616;
+  border: double 4px #B51616;
+  transform: rotate( 7deg );
+}
 
 
 /*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/

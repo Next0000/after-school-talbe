@@ -1,50 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>scenario.2</title>
-
-    <link href="../キャラクター/stamp.css" rel="stylesheet" type="text/css">
+  <head id="head">
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
-    <link href="style1.css" rel="stylesheet" type="text/css">
+    <link href="Scenario_page.css" rel="stylesheet" type="text/css">
     <script src="../scripts/main.js"></script>
-
-    <link rel="icon" href="../images/favicon.ico">
-
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel=" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Shippori+Mincho&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
   </head>
 
   <div id="loading"></div>
 
   <body ontouchstart="">
-    <header>
-      <div class="drawer">
-        <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-        <label for="navToggle" class="btn-burger">
-          <span class="icon"></span>
-        </label>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="../index.html" class="btn-cross">top</a></li>
-            <li id="now"><a href="../シナリオ/index1.html" class="btn-cross">Scenario</a></li>
-            <li><a href="../キャラクター/index1.html" class="btn-cross">character</a></li>
-            <li><a href="../放課後卓とは/index3.html" class="btn-cross">about</a></li>
-            <li><a href="../pass.html" class="btn-cross">shop</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header> 
+    <header id="header"></header>
 
     <div class="repo1">
-      <div style="padding: 1vw; flex-grow: .7;">
+      <div style="width:65%;">
         <h2 style="border-bottom: dashed 2px">沼男は誰だ？</h2>
         <h2>Scenario:ma34様</h2>
       </div>
-      <div style="padding:1vw; border-left: solid 2px">
-        <h2>date:2017/8/../</h2>
+      <div style="width:35%; border-left: solid 2px;">
+        <h2>date:2017/08/xx</h2>
         <h2>GM:凍雲</h2>
       </div>
     </div>
@@ -75,144 +48,115 @@
 
     <div class="member">
       <h2 style="text-align:center">-player Character-</h2>
-      <ul class="mem-list">
-        <li>
-          <div class="data">
-            <a href="../キャラクター/yami/gomita.html">
+
+      <div class="tab">
+        <label>
+            <input type="radio" name="tab" checked>
+            探偵助手
+        </label>
+        <div>
+          <div class="member_text">
+            <h2>【木村あかね】</h2>
+            <p>久次米探偵事務所の新人探偵<br>
+              前作での久次米の振る舞いに惹かれ、後を追うように探偵へ転職した。<br>
+              五味田と探偵業務をこなす傍らで、亀田から護身術を学んでいる。<br>
+              久次米の感情が思慕であるかは不明<br>
+              ただ最後まで、彼を追った人物。
+            </p>
+          </div>
+          <div class="member_picture">
+            <a href="../キャラクター/numa/akane.html">
+              <img src="../images/木村茜icon.png" alt="木村あかね image">
+            </a>
+          </div>
+        </div>
+
+        <label>
+          <input type="radio" name="tab">
+          探偵
+        </label>
+        <div>
+          <div class="member_text">
+            <h2>【五味田すとか】</h2>
+            <p>探偵”助手”を自称する探偵。<br>
+              「久次米くるみ」を心から尊敬し、彼の復帰を心待ちにしていた。<br>
+              自身の強い執着性は改善されたが、ふとした拍子にぶり返す。<br>
+              新しい仲間（あかね）と共に3人で事務所に帰ることを願っていた。
+            </p>
+          </div>
+          <div class="member_picture">
+            <a href="../キャラクター/numa/gomita.html">
               <img src="../images/五味田すとかicon.png" alt="五味田すとか image">
             </a>
-            <label>
-              <span class="balloon">
-                <div>
-                  <h2>Detective assistant</h2>
-                  <h3>タンテイ</h3>
-                  <p>【五味田すとか】</p>
-                  <p>探偵”助手”を自称する探偵。<br>
-                    「久次米くるみ」を心から尊敬し、<br>
-                    彼の復帰を心待ちにしている。<br>
-                    自身の強い執着性は改善されたが<br>
-                    ふとした拍子にぶり返す。<br>
-                    新しい仲間（あかね）と共に<br>
-                    3人で事務所に帰ることを願った。
-                  </p>
-                </div>
-              </span>
-            </label>
-            <span class="tape"></span>
           </div>
-        </li>
-
-        <li>
-          <div class="data">
-            <label>
-              <a href="../キャラクター/yami/akane.html">
-                <img src="../images/木村茜icon.png" alt="木村あかね image">
-              </a>
-            </label>
-            <span class="balloon">
-              <div>
-                <h2>Detective assistant</h2>
-                <h3>タンテイ</h3>
-                <p>【木村あかね】</p>
-                <p>久次米探偵事務所の新人探偵<br>
-                  前作での久次米の振る舞いに惹かれ<br>
-                  追うように探偵へ転職した。<br>
-                  五味田と探偵業務をこなす傍らで、<br>
-                  亀田から護身術を学んでいる。<br>
-                  久次米の感情が思慕であるかは不明<br>
-                  ただ最後まで、彼を追った人物。
-                </p>
-              </div>
-            </span>
-            <span class="tape"></span>
+        </div>
+    
+        <label>
+          <input type="radio" name="tab">
+          警察
+        </label>
+        <div>
+          <div class="member_text">
+            <h2>【阿良々木琥珀】</h2>
+            <p>
+              好奇心旺盛かつ社交的な警察官。<br>
+              久次米とは深い仲であり、捜査を請け負う傍ら進んで探索者となる。<br>
+              初めて目にする事象にも臆せず、勇敢に立ち向かう度胸がある。<br>
+              並々ならぬ覚悟の上で、友（久次米）を<s>　　</s>した人物。
+            </p>
           </div>
-        </li>
-
-
-        <li>
-          <div class="data">
-            <label>
-              <a href="../キャラクター/yami/tatibana.html">
-                <img src="../images/橘裕太icon.png" alt="橘裕太 image">
-              </a>
-            </label>
-            <span class="balloon">
-              <div>
-                <h2>Musician</h2>
-                <h3>ミュージシャン</h3>
-                <p>【橘裕太】</p>
-                <p>
-                  世界的ミュージシャン。<br>
-                  冒涜的かつ狂気的な音楽性から<br>
-                  飛ぶように成功を重ねている。<br>
-                  亀田とはライブに招待する程の仲であり<br>
-                  彼の中での世界が変わりつつある。<br>
-                  あの日の刺激はすべからく熱意へと<br>
-                  感性の柔軟性は凶か吉か...。
-                </p>
-              </div>
-            </span>
-            <span class="tape"></span>
+          <div class="member_picture">
+            <a href="../キャラクター/numa/kohaku.html"　style="--lineCol:">
+              <img src="../images/久次米くるみicon.png" alt="久次米くるみ image">
+            </a>
           </div>
-        </li>
+        </div>
 
-
-        <li>
-          <div class="data">
-            <label>
-              <a href="../キャラクター/yami/mituya.html">
-                <img src="../images/五味田すとかicon.png" alt="五味田すとか image">
-              </a>
-            </label>
-            <span class="balloon">
-              <div>
-                <h2>Self-Defense Force</h2>
-                <h3>ジエイタイ</h3>
-                <p>【亀田三矢】</p>
-                <p>
-                  家族・友人を愛す自衛隊衛生官。<br>
-                  宴での出来事から家族に絞られ、<br>
-                  定期連絡とこまめな帰宅を約束する。<br>
-                  しかし無関心でいる事は出来ず、<br>
-                  民間軍事会社を立ち上げ護身術を指南<br>
-                  いかなる時でも家族を思う良き父。<br>
-                  そう、いかなる時でも...。
-                </p>
-              </div>
-            </span>
-            <span class="tape"></span>
+        <label>
+          <input type="radio" name="tab">
+          歌手
+        </label>
+        <div>
+          <div class="member_text">
+            <h2>【橘裕太】</h2>
+            <p>
+              世界的ミュージシャン。<br>
+              冒涜的かつ狂気的な音楽性から飛ぶように成功を重ねている。<br>
+              亀田とはライブに招待する程の仲であり、彼の中での世界が変わりつつある。<br>
+              あの日の刺激はすべからく音楽への熱意へと昇華することで自我を保っている<br>
+              感性の柔軟性は凶か吉か...。
+            </p>
           </div>
-        </li>
-
-
-
-        <li>
-          <div class="data">
-            <label>
-              <a href="../キャラクター/yami/kujime.html"　style="--lineCol:">
-                <img src="../images/久次米くるみicon.png" alt="久次米くるみ image">
-              </a>
-            </label>
-            <span class="balloon">
-              <div>
-                <h2>police</h2>
-                <h3>ケイサツ</h3>
-                <p>【阿良々木琥珀】</p>
-                <p>
-                  好奇心旺盛かつ社交的な警察官。<br>
-                  久次米とは深い仲であり、<br>
-                  捜査を請け負う傍ら進んで探索者となる<br>
-                  初めて目にする事象にも臆せず、<br>
-                  勇敢に立ち向かう度胸がある。<br>
-                  並々ならぬ覚悟の上で、<br>
-                  友（久次米）を<s>　　</s>した人物。
-                </p>
-              </div>
-            </span>
-            <span class="tape"></span>
+          <div class="member_picture">
+            <a href="../キャラクター/numa/tatibana.html">
+              <img src="../images/橘裕太icon.png" alt="橘裕太 image">
+            </a>
           </div>
-        </li>
-      </ul>
+        </div>
+
+        <label>
+          <input type="radio" name="tab">
+          自衛隊
+        </label>
+        <div>
+          <div class="member_text">
+            <h2>【亀田三矢】</h2>
+            <p>
+              家族・友人を愛す自衛隊衛生官。<br>
+              宴での出来事から家族にこってり絞られ、定期連絡とこまめな帰宅を約束する。<br>
+              しかし無関心でいる事は出来ず、民間軍事会社を立ち上げ護身術を指南。<br>
+              いかなる時でも家族を思う良き父。<br>
+              そう、いかなる時でも...。
+            </p>
+          </div>
+          <div class="member_picture">
+            <a href="../キャラクター/numa/mituya.html">
+              <img src="../images/ダミーicon.png" alt="亀田三矢 image">
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
 
 
@@ -259,7 +203,7 @@
           </div>
           
           <div class="stamp">
-            　end　
+            end
           </div>
 
           </div>
@@ -268,6 +212,7 @@
 
     </div>
 
-    <footer></footer>
+  <footer id="footer"></footer>
+  <script src="../scripts/include.js"></script>
   </body>
 </html>
