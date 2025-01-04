@@ -4,25 +4,31 @@
   --end:-100%;
 }
 
+#now_Top a{
+  color: white;
+  background-color: black;
+}
+
 .main{
   position: relative;
-  height: 100%;
+  width: 100%;
+  height: calc(100vh - 3vw);
 }
 /*回転文字や中央ロゴの全体配置*/
 .bgmark{
   position: relative;
-  top: 55%;
+  top: 50%;
   left: 50%;
   width: 95%;
   height: 80%;
   transform: translate(-50%,-50%);
   overflow: hidden;
+  border: double 5px #403D31;
 }
 
 /*ロゴの持ち上げ（スロー）*/
 .move2{
   opacity: 0;
-  margin-top: 10vh;
   height: 100%;
   animation: moveAnime 1.0s ease-in-out 1.5s forwards;
 }
@@ -33,7 +39,7 @@
   }
   100% {
     opacity: 0.8;
-    transform: translateY(-10vh);
+    transform: translateY(1);
   }
 }
 .move2 img{
@@ -46,8 +52,7 @@
 
 /*要素の持ち上げ（素早い）*/
 .opRoll{
-  height: 98%;
-  border: double 5px #403D31;
+  height: 100%;
   animation: fade_up 1s ease-in-out 0.6s forwards;
   opacity: 0;
 }
@@ -76,15 +81,15 @@
 /*タイトルにょーん*/
 .title1{
   position: absolute;
-  top: 25vh;
-  left: 10vw;
+  top: 15vh;
+  left: 5vw;
   text-align: left;
   overflow: hidden;
 }
 .title2{
   position: absolute;
   bottom: 10vh;
-  left: 10vw;
+  left: 5vw;
   text-align: left;
   overflow: hidden;
 }
