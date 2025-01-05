@@ -18,7 +18,7 @@
 
 .title{
   position: relative;
-  height: 200vh;
+  height: 50vh;
   padding-top: 10vh;
 }
 .after{
@@ -38,6 +38,39 @@
   filter: grayscale(30%);
 
 }
+.fade{
+  /* アニメーションの命令 */
+  animation: scrollAnime linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
+@keyframes scrollAnime {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.rotate{
+  transform: rotateZ(0);
+    transform-origin: center;
+    /* アニメーションの命令 */
+    animation: minuteAnime linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+}
+
+@keyframes minuteAnime {
+    from {
+        transform: rotateZ(0);
+    }
+
+    to {
+        transform: rotateZ(180deg);
+    }
+}
 
 .box1{
   position: relative;
@@ -53,7 +86,6 @@
 }
 .box2-set{
   margin: auto;
-  padding: 5vh 0;
   width:10vw;
   height:30vh;
   filter: grayscale(50%);
@@ -86,10 +118,6 @@
   filter: grayscale(30%);
 }
 
-
-.half2{
-  display: none;
-}
 
 /*-------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px){
