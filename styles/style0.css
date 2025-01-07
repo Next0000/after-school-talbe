@@ -23,7 +23,6 @@
   height: 80%;
   transform: translate(-50%,-50%);
   overflow: hidden;
-  border: double 5px #403D31;
 }
 
 /*ロゴの持ち上げ（スロー）*/
@@ -55,18 +54,9 @@
   height: 100%;
   animation: fade_up 1s ease-in-out 0.6s forwards;
   opacity: 0;
+  background-color: #D9D5C1;
 }
-/*背景画像*/
-.pic img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.1;
-  background-size: cover;
-  filter: contrast(150%) grayscale(100%);
-  width: 100%;
-  height: auto;
-}
+
 @keyframes fade_up {
   0% {
     transform: translateY(100vh);
@@ -126,12 +116,6 @@
     height: 95%;
     transform: translate(-50%,-50%);
     overflow: hidden;
-  }
-
-  .pic img{
-    left:-50%;
-    width: auto;
-    height: 100%;
   }
 
   .title1{

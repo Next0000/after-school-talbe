@@ -38,7 +38,7 @@
 
 /* 左comment要素 */
 .comment{
-  background-color: #B51616;
+  background-color: #D9D5C1;
   width: calc(50% - 8px);
   height: 100vh;
   position: fixed;
@@ -56,9 +56,6 @@
 
   font-size: 3vw;
   font-weight: bold;
-
-
-  color: #e4e2d5;
 }
 
 /* 中央チケット要素*/
