@@ -14,9 +14,9 @@ var infiniteSlider = new Swiper(".infinite-slider", {
     slidesPerView: "auto",
     spaceBetween: 30,
     centeredSlides: true,
-    speed: 150,
+    speed: 300,
     autoplay: {
-        delay: 10000,
+        delay: 8000,
         disableOnInteraction: false,
     },
     breakpoints: {

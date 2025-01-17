@@ -89,13 +89,14 @@
     }
     .list li{
       overflow: hidden;
-      margin: 0vw 0vw;
+      margin: 10px 0vw;
       float: none;
-      width:  45vw;
-      height: 45vw;
+      width:  70vw;
+      height: 40vw;
       background-size: 200%;
       background-color: var(--bgCol);
       background-blend-mode: multiply;
+      border-radius: 5px;
       filter: none;
       color: #ccc;
     }
