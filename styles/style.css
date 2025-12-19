@@ -335,8 +335,11 @@ h3{
     margin: 0;
     padding-top: 40%;
     height: 100%;
-
     z-index: 10;
+  }
+
+  .nav-list ul{
+    margin-block-start:0;
   }
 
   .nav-list li {
