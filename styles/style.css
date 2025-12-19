@@ -328,7 +328,9 @@ h3{
 
   .nav-list {
     position: fixed;
-    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw;
     background-color: #8b8981;
     list-style: none;
     display: none;
@@ -336,10 +338,6 @@ h3{
     padding-top: 40%;
     height: 100%;
     z-index: 10;
-  }
-
-  .nav-list ul{
-    margin-block-start:0;
   }
 
   .nav-list li {
