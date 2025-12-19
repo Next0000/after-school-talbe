@@ -46,6 +46,7 @@ main{
   text-align: left;
   padding: 1vw;
   margin: 0;
+  width: 15vw;
 }
 /*story*/
 .repo3{
@@ -86,6 +87,7 @@ main{
 .tab > div {
   display: none;
   width: 100%;
+  height: 30vw;
   padding: 10px;
   font-size: 16px;
   background-color: #d4c390;
@@ -104,11 +106,13 @@ main{
   margin-bottom: 50px;
 }
 .member_picture{
-  position: relative;
+  position: absolute;
   width: 10%;
   padding: 10px;
   background-color: #353535;
-  margin: auto;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
 }
 .member_picture img{
   -webkit-filter: grayscale(100%);
@@ -162,6 +166,7 @@ main{
 /*報告欄*/
 .repo4-2{
   border: solid 2px #3F3515;
+  width: calc(100% - 30vw);
 }
 /*備考と判定*/
 .repo4-3{
@@ -198,6 +203,7 @@ main{
   .repo2{
     padding: 2vw;
     height: auto;
+    width: auto;
   }
   .repo2 p{
     margin: 0;
@@ -215,14 +221,19 @@ main{
     justify-content: space-between;
   }
   .repo4-1{
-      border: solid 2px #3F3515;
       margin: 1vw 0 2vw 0;
       padding: 2vw;
       width: auto;
   }
+  .repo4-1 ul li{
+    margin-left: 20px; 
+  }
   .repo4-1 ul p{
     margin: 0; 
   }
+  .repo4-2{
+  width: auto;
+}
   .repo4-2 p{
     padding: 2vw;
   }
@@ -243,7 +254,7 @@ main{
   display: block;
   flex-wrap:nowrap;
   width: 100%;
-  height: 90vh;
+  min-height: 80vh;
 }
 
 .tab > label {
@@ -272,9 +283,9 @@ main{
   width: 90%;
 }
 .member_picture{
-  position: relative;
+  position: absolute;
   width: 30%;
-  margin: auto;
+  bottom: 10px;
 }
 /*-------------------------------------------*/
 /*写真一覧*/
